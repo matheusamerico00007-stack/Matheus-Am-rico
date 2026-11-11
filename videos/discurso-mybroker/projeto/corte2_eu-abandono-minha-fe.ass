@@ -1,0 +1,164 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter ExtraBold,84,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,6,2,2,80,80,560,1
+Style: Title,Inter ExtraBold,80,&H00FFFFFF,&H00FFFFFF,&H00000000,&HB4000000,-1,0,0,0,100,100,1,0,3,22,0,8,90,90,230,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:03.80,Title,,0,0,0,,{\fad(150,300)}"SE VOCÊ NÃO SENTIR NADA,\NEU ABANDONO MINHA FÉ."
+Dialogue: 0,0:00:00.07,0:00:00.19,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}TEM{\c&HFFFFFF&} UMA VEZ
+Dialogue: 0,0:00:00.19,0:00:00.33,Cap,,0,0,0,,{\fscx100\fscy100}TEM {\c&H33D6FF&}UMA{\c&HFFFFFF&} VEZ
+Dialogue: 0,0:00:00.33,0:00:00.59,Cap,,0,0,0,,{\fscx100\fscy100}TEM UMA {\c&H33D6FF&}VEZ{\c&HFFFFFF&}
+Dialogue: 0,0:00:00.59,0:00:01.33,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}QUE{\c&HFFFFFF&} EU TAVA
+Dialogue: 0,0:00:01.33,0:00:01.49,Cap,,0,0,0,,{\fscx100\fscy100}QUE {\c&H33D6FF&}EU{\c&HFFFFFF&} TAVA
+Dialogue: 0,0:00:01.49,0:00:01.69,Cap,,0,0,0,,{\fscx100\fscy100}QUE EU {\c&H33D6FF&}TAVA{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.69,0:00:02.07,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}CONVERSANDO{\c&HFFFFFF&} COM ALGUÉM
+Dialogue: 0,0:00:02.07,0:00:02.21,Cap,,0,0,0,,{\fscx100\fscy100}CONVERSANDO {\c&H33D6FF&}COM{\c&HFFFFFF&} ALGUÉM
+Dialogue: 0,0:00:02.21,0:00:02.35,Cap,,0,0,0,,{\fscx100\fscy100}CONVERSANDO COM {\c&H33D6FF&}ALGUÉM{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.35,0:00:02.51,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}QUE{\c&HFFFFFF&} NÃO ACREDITAVA
+Dialogue: 0,0:00:02.51,0:00:02.65,Cap,,0,0,0,,{\fscx100\fscy100}QUE {\c&H33D6FF&}NÃO{\c&HFFFFFF&} ACREDITAVA
+Dialogue: 0,0:00:02.65,0:00:02.97,Cap,,0,0,0,,{\fscx100\fscy100}QUE NÃO {\c&H33D6FF&}ACREDITAVA{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.97,0:00:03.13,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}EM{\c&HFFFFFF&} DEUS
+Dialogue: 0,0:00:03.13,0:00:03.93,Cap,,0,0,0,,{\fscx100\fscy100}EM {\c&H33D6FF&}DEUS{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.93,0:00:04.05,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}EU{\c&HFFFFFF&} FALEI COM
+Dialogue: 0,0:00:04.05,0:00:04.15,Cap,,0,0,0,,{\fscx100\fscy100}EU {\c&H33D6FF&}FALEI{\c&HFFFFFF&} COM
+Dialogue: 0,0:00:04.15,0:00:04.29,Cap,,0,0,0,,{\fscx100\fscy100}EU FALEI {\c&H33D6FF&}COM{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.29,0:00:04.39,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}ELA{\c&HFFFFFF&} ASSIM
+Dialogue: 0,0:00:04.39,0:00:05.13,Cap,,0,0,0,,{\fscx100\fscy100}ELA {\c&H33D6FF&}ASSIM{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.13,0:00:05.37,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}CARA{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.37,0:00:05.51,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}SE{\c&HFFFFFF&} EU ORAR
+Dialogue: 0,0:00:05.51,0:00:05.61,Cap,,0,0,0,,{\fscx100\fscy100}SE {\c&H33D6FF&}EU{\c&HFFFFFF&} ORAR
+Dialogue: 0,0:00:05.61,0:00:05.71,Cap,,0,0,0,,{\fscx100\fscy100}SE EU {\c&H33D6FF&}ORAR{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.71,0:00:05.99,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}POR{\c&HFFFFFF&} VOCÊ E
+Dialogue: 0,0:00:05.99,0:00:06.55,Cap,,0,0,0,,{\fscx100\fscy100}POR {\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} E
+Dialogue: 0,0:00:06.55,0:00:06.95,Cap,,0,0,0,,{\fscx100\fscy100}POR VOCÊ {\c&H33D6FF&}E{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.95,0:00:07.29,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} SENTIR ALGUMA
+Dialogue: 0,0:00:07.29,0:00:07.51,Cap,,0,0,0,,{\fscx100\fscy100}VOCÊ {\c&H33D6FF&}SENTIR{\c&HFFFFFF&} ALGUMA
+Dialogue: 0,0:00:07.51,0:00:07.81,Cap,,0,0,0,,{\fscx100\fscy100}VOCÊ SENTIR {\c&H33D6FF&}ALGUMA{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.81,0:00:07.99,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}COISA{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.99,0:00:08.17,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}DEUS{\c&HFFFFFF&} EXISTE
+Dialogue: 0,0:00:08.17,0:00:08.69,Cap,,0,0,0,,{\fscx100\fscy100}DEUS {\c&H33D6FF&}EXISTE{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.69,0:00:08.79,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}SE{\c&HFFFFFF&} EU ORAR
+Dialogue: 0,0:00:08.79,0:00:08.83,Cap,,0,0,0,,{\fscx100\fscy100}SE {\c&H33D6FF&}EU{\c&HFFFFFF&} ORAR
+Dialogue: 0,0:00:08.83,0:00:08.97,Cap,,0,0,0,,{\fscx100\fscy100}SE EU {\c&H33D6FF&}ORAR{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.97,0:00:09.15,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}POR{\c&HFFFFFF&} VOCÊ E
+Dialogue: 0,0:00:09.15,0:00:09.29,Cap,,0,0,0,,{\fscx100\fscy100}POR {\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} E
+Dialogue: 0,0:00:09.29,0:00:09.33,Cap,,0,0,0,,{\fscx100\fscy100}POR VOCÊ {\c&H33D6FF&}E{\c&HFFFFFF&}
+Dialogue: 0,0:00:09.33,0:00:09.43,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} NÃO SENTIR
+Dialogue: 0,0:00:09.43,0:00:09.53,Cap,,0,0,0,,{\fscx100\fscy100}VOCÊ {\c&H33D6FF&}NÃO{\c&HFFFFFF&} SENTIR
+Dialogue: 0,0:00:09.53,0:00:09.75,Cap,,0,0,0,,{\fscx100\fscy100}VOCÊ NÃO {\c&H33D6FF&}SENTIR{\c&HFFFFFF&}
+Dialogue: 0,0:00:09.75,0:00:10.57,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}NADA{\c&HFFFFFF&}
+Dialogue: 0,0:00:10.57,0:00:10.65,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}DEUS{\c&HFFFFFF&} NÃO EXISTE
+Dialogue: 0,0:00:10.65,0:00:10.93,Cap,,0,0,0,,{\fscx100\fscy100}DEUS {\c&H33D6FF&}NÃO{\c&HFFFFFF&} EXISTE
+Dialogue: 0,0:00:10.93,0:00:11.11,Cap,,0,0,0,,{\fscx100\fscy100}DEUS NÃO {\c&H33D6FF&}EXISTE{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.11,0:00:11.19,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}EU{\c&HFFFFFF&} ABANDONO MINHA
+Dialogue: 0,0:00:11.19,0:00:11.45,Cap,,0,0,0,,{\fscx100\fscy100}EU {\c&H33D6FF&}ABANDONO{\c&HFFFFFF&} MINHA
+Dialogue: 0,0:00:11.45,0:00:11.61,Cap,,0,0,0,,{\fscx100\fscy100}EU ABANDONO {\c&H33D6FF&}MINHA{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.61,0:00:12.31,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}FÉ{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.31,0:00:12.43,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}EU{\c&HFFFFFF&} OREI POR
+Dialogue: 0,0:00:12.43,0:00:12.67,Cap,,0,0,0,,{\fscx100\fscy100}EU {\c&H33D6FF&}OREI{\c&HFFFFFF&} POR
+Dialogue: 0,0:00:12.67,0:00:12.83,Cap,,0,0,0,,{\fscx100\fscy100}EU OREI {\c&H33D6FF&}POR{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.83,0:00:13.21,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}ELE{\c&HFFFFFF&} E O
+Dialogue: 0,0:00:13.21,0:00:14.03,Cap,,0,0,0,,{\fscx100\fscy100}ELE {\c&H33D6FF&}E{\c&HFFFFFF&} O
+Dialogue: 0,0:00:14.03,0:00:14.15,Cap,,0,0,0,,{\fscx100\fscy100}ELE E {\c&H33D6FF&}O{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.15,0:00:14.37,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}CARA{\c&HFFFFFF&} ATÉ CAIU
+Dialogue: 0,0:00:14.37,0:00:14.57,Cap,,0,0,0,,{\fscx100\fscy100}CARA {\c&H33D6FF&}ATÉ{\c&HFFFFFF&} CAIU
+Dialogue: 0,0:00:14.57,0:00:15.05,Cap,,0,0,0,,{\fscx100\fscy100}CARA ATÉ {\c&H33D6FF&}CAIU{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.05,0:00:15.21,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}NÃO{\c&HFFFFFF&} SEI O
+Dialogue: 0,0:00:15.21,0:00:15.37,Cap,,0,0,0,,{\fscx100\fscy100}NÃO {\c&H33D6FF&}SEI{\c&HFFFFFF&} O
+Dialogue: 0,0:00:15.37,0:00:15.43,Cap,,0,0,0,,{\fscx100\fscy100}NÃO SEI {\c&H33D6FF&}O{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.43,0:00:15.47,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}QUE{\c&HFFFFFF&} ACONTECEU NÃO
+Dialogue: 0,0:00:15.47,0:00:15.79,Cap,,0,0,0,,{\fscx100\fscy100}QUE {\c&H33D6FF&}ACONTECEU{\c&HFFFFFF&} NÃO
+Dialogue: 0,0:00:15.79,0:00:16.05,Cap,,0,0,0,,{\fscx100\fscy100}QUE ACONTECEU {\c&H33D6FF&}NÃO{\c&HFFFFFF&}
+Dialogue: 0,0:00:16.05,0:00:16.77,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}MAS{\c&HFFFFFF&} ELE SE
+Dialogue: 0,0:00:16.77,0:00:17.41,Cap,,0,0,0,,{\fscx100\fscy100}MAS {\c&H33D6FF&}ELE{\c&HFFFFFF&} SE
+Dialogue: 0,0:00:17.41,0:00:17.59,Cap,,0,0,0,,{\fscx100\fscy100}MAS ELE {\c&H33D6FF&}SE{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.59,0:00:17.77,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}SENTIU{\c&HFFFFFF&} E NO
+Dialogue: 0,0:00:17.77,0:00:17.89,Cap,,0,0,0,,{\fscx100\fscy100}SENTIU {\c&H33D6FF&}E{\c&HFFFFFF&} NO
+Dialogue: 0,0:00:17.89,0:00:17.89,Cap,,0,0,0,,{\fscx100\fscy100}SENTIU E {\c&H33D6FF&}NO{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.89,0:00:18.09,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}FINAL{\c&HFFFFFF&} ELE ACEITOU
+Dialogue: 0,0:00:18.09,0:00:18.25,Cap,,0,0,0,,{\fscx100\fscy100}FINAL {\c&H33D6FF&}ELE{\c&HFFFFFF&} ACEITOU
+Dialogue: 0,0:00:18.25,0:00:18.47,Cap,,0,0,0,,{\fscx100\fscy100}FINAL ELE {\c&H33D6FF&}ACEITOU{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.47,0:00:19.07,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}JESUS{\c&HFFFFFF&}
+Dialogue: 0,0:00:19.07,0:00:19.43,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}E{\c&HFFFFFF&} SE EU
+Dialogue: 0,0:00:19.43,0:00:19.57,Cap,,0,0,0,,{\fscx100\fscy100}E {\c&H33D6FF&}SE{\c&HFFFFFF&} EU
+Dialogue: 0,0:00:19.57,0:00:19.69,Cap,,0,0,0,,{\fscx100\fscy100}E SE {\c&H33D6FF&}EU{\c&HFFFFFF&}
+Dialogue: 0,0:00:19.69,0:00:19.85,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}POSSO{\c&HFFFFFF&} DIZER UMA
+Dialogue: 0,0:00:19.85,0:00:20.03,Cap,,0,0,0,,{\fscx100\fscy100}POSSO {\c&H33D6FF&}DIZER{\c&HFFFFFF&} UMA
+Dialogue: 0,0:00:20.03,0:00:20.21,Cap,,0,0,0,,{\fscx100\fscy100}POSSO DIZER {\c&H33D6FF&}UMA{\c&HFFFFFF&}
+Dialogue: 0,0:00:20.21,0:00:20.37,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}COISA{\c&HFFFFFF&} PRA VOCÊ
+Dialogue: 0,0:00:20.37,0:00:20.61,Cap,,0,0,0,,{\fscx100\fscy100}COISA {\c&H33D6FF&}PRA{\c&HFFFFFF&} VOCÊ
+Dialogue: 0,0:00:20.61,0:00:22.41,Cap,,0,0,0,,{\fscx100\fscy100}COISA PRA {\c&H33D6FF&}VOCÊ{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.55,0:00:22.67,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}DEUS{\c&HFFFFFF&} EXISTE
+Dialogue: 0,0:00:22.67,0:00:23.59,Cap,,0,0,0,,{\fscx100\fscy100}DEUS {\c&H33D6FF&}EXISTE{\c&HFFFFFF&}
+Dialogue: 0,0:00:23.59,0:00:23.65,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}E{\c&HFFFFFF&} SE VOCÊ
+Dialogue: 0,0:00:23.65,0:00:23.73,Cap,,0,0,0,,{\fscx100\fscy100}E {\c&H33D6FF&}SE{\c&HFFFFFF&} VOCÊ
+Dialogue: 0,0:00:23.73,0:00:23.89,Cap,,0,0,0,,{\fscx100\fscy100}E SE {\c&H33D6FF&}VOCÊ{\c&HFFFFFF&}
+Dialogue: 0,0:00:23.89,0:00:24.13,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}NÃO{\c&HFFFFFF&} ACREDITA NISSO
+Dialogue: 0,0:00:24.13,0:00:24.51,Cap,,0,0,0,,{\fscx100\fscy100}NÃO {\c&H33D6FF&}ACREDITA{\c&HFFFFFF&} NISSO
+Dialogue: 0,0:00:24.51,0:00:24.91,Cap,,0,0,0,,{\fscx100\fscy100}NÃO ACREDITA {\c&H33D6FF&}NISSO{\c&HFFFFFF&}
+Dialogue: 0,0:00:24.91,0:00:25.15,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}SE{\c&HFFFFFF&} VOCÊ TÁ
+Dialogue: 0,0:00:25.15,0:00:25.45,Cap,,0,0,0,,{\fscx100\fscy100}SE {\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} TÁ
+Dialogue: 0,0:00:25.45,0:00:25.61,Cap,,0,0,0,,{\fscx100\fscy100}SE VOCÊ {\c&H33D6FF&}TÁ{\c&HFFFFFF&}
+Dialogue: 0,0:00:25.61,0:00:25.95,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}PERDIDO{\c&HFFFFFF&} NA SUA
+Dialogue: 0,0:00:25.95,0:00:26.07,Cap,,0,0,0,,{\fscx100\fscy100}PERDIDO {\c&H33D6FF&}NA{\c&HFFFFFF&} SUA
+Dialogue: 0,0:00:26.07,0:00:26.29,Cap,,0,0,0,,{\fscx100\fscy100}PERDIDO NA {\c&H33D6FF&}SUA{\c&HFFFFFF&}
+Dialogue: 0,0:00:26.29,0:00:26.95,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}FÉ{\c&HFFFFFF&}
+Dialogue: 0,0:00:26.95,0:00:27.09,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}TE{\c&HFFFFFF&} DOU UM
+Dialogue: 0,0:00:27.09,0:00:27.17,Cap,,0,0,0,,{\fscx100\fscy100}TE {\c&H33D6FF&}DOU{\c&HFFFFFF&} UM
+Dialogue: 0,0:00:27.17,0:00:27.29,Cap,,0,0,0,,{\fscx100\fscy100}TE DOU {\c&H33D6FF&}UM{\c&HFFFFFF&}
+Dialogue: 0,0:00:27.29,0:00:28.13,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}DESAFIO{\c&HFFFFFF&}
+Dialogue: 0,0:00:28.13,0:00:28.21,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}FALA{\c&HFFFFFF&} COM DEUS
+Dialogue: 0,0:00:28.21,0:00:28.39,Cap,,0,0,0,,{\fscx100\fscy100}FALA {\c&H33D6FF&}COM{\c&HFFFFFF&} DEUS
+Dialogue: 0,0:00:28.39,0:00:28.61,Cap,,0,0,0,,{\fscx100\fscy100}FALA COM {\c&H33D6FF&}DEUS{\c&HFFFFFF&}
+Dialogue: 0,0:00:28.61,0:00:29.13,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}DEUS{\c&HFFFFFF&}
+Dialogue: 0,0:00:29.13,0:00:29.23,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}SE{\c&HFFFFFF&} VOCÊ ME
+Dialogue: 0,0:00:29.23,0:00:29.37,Cap,,0,0,0,,{\fscx100\fscy100}SE {\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} ME
+Dialogue: 0,0:00:29.37,0:00:29.47,Cap,,0,0,0,,{\fscx100\fscy100}SE VOCÊ {\c&H33D6FF&}ME{\c&HFFFFFF&}
+Dialogue: 0,0:00:29.47,0:00:30.37,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}ABENÇOAR{\c&HFFFFFF&}
+Dialogue: 0,0:00:30.37,0:00:30.43,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}SE{\c&HFFFFFF&} EU VENDER
+Dialogue: 0,0:00:30.43,0:00:30.53,Cap,,0,0,0,,{\fscx100\fscy100}SE {\c&H33D6FF&}EU{\c&HFFFFFF&} VENDER
+Dialogue: 0,0:00:30.53,0:00:31.25,Cap,,0,0,0,,{\fscx100\fscy100}SE EU {\c&H33D6FF&}VENDER{\c&HFFFFFF&}
+Dialogue: 0,0:00:31.25,0:00:31.41,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}SE{\c&HFFFFFF&} O SENHOR
+Dialogue: 0,0:00:31.41,0:00:31.59,Cap,,0,0,0,,{\fscx100\fscy100}SE {\c&H33D6FF&}O{\c&HFFFFFF&} SENHOR
+Dialogue: 0,0:00:31.59,0:00:31.59,Cap,,0,0,0,,{\fscx100\fscy100}SE O {\c&H33D6FF&}SENHOR{\c&HFFFFFF&}
+Dialogue: 0,0:00:31.59,0:00:31.77,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}ME{\c&HFFFFFF&} FAZER AVANÇAR
+Dialogue: 0,0:00:31.77,0:00:32.21,Cap,,0,0,0,,{\fscx100\fscy100}ME {\c&H33D6FF&}FAZER{\c&HFFFFFF&} AVANÇAR
+Dialogue: 0,0:00:32.21,0:00:33.39,Cap,,0,0,0,,{\fscx100\fscy100}ME FAZER {\c&H33D6FF&}AVANÇAR{\c&HFFFFFF&}
+Dialogue: 0,0:00:33.39,0:00:33.53,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}EU{\c&HFFFFFF&} CREIO QUE
+Dialogue: 0,0:00:33.53,0:00:33.69,Cap,,0,0,0,,{\fscx100\fscy100}EU {\c&H33D6FF&}CREIO{\c&HFFFFFF&} QUE
+Dialogue: 0,0:00:33.69,0:00:33.81,Cap,,0,0,0,,{\fscx100\fscy100}EU CREIO {\c&H33D6FF&}QUE{\c&HFFFFFF&}
+Dialogue: 0,0:00:33.81,0:00:33.91,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} EXISTE
+Dialogue: 0,0:00:33.91,0:00:34.53,Cap,,0,0,0,,{\fscx100\fscy100}VOCÊ {\c&H33D6FF&}EXISTE{\c&HFFFFFF&}
+Dialogue: 0,0:00:34.53,0:00:34.77,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}PORQUE{\c&HFFFFFF&} EU TENHO
+Dialogue: 0,0:00:34.77,0:00:34.87,Cap,,0,0,0,,{\fscx100\fscy100}PORQUE {\c&H33D6FF&}EU{\c&HFFFFFF&} TENHO
+Dialogue: 0,0:00:34.87,0:00:34.97,Cap,,0,0,0,,{\fscx100\fscy100}PORQUE EU {\c&H33D6FF&}TENHO{\c&HFFFFFF&}
+Dialogue: 0,0:00:34.97,0:00:35.33,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}CERTEZA{\c&HFFFFFF&} QUEM ELE
+Dialogue: 0,0:00:35.33,0:00:35.57,Cap,,0,0,0,,{\fscx100\fscy100}CERTEZA {\c&H33D6FF&}QUEM{\c&HFFFFFF&} ELE
+Dialogue: 0,0:00:35.57,0:00:35.75,Cap,,0,0,0,,{\fscx100\fscy100}CERTEZA QUEM {\c&H33D6FF&}ELE{\c&HFFFFFF&}
+Dialogue: 0,0:00:35.75,0:00:36.01,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}É{\c&HFFFFFF&}
+Dialogue: 0,0:00:36.01,0:00:36.01,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}EU{\c&HFFFFFF&} TENHO CERTEZA
+Dialogue: 0,0:00:36.01,0:00:36.15,Cap,,0,0,0,,{\fscx100\fscy100}EU {\c&H33D6FF&}TENHO{\c&HFFFFFF&} CERTEZA
+Dialogue: 0,0:00:36.15,0:00:36.43,Cap,,0,0,0,,{\fscx100\fscy100}EU TENHO {\c&H33D6FF&}CERTEZA{\c&HFFFFFF&}
+Dialogue: 0,0:00:36.43,0:00:36.55,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}QUE{\c&HFFFFFF&} ELE VAI
+Dialogue: 0,0:00:36.55,0:00:36.63,Cap,,0,0,0,,{\fscx100\fscy100}QUE {\c&H33D6FF&}ELE{\c&HFFFFFF&} VAI
+Dialogue: 0,0:00:36.63,0:00:36.75,Cap,,0,0,0,,{\fscx100\fscy100}QUE ELE {\c&H33D6FF&}VAI{\c&HFFFFFF&}
+Dialogue: 0,0:00:36.75,0:00:36.89,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}TE{\c&HFFFFFF&} ABENÇOAR
+Dialogue: 0,0:00:36.89,0:00:38.01,Cap,,0,0,0,,{\fscx100\fscy100}TE {\c&H33D6FF&}ABENÇOAR{\c&HFFFFFF&}
+Dialogue: 0,0:00:38.01,0:00:38.15,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}ENTÃO{\c&HFFFFFF&} ENTREGA SEU
+Dialogue: 0,0:00:38.15,0:00:38.39,Cap,,0,0,0,,{\fscx100\fscy100}ENTÃO {\c&H33D6FF&}ENTREGA{\c&HFFFFFF&} SEU
+Dialogue: 0,0:00:38.39,0:00:38.53,Cap,,0,0,0,,{\fscx100\fscy100}ENTÃO ENTREGA {\c&H33D6FF&}SEU{\c&HFFFFFF&}
+Dialogue: 0,0:00:38.53,0:00:38.79,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}CAMINHO{\c&HFFFFFF&} PRO SENHOR
+Dialogue: 0,0:00:38.79,0:00:38.99,Cap,,0,0,0,,{\fscx100\fscy100}CAMINHO {\c&H33D6FF&}PRO{\c&HFFFFFF&} SENHOR
+Dialogue: 0,0:00:38.99,0:00:39.61,Cap,,0,0,0,,{\fscx100\fscy100}CAMINHO PRO {\c&H33D6FF&}SENHOR{\c&HFFFFFF&}
+Dialogue: 0,0:00:39.61,0:00:39.83,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}CONFIA{\c&HFFFFFF&} NELE E
+Dialogue: 0,0:00:39.83,0:00:40.19,Cap,,0,0,0,,{\fscx100\fscy100}CONFIA {\c&H33D6FF&}NELE{\c&HFFFFFF&} E
+Dialogue: 0,0:00:40.19,0:00:40.39,Cap,,0,0,0,,{\fscx100\fscy100}CONFIA NELE {\c&H33D6FF&}E{\c&HFFFFFF&}
+Dialogue: 0,0:00:40.39,0:00:40.51,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}O{\c&HFFFFFF&} MAIS ELE
+Dialogue: 0,0:00:40.51,0:00:40.63,Cap,,0,0,0,,{\fscx100\fscy100}O {\c&H33D6FF&}MAIS{\c&HFFFFFF&} ELE
+Dialogue: 0,0:00:40.63,0:00:40.79,Cap,,0,0,0,,{\fscx100\fscy100}O MAIS {\c&H33D6FF&}ELE{\c&HFFFFFF&}
+Dialogue: 0,0:00:40.79,0:00:41.63,Cap,,0,0,0,,{\fscx100\fscy100}{\c&H33D6FF&}FARÁ{\c&HFFFFFF&}
