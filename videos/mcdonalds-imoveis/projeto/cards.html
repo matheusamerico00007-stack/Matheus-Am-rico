@@ -1,0 +1,48 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;overflow:hidden;font-family:'Inter',sans-serif;color:#fff;background:#0d0d10}
+.card{position:absolute;inset:0;display:none;background:radial-gradient(1200px 900px at 50% 30%,#23232b 0%,#0d0d10 70%)}
+.glow{position:absolute;width:900px;height:900px;border-radius:50%;filter:blur(120px);opacity:.35;animation:drift 12s linear both}
+@keyframes drift{from{transform:translate(-200px,-100px)}to{transform:translate(300px,250px)}}
+.kicker{position:absolute;top:250px;width:100%;text-align:center;font-weight:800;letter-spacing:10px;font-size:40px;color:#FFD633;opacity:0;animation:fadeUp .4s ease-out both}
+.title{position:absolute;top:320px;width:100%;text-align:center;font-weight:900;font-size:78px;line-height:1.05;opacity:0;animation:fadeUp .45s ease-out both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@keyframes pop{0%{opacity:0;transform:scale(.6)}70%{opacity:1;transform:scale(1.06)}100%{opacity:1;transform:scale(1)}}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.steps{position:absolute;top:480px;left:90px;right:90px}
+.step{display:flex;align-items:center;gap:34px;background:#1b1b22;border:3px solid #2e2e38;border-radius:34px;padding:22px 36px;margin-bottom:42px;opacity:0;animation:pop .45s cubic-bezier(.2,.9,.3,1.2) both;position:relative}
+.step.hl{border-color:#FFD633;background:#2a2610}
+.step .ic{font-size:74px;width:110px;text-align:center;font-family:'Noto Color Emoji'}
+.step .tx{font-weight:800;font-size:47px;line-height:1.12}
+.step .tx b{color:#FFD633}
+.step .n{position:absolute;top:-22px;left:-18px;background:#FFD633;color:#111;font-weight:900;font-size:34px;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.arrow{position:absolute;left:50%;width:6px;height:56px;margin-left:-3px;background:#FFD633;transform-origin:top;animation:grow .25s ease-out both}
+.big{position:absolute;width:100%;text-align:center;font-weight:900}
+.strike{position:absolute;left:170px;right:170px;height:16px;background:#E63946;border-radius:8px;transform-origin:left;animation:sx .35s ease-in both;transform:scaleX(0)}
+@keyframes sx{from{transform:scaleX(0) rotate(-6deg)}to{transform:scaleX(1) rotate(-6deg)}}
+.pill{display:inline-block;background:#FFD633;color:#111;padding:14px 34px;border-radius:20px}
+</style></head><body>
+<!-- CARD 1: como funciona -->
+<div class="card" id="c1">
+  <div class="glow" style="background:#FFD633;left:-200px;top:200px"></div>
+  <div class="kicker" style="animation-delay:0s">COMO FUNCIONA</div>
+  <div class="title" style="animation-delay:.1s">A FRANQUIA DO<br><span style="color:#FFD633">McDONALD'S</span></div>
+  <div class="steps">
+    <div class="step" style="animation-delay:.84s"><div class="n">1</div><div class="ic">📍</div><div class="tx">Você <b>acha</b><br>o terreno</div></div>
+    <div class="step" style="animation-delay:2.02s"><div class="n">2</div><div class="ic">🏢</div><div class="tx">O McDonald's<br><b>compra</b> o terreno</div></div>
+    <div class="step hl" style="animation-delay:4.40s"><div class="n">3</div><div class="ic">💸</div><div class="tx">Você paga <b>aluguel</b><br>pro McDonald's</div></div>
+    <div class="step" style="animation-delay:6.58s"><div class="n">+</div><div class="ic">🧾</div><div class="tx">E ainda a<br><b>taxa de franquia</b></div></div>
+  </div>
+</div>
+<!-- CARD 2: o verdadeiro negócio -->
+<div class="card" id="c2">
+  <div class="glow" style="background:#E63946;right:-300px;top:100px;opacity:.25"></div>
+  <div class="kicker" style="animation-delay:0s">O VERDADEIRO NEGÓCIO</div>
+  <div class="big" style="top:420px;font-size:52px;color:#bbb;opacity:0;animation:fadeUp .4s both;animation-delay:1.38s">NÃO É SÓ VENDER</div>
+  <div class="big" style="top:500px;font-size:100px;opacity:0;animation:pop .45s both;animation-delay:2.5s"><span style="font-family:'Noto Color Emoji'">🍔</span> HAMBÚRGUER</div>
+  <div class="strike" style="top:568px;animation-delay:3.45s"></div>
+  <div class="big" style="top:760px;font-size:56px;color:#bbb;opacity:0;animation:fadeUp .4s both;animation-delay:3.98s">É</div>
+  <div class="big" style="top:840px;font-size:150px;color:#FFD633;opacity:0;animation:pop .5s cubic-bezier(.2,.9,.3,1.3) both;animation-delay:4.0s"><span style="font-family:'Noto Color Emoji'">🏢</span> IMÓVEL</div>
+  <div class="big" style="top:1060px;font-size:50px;opacity:0;animation:fadeUp .4s both;animation-delay:4.76s"><span class="pill">ALAVANCAR O PATRIMÔNIO</span></div>
+</div>
+</body></html>
