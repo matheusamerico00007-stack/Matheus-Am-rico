@@ -1,0 +1,191 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter ExtraBold,84,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,6,2,2,80,80,520,1
+Style: Box,Inter ExtraBold,92,&H00111111,&H00FFFFFF,&H0033D6FF,&H0033D6FF,-1,0,0,0,100,100,0,0,3,20,0,8,80,80,300,1
+Style: Sub,Inter ExtraBold,50,&H00FFFFFF,&H00FFFFFF,&H00111111,&H00111111,-1,0,0,0,100,100,2,0,3,14,0,8,80,80,0,1
+Style: Chk,Inter ExtraBold,62,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,5,3,7,90,80,0,1
+Style: Disc,Inter Medium,30,&H40FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,0,2,60,60,70,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.35,Cap,,0,0,0,,{\c&H33D6FF&}ESSE{\c&HFFFFFF&} É O
+Dialogue: 0,0:00:00.35,0:00:00.47,Cap,,0,0,0,,ESSE {\c&H33D6FF&}É{\c&HFFFFFF&} O
+Dialogue: 0,0:00:00.47,0:00:00.51,Cap,,0,0,0,,ESSE É {\c&H33D6FF&}O{\c&HFFFFFF&}
+Dialogue: 0,0:00:00.51,0:00:00.69,Cap,,0,0,0,,{\c&H33D6FF&}MELHOR{\c&HFFFFFF&} ESTÚDIO PARA
+Dialogue: 0,0:00:00.69,0:00:01.07,Cap,,0,0,0,,MELHOR {\c&H33D6FF&}ESTÚDIO{\c&HFFFFFF&} PARA
+Dialogue: 0,0:00:01.07,0:00:01.27,Cap,,0,0,0,,MELHOR ESTÚDIO {\c&H33D6FF&}PARA{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.27,0:00:01.73,Cap,,0,0,0,,{\c&H33D6FF&}INVESTIMENTO{\c&HFFFFFF&} EM BH
+Dialogue: 0,0:00:01.73,0:00:01.93,Cap,,0,0,0,,INVESTIMENTO {\c&H33D6FF&}EM{\c&HFFFFFF&} BH
+Dialogue: 0,0:00:01.93,0:00:02.33,Cap,,0,0,0,,INVESTIMENTO EM {\c&H33D6FF&}BH{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.33,0:00:02.61,Cap,,0,0,0,,{\c&H33D6FF&}E{\c&HFFFFFF&} EU TE
+Dialogue: 0,0:00:02.61,0:00:02.73,Cap,,0,0,0,,E {\c&H33D6FF&}EU{\c&HFFFFFF&} TE
+Dialogue: 0,0:00:02.73,0:00:02.85,Cap,,0,0,0,,E EU {\c&H33D6FF&}TE{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.85,0:00:03.03,Cap,,0,0,0,,{\c&H33D6FF&}PROVO{\c&HFFFFFF&} POR QUÊ
+Dialogue: 0,0:00:03.03,0:00:03.35,Cap,,0,0,0,,PROVO {\c&H33D6FF&}POR{\c&HFFFFFF&} QUÊ
+Dialogue: 0,0:00:03.35,0:00:03.64,Cap,,0,0,0,,PROVO POR {\c&H33D6FF&}QUÊ{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.64,0:00:03.74,Cap,,0,0,0,,{\c&H33D6FF&}ESTOU{\c&HFFFFFF&} FALANDO DE
+Dialogue: 0,0:00:03.74,0:00:03.98,Cap,,0,0,0,,ESTOU {\c&H33D6FF&}FALANDO{\c&HFFFFFF&} DE
+Dialogue: 0,0:00:03.98,0:00:04.10,Cap,,0,0,0,,ESTOU FALANDO {\c&H33D6FF&}DE{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.10,0:00:04.26,Cap,,0,0,0,,{\c&H33D6FF&}UM{\c&HFFFFFF&} PATRIMAR NA
+Dialogue: 0,0:00:04.26,0:00:04.76,Cap,,0,0,0,,UM {\c&H33D6FF&}PATRIMAR{\c&HFFFFFF&} NA
+Dialogue: 0,0:00:04.76,0:00:04.92,Cap,,0,0,0,,UM PATRIMAR {\c&H33D6FF&}NA{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.92,0:00:05.22,Cap,,0,0,0,,{\c&H33D6FF&}REGIÃO{\c&HFFFFFF&} HOSPITALAR
+Dialogue: 0,0:00:05.22,0:00:05.82,Cap,,0,0,0,,REGIÃO {\c&H33D6FF&}HOSPITALAR{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.82,0:00:06.06,Cap,,0,0,0,,{\c&H33D6FF&}COM{\c&HFFFFFF&} PARCELAS DE
+Dialogue: 0,0:00:06.06,0:00:06.42,Cap,,0,0,0,,COM {\c&H33D6FF&}PARCELAS{\c&HFFFFFF&} DE
+Dialogue: 0,0:00:06.42,0:00:06.56,Cap,,0,0,0,,COM PARCELAS {\c&H33D6FF&}DE{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.56,0:00:07.46,Cap,,0,0,0,,{\c&H33D6FF&}R$ 900{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.67,0:00:07.75,Cap,,0,0,0,,{\c&H33D6FF&}O{\c&HFFFFFF&} PRÉDIO É
+Dialogue: 0,0:00:07.75,0:00:07.87,Cap,,0,0,0,,O {\c&H33D6FF&}PRÉDIO{\c&HFFFFFF&} É
+Dialogue: 0,0:00:07.87,0:00:07.95,Cap,,0,0,0,,O PRÉDIO {\c&H33D6FF&}É{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.95,0:00:08.11,Cap,,0,0,0,,{\c&H33D6FF&}DE{\c&HFFFFFF&} 100% REVESTIDO
+Dialogue: 0,0:00:08.11,0:00:08.51,Cap,,0,0,0,,DE {\c&H33D6FF&}100%{\c&HFFFFFF&} REVESTIDO
+Dialogue: 0,0:00:08.51,0:00:09.59,Cap,,0,0,0,,DE 100% {\c&H33D6FF&}REVESTIDO{\c&HFFFFFF&}
+Dialogue: 0,0:00:09.59,0:00:09.83,Cap,,0,0,0,,{\c&H33D6FF&}VAGAS{\c&HFFFFFF&} DE GARAGEM
+Dialogue: 0,0:00:09.83,0:00:09.97,Cap,,0,0,0,,VAGAS {\c&H33D6FF&}DE{\c&HFFFFFF&} GARAGEM
+Dialogue: 0,0:00:09.97,0:00:10.13,Cap,,0,0,0,,VAGAS DE {\c&H33D6FF&}GARAGEM{\c&HFFFFFF&}
+Dialogue: 0,0:00:10.13,0:00:10.41,Cap,,0,0,0,,{\c&H33D6FF&}PARA{\c&HFFFFFF&} TODO MUNDO
+Dialogue: 0,0:00:10.41,0:00:10.69,Cap,,0,0,0,,PARA {\c&H33D6FF&}TODO{\c&HFFFFFF&} MUNDO
+Dialogue: 0,0:00:10.69,0:00:11.22,Cap,,0,0,0,,PARA TODO {\c&H33D6FF&}MUNDO{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.22,0:00:11.34,Cap,,0,0,0,,{\c&H33D6FF&}O{\c&HFFFFFF&} LAZER DO
+Dialogue: 0,0:00:11.34,0:00:11.52,Cap,,0,0,0,,O {\c&H33D6FF&}LAZER{\c&HFFFFFF&} DO
+Dialogue: 0,0:00:11.52,0:00:11.74,Cap,,0,0,0,,O LAZER {\c&H33D6FF&}DO{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.74,0:00:12.08,Cap,,0,0,0,,{\c&H33D6FF&}PRÉDIO{\c&HFFFFFF&} É O
+Dialogue: 0,0:00:12.08,0:00:12.26,Cap,,0,0,0,,PRÉDIO {\c&H33D6FF&}É{\c&HFFFFFF&} O
+Dialogue: 0,0:00:12.26,0:00:12.28,Cap,,0,0,0,,PRÉDIO É {\c&H33D6FF&}O{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.28,0:00:12.60,Cap,,0,0,0,,{\c&H33D6FF&}LAZER{\c&HFFFFFF&} ENXUTO E
+Dialogue: 0,0:00:12.60,0:00:13.06,Cap,,0,0,0,,LAZER {\c&H33D6FF&}ENXUTO{\c&HFFFFFF&} E
+Dialogue: 0,0:00:13.06,0:00:13.40,Cap,,0,0,0,,LAZER ENXUTO {\c&H33D6FF&}E{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.40,0:00:14.04,Cap,,0,0,0,,{\c&H33D6FF&}NECESSÁRIO{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.04,0:00:14.14,Cap,,0,0,0,,{\c&H33D6FF&}A{\c&HFFFFFF&} ACADEMIA COM
+Dialogue: 0,0:00:14.14,0:00:14.60,Cap,,0,0,0,,A {\c&H33D6FF&}ACADEMIA{\c&HFFFFFF&} COM
+Dialogue: 0,0:00:14.60,0:00:15.20,Cap,,0,0,0,,A ACADEMIA {\c&H33D6FF&}COM{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.20,0:00:15.70,Cap,,0,0,0,,{\c&H33D6FF&}EQUIPAMENTO{\c&HFFFFFF&} EM TECHNOGYM
+Dialogue: 0,0:00:15.70,0:00:15.92,Cap,,0,0,0,,EQUIPAMENTO {\c&H33D6FF&}EM{\c&HFFFFFF&} TECHNOGYM
+Dialogue: 0,0:00:15.92,0:00:16.54,Cap,,0,0,0,,EQUIPAMENTO EM {\c&H33D6FF&}TECHNOGYM{\c&HFFFFFF&}
+Dialogue: 0,0:00:16.54,0:00:16.94,Cap,,0,0,0,,{\c&H33D6FF&}E{\c&HFFFFFF&} UM APARTAMENTO
+Dialogue: 0,0:00:16.94,0:00:17.16,Cap,,0,0,0,,E {\c&H33D6FF&}UM{\c&HFFFFFF&} APARTAMENTO
+Dialogue: 0,0:00:17.16,0:00:17.98,Cap,,0,0,0,,E UM {\c&H33D6FF&}APARTAMENTO{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.98,0:00:18.54,Cap,,0,0,0,,{\c&H33D6FF&}NESSE{\c&HFFFFFF&} PRÉDIO AQUI
+Dialogue: 0,0:00:18.54,0:00:18.86,Cap,,0,0,0,,NESSE {\c&H33D6FF&}PRÉDIO{\c&HFFFFFF&} AQUI
+Dialogue: 0,0:00:18.86,0:00:19.32,Cap,,0,0,0,,NESSE PRÉDIO {\c&H33D6FF&}AQUI{\c&HFFFFFF&}
+Dialogue: 0,0:00:19.32,0:00:19.56,Cap,,0,0,0,,{\c&H33D6FF&}VAI{\c&HFFFFFF&} COLOCAR NO
+Dialogue: 0,0:00:19.56,0:00:19.88,Cap,,0,0,0,,VAI {\c&H33D6FF&}COLOCAR{\c&HFFFFFF&} NO
+Dialogue: 0,0:00:19.88,0:00:20.06,Cap,,0,0,0,,VAI COLOCAR {\c&H33D6FF&}NO{\c&HFFFFFF&}
+Dialogue: 0,0:00:20.06,0:00:20.28,Cap,,0,0,0,,{\c&H33D6FF&}SEU{\c&HFFFFFF&} BOLSO TODO
+Dialogue: 0,0:00:20.28,0:00:20.70,Cap,,0,0,0,,SEU {\c&H33D6FF&}BOLSO{\c&HFFFFFF&} TODO
+Dialogue: 0,0:00:20.70,0:00:21.02,Cap,,0,0,0,,SEU BOLSO {\c&H33D6FF&}TODO{\c&HFFFFFF&}
+Dialogue: 0,0:00:21.02,0:00:21.38,Cap,,0,0,0,,{\c&H33D6FF&}MÊS{\c&HFFFFFF&} R$ 5 MIL
+Dialogue: 0,0:00:21.38,0:00:22.24,Cap,,0,0,0,,MÊS {\c&H33D6FF&}R$ 5{\c&HFFFFFF&} MIL
+Dialogue: 0,0:00:22.24,0:00:22.50,Cap,,0,0,0,,MÊS R$ 5 {\c&H33D6FF&}MIL{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.50,0:00:22.82,Cap,,0,0,0,,{\c&H33D6FF&}NO{\c&HFFFFFF&} ALUGUEL TRADICIONAL
+Dialogue: 0,0:00:22.82,0:00:23.04,Cap,,0,0,0,,NO {\c&H33D6FF&}ALUGUEL{\c&HFFFFFF&} TRADICIONAL
+Dialogue: 0,0:00:23.04,0:00:23.74,Cap,,0,0,0,,NO ALUGUEL {\c&H33D6FF&}TRADICIONAL{\c&HFFFFFF&}
+Dialogue: 0,0:00:23.74,0:00:24.10,Cap,,0,0,0,,{\c&H33D6FF&}AGORA{\c&HFFFFFF&}
+Dialogue: 0,0:00:24.10,0:00:24.24,Cap,,0,0,0,,{\c&H33D6FF&}SE{\c&HFFFFFF&} VOCÊ COLOCAR
+Dialogue: 0,0:00:24.24,0:00:24.40,Cap,,0,0,0,,SE {\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} COLOCAR
+Dialogue: 0,0:00:24.40,0:00:24.70,Cap,,0,0,0,,SE VOCÊ {\c&H33D6FF&}COLOCAR{\c&HFFFFFF&}
+Dialogue: 0,0:00:24.70,0:00:24.84,Cap,,0,0,0,,{\c&H33D6FF&}NO{\c&HFFFFFF&} AIRBNB
+Dialogue: 0,0:00:24.84,0:00:25.60,Cap,,0,0,0,,NO {\c&H33D6FF&}AIRBNB{\c&HFFFFFF&}
+Dialogue: 0,0:00:25.60,0:00:25.82,Cap,,0,0,0,,{\c&H33D6FF&}QUE{\c&HFFFFFF&} JÁ ESTÁ
+Dialogue: 0,0:00:25.82,0:00:26.28,Cap,,0,0,0,,QUE {\c&H33D6FF&}JÁ{\c&HFFFFFF&} ESTÁ
+Dialogue: 0,0:00:26.28,0:00:27.14,Cap,,0,0,0,,QUE JÁ {\c&H33D6FF&}ESTÁ{\c&HFFFFFF&}
+Dialogue: 0,0:00:27.14,0:00:27.76,Cap,,0,0,0,,{\c&H33D6FF&}LIBERADO{\c&HFFFFFF&} NA CONVENÇÃO
+Dialogue: 0,0:00:27.76,0:00:27.92,Cap,,0,0,0,,LIBERADO {\c&H33D6FF&}NA{\c&HFFFFFF&} CONVENÇÃO
+Dialogue: 0,0:00:27.92,0:00:28.32,Cap,,0,0,0,,LIBERADO NA {\c&H33D6FF&}CONVENÇÃO{\c&HFFFFFF&}
+Dialogue: 0,0:00:28.32,0:00:28.50,Cap,,0,0,0,,{\c&H33D6FF&}DE{\c&HFFFFFF&} CONDOMÍNIO
+Dialogue: 0,0:00:28.50,0:00:29.07,Cap,,0,0,0,,DE {\c&H33D6FF&}CONDOMÍNIO{\c&HFFFFFF&}
+Dialogue: 0,0:00:29.07,0:00:29.35,Cap,,0,0,0,,{\c&H33D6FF&}ESTAMOS{\c&HFFFFFF&} FALANDO DE
+Dialogue: 0,0:00:29.35,0:00:29.63,Cap,,0,0,0,,ESTAMOS {\c&H33D6FF&}FALANDO{\c&HFFFFFF&} DE
+Dialogue: 0,0:00:29.63,0:00:29.85,Cap,,0,0,0,,ESTAMOS FALANDO {\c&H33D6FF&}DE{\c&HFFFFFF&}
+Dialogue: 0,0:00:29.85,0:00:30.17,Cap,,0,0,0,,{\c&H33D6FF&}MAIS{\c&HFFFFFF&} DE R$ 9
+Dialogue: 0,0:00:30.17,0:00:30.57,Cap,,0,0,0,,MAIS {\c&H33D6FF&}DE{\c&HFFFFFF&} R$ 9
+Dialogue: 0,0:00:30.57,0:00:30.71,Cap,,0,0,0,,MAIS DE {\c&H33D6FF&}R$ 9{\c&HFFFFFF&}
+Dialogue: 0,0:00:30.71,0:00:31.09,Cap,,0,0,0,,{\c&H33D6FF&}MIL{\c&HFFFFFF&} NO SEU
+Dialogue: 0,0:00:31.09,0:00:31.73,Cap,,0,0,0,,MIL {\c&H33D6FF&}NO{\c&HFFFFFF&} SEU
+Dialogue: 0,0:00:31.73,0:00:31.97,Cap,,0,0,0,,MIL NO {\c&H33D6FF&}SEU{\c&HFFFFFF&}
+Dialogue: 0,0:00:31.97,0:00:32.27,Cap,,0,0,0,,{\c&H33D6FF&}BOLSO{\c&HFFFFFF&} TODO MÊS
+Dialogue: 0,0:00:32.27,0:00:32.53,Cap,,0,0,0,,BOLSO {\c&H33D6FF&}TODO{\c&HFFFFFF&} MÊS
+Dialogue: 0,0:00:32.53,0:00:32.97,Cap,,0,0,0,,BOLSO TODO {\c&H33D6FF&}MÊS{\c&HFFFFFF&}
+Dialogue: 0,0:00:32.97,0:00:33.05,Cap,,0,0,0,,{\c&H33D6FF&}MEU{\c&HFFFFFF&} AMIGO
+Dialogue: 0,0:00:33.05,0:00:33.83,Cap,,0,0,0,,MEU {\c&H33D6FF&}AMIGO{\c&HFFFFFF&}
+Dialogue: 0,0:00:33.83,0:00:33.99,Cap,,0,0,0,,{\c&H33D6FF&}NUNCA{\c&HFFFFFF&} MAIS NA
+Dialogue: 0,0:00:33.99,0:00:34.27,Cap,,0,0,0,,NUNCA {\c&H33D6FF&}MAIS{\c&HFFFFFF&} NA
+Dialogue: 0,0:00:34.27,0:00:34.45,Cap,,0,0,0,,NUNCA MAIS {\c&H33D6FF&}NA{\c&HFFFFFF&}
+Dialogue: 0,0:00:34.45,0:00:35.07,Cap,,0,0,0,,{\c&H33D6FF&}HISTÓRIA{\c&HFFFFFF&} DO BRASIL
+Dialogue: 0,0:00:35.07,0:00:35.31,Cap,,0,0,0,,HISTÓRIA {\c&H33D6FF&}DO{\c&HFFFFFF&} BRASIL
+Dialogue: 0,0:00:35.31,0:00:35.63,Cap,,0,0,0,,HISTÓRIA DO {\c&H33D6FF&}BRASIL{\c&HFFFFFF&}
+Dialogue: 0,0:00:35.63,0:00:35.79,Cap,,0,0,0,,{\c&H33D6FF&}NEM{\c&HFFFFFF&} DA HUMANIDADE
+Dialogue: 0,0:00:35.79,0:00:35.99,Cap,,0,0,0,,NEM {\c&H33D6FF&}DA{\c&HFFFFFF&} HUMANIDADE
+Dialogue: 0,0:00:35.99,0:00:36.53,Cap,,0,0,0,,NEM DA {\c&H33D6FF&}HUMANIDADE{\c&HFFFFFF&}
+Dialogue: 0,0:00:36.53,0:00:37.03,Cap,,0,0,0,,{\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} VAI VER
+Dialogue: 0,0:00:37.03,0:00:37.21,Cap,,0,0,0,,VOCÊ {\c&H33D6FF&}VAI{\c&HFFFFFF&} VER
+Dialogue: 0,0:00:37.21,0:00:37.31,Cap,,0,0,0,,VOCÊ VAI {\c&H33D6FF&}VER{\c&HFFFFFF&}
+Dialogue: 0,0:00:37.31,0:00:37.49,Cap,,0,0,0,,{\c&H33D6FF&}UM{\c&HFFFFFF&} PATRIMAR COM
+Dialogue: 0,0:00:37.49,0:00:38.09,Cap,,0,0,0,,UM {\c&H33D6FF&}PATRIMAR{\c&HFFFFFF&} COM
+Dialogue: 0,0:00:38.09,0:00:38.31,Cap,,0,0,0,,UM PATRIMAR {\c&H33D6FF&}COM{\c&HFFFFFF&}
+Dialogue: 0,0:00:38.31,0:00:38.69,Cap,,0,0,0,,{\c&H33D6FF&}PARCELAS{\c&HFFFFFF&} DE R$ 900
+Dialogue: 0,0:00:38.69,0:00:38.75,Cap,,0,0,0,,PARCELAS {\c&H33D6FF&}DE{\c&HFFFFFF&} R$ 900
+Dialogue: 0,0:00:38.75,0:00:39.09,Cap,,0,0,0,,PARCELAS DE {\c&H33D6FF&}R$ 900{\c&HFFFFFF&}
+Dialogue: 0,0:00:39.09,0:00:39.65,Cap,,0,0,0,,{\c&H33D6FF&}E{\c&HFFFFFF&} RENTABILIDADE EM
+Dialogue: 0,0:00:39.65,0:00:40.53,Cap,,0,0,0,,E {\c&H33D6FF&}RENTABILIDADE{\c&HFFFFFF&} EM
+Dialogue: 0,0:00:40.53,0:00:40.71,Cap,,0,0,0,,E RENTABILIDADE {\c&H33D6FF&}EM{\c&HFFFFFF&}
+Dialogue: 0,0:00:40.71,0:00:40.97,Cap,,0,0,0,,{\c&H33D6FF&}TORNO{\c&HFFFFFF&} DE 1%
+Dialogue: 0,0:00:40.97,0:00:41.13,Cap,,0,0,0,,TORNO {\c&H33D6FF&}DE{\c&HFFFFFF&} 1%
+Dialogue: 0,0:00:41.13,0:00:41.65,Cap,,0,0,0,,TORNO DE {\c&H33D6FF&}1%{\c&HFFFFFF&}
+Dialogue: 0,0:00:41.65,0:00:41.81,Cap,,0,0,0,,{\c&H33D6FF&}AO{\c&HFFFFFF&} MÊS
+Dialogue: 0,0:00:41.81,0:00:42.23,Cap,,0,0,0,,AO {\c&H33D6FF&}MÊS{\c&HFFFFFF&}
+Dialogue: 0,0:00:42.23,0:00:42.37,Cap,,0,0,0,,{\c&H33D6FF&}ENTÃO{\c&HFFFFFF&} SE VOCÊ
+Dialogue: 0,0:00:42.37,0:00:42.57,Cap,,0,0,0,,ENTÃO {\c&H33D6FF&}SE{\c&HFFFFFF&} VOCÊ
+Dialogue: 0,0:00:42.57,0:00:42.85,Cap,,0,0,0,,ENTÃO SE {\c&H33D6FF&}VOCÊ{\c&HFFFFFF&}
+Dialogue: 0,0:00:42.85,0:00:42.93,Cap,,0,0,0,,{\c&H33D6FF&}QUER{\c&HFFFFFF&} GARANTIR A
+Dialogue: 0,0:00:42.93,0:00:43.39,Cap,,0,0,0,,QUER {\c&H33D6FF&}GARANTIR{\c&HFFFFFF&} A
+Dialogue: 0,0:00:43.39,0:00:43.47,Cap,,0,0,0,,QUER GARANTIR {\c&H33D6FF&}A{\c&HFFFFFF&}
+Dialogue: 0,0:00:43.47,0:00:43.63,Cap,,0,0,0,,{\c&H33D6FF&}SUA{\c&HFFFFFF&} UNIDADE NUM
+Dialogue: 0,0:00:43.63,0:00:43.97,Cap,,0,0,0,,SUA {\c&H33D6FF&}UNIDADE{\c&HFFFFFF&} NUM
+Dialogue: 0,0:00:43.97,0:00:44.17,Cap,,0,0,0,,SUA UNIDADE {\c&H33D6FF&}NUM{\c&HFFFFFF&}
+Dialogue: 0,0:00:44.17,0:00:44.51,Cap,,0,0,0,,{\c&H33D6FF&}PRÉDIO{\c&HFFFFFF&} QUE EM
+Dialogue: 0,0:00:44.51,0:00:44.65,Cap,,0,0,0,,PRÉDIO {\c&H33D6FF&}QUE{\c&HFFFFFF&} EM
+Dialogue: 0,0:00:44.65,0:00:44.75,Cap,,0,0,0,,PRÉDIO QUE {\c&H33D6FF&}EM{\c&HFFFFFF&}
+Dialogue: 0,0:00:44.75,0:00:44.93,Cap,,0,0,0,,{\c&H33D6FF&}UMA{\c&HFFFFFF&} SEMANA JÁ
+Dialogue: 0,0:00:44.93,0:00:45.35,Cap,,0,0,0,,UMA {\c&H33D6FF&}SEMANA{\c&HFFFFFF&} JÁ
+Dialogue: 0,0:00:45.35,0:00:45.77,Cap,,0,0,0,,UMA SEMANA {\c&H33D6FF&}JÁ{\c&HFFFFFF&}
+Dialogue: 0,0:00:45.77,0:00:45.93,Cap,,0,0,0,,{\c&H33D6FF&}FOI{\c&HFFFFFF&} VENDIDO MAIS
+Dialogue: 0,0:00:45.93,0:00:46.29,Cap,,0,0,0,,FOI {\c&H33D6FF&}VENDIDO{\c&HFFFFFF&} MAIS
+Dialogue: 0,0:00:46.29,0:00:46.57,Cap,,0,0,0,,FOI VENDIDO {\c&H33D6FF&}MAIS{\c&HFFFFFF&}
+Dialogue: 0,0:00:46.57,0:00:46.93,Cap,,0,0,0,,{\c&H33D6FF&}DE{\c&HFFFFFF&} 60%
+Dialogue: 0,0:00:46.93,0:00:48.00,Cap,,0,0,0,,DE {\c&H33D6FF&}60%{\c&HFFFFFF&}
+Dialogue: 0,0:00:48.00,0:00:48.28,Cap,,0,0,0,,{\c&H33D6FF&}ME{\c&HFFFFFF&} CHAMA AQUI
+Dialogue: 0,0:00:48.28,0:00:48.42,Cap,,0,0,0,,ME {\c&H33D6FF&}CHAMA{\c&HFFFFFF&} AQUI
+Dialogue: 0,0:00:48.42,0:00:48.82,Cap,,0,0,0,,ME CHAMA {\c&H33D6FF&}AQUI{\c&HFFFFFF&}
+Dialogue: 0,0:00:48.82,0:00:49.00,Cap,,0,0,0,,{\c&H33D6FF&}QUE{\c&HFFFFFF&} EU TE
+Dialogue: 0,0:00:49.00,0:00:49.04,Cap,,0,0,0,,QUE {\c&H33D6FF&}EU{\c&HFFFFFF&} TE
+Dialogue: 0,0:00:49.04,0:00:49.18,Cap,,0,0,0,,QUE EU {\c&H33D6FF&}TE{\c&HFFFFFF&}
+Dialogue: 0,0:00:49.18,0:00:49.30,Cap,,0,0,0,,{\c&H33D6FF&}PASSO{\c&HFFFFFF&} TODAS AS
+Dialogue: 0,0:00:49.30,0:00:49.50,Cap,,0,0,0,,PASSO {\c&H33D6FF&}TODAS{\c&HFFFFFF&} AS
+Dialogue: 0,0:00:49.50,0:00:49.66,Cap,,0,0,0,,PASSO TODAS {\c&H33D6FF&}AS{\c&HFFFFFF&}
+Dialogue: 0,0:00:49.66,0:00:50.33,Cap,,0,0,0,,{\c&H33D6FF&}INFORMAÇÕES{\c&HFFFFFF&}
+Dialogue: 2,0:00:06.00,0:00:07.62,Box,,0,0,300,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,120)}PARCELAS DE\NR$ 900
+Dialogue: 2,0:00:06.15,0:00:07.62,Sub,,0,0,550,,{\fad(120,120)}PATRIMAR · REGIÃO HOSPITALAR
+Dialogue: 2,0:00:08.11,0:00:16.90,Chk,,0,0,0,,{\pos(90,330)\fad(150,150)\fscx80\fscy80\t(0,150,\fscx100\fscy100)}{\fnDejaVu Sans\c&H33D6FF&}✔{\fnInter ExtraBold\c&HFFFFFF&} 100% REVESTIDO
+Dialogue: 2,0:00:09.59,0:00:16.90,Chk,,0,0,0,,{\pos(90,425)\fad(150,150)\fscx80\fscy80\t(0,150,\fscx100\fscy100)}{\fnDejaVu Sans\c&H33D6FF&}✔{\fnInter ExtraBold\c&HFFFFFF&} VAGA PARA TODOS
+Dialogue: 2,0:00:11.22,0:00:16.90,Chk,,0,0,0,,{\pos(90,520)\fad(150,150)\fscx80\fscy80\t(0,150,\fscx100\fscy100)}{\fnDejaVu Sans\c&H33D6FF&}✔{\fnInter ExtraBold\c&HFFFFFF&} LAZER ENXUTO
+Dialogue: 2,0:00:14.10,0:00:16.90,Chk,,0,0,0,,{\pos(90,615)\fad(150,150)\fscx80\fscy80\t(0,150,\fscx100\fscy100)}{\fnDejaVu Sans\c&H33D6FF&}✔{\fnInter ExtraBold\c&HFFFFFF&} ACADEMIA TECHNOGYM
+Dialogue: 2,0:00:20.97,0:00:23.67,Box,,0,0,300,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,120)}R$ 5 MIL/MÊS
+Dialogue: 2,0:00:21.12,0:00:23.67,Sub,,0,0,450,,{\fad(120,120)}NO ALUGUEL TRADICIONAL
+Dialogue: 2,0:00:24.82,0:00:29.02,Box,,0,0,300,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,120)}AIRBNB LIBERADO
+Dialogue: 2,0:00:24.97,0:00:29.02,Sub,,0,0,450,,{\fad(120,120)}NA CONVENÇÃO DO CONDOMÍNIO
+Dialogue: 2,0:00:29.83,0:00:32.85,Box,,0,0,300,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,120)}+ DE R$ 9 MIL/MÊS
+Dialogue: 2,0:00:29.98,0:00:32.85,Sub,,0,0,450,,{\fad(120,120)}NO AIRBNB
+Dialogue: 2,0:00:38.25,0:00:39.63,Box,,0,0,300,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,120)}PARCELAS DE\NR$ 900
+Dialogue: 2,0:00:39.63,0:00:42.13,Box,,0,0,300,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,120)}≈ 1% AO MÊS
+Dialogue: 2,0:00:39.78,0:00:42.13,Sub,,0,0,450,,{\fad(120,120)}DE RENTABILIDADE
+Dialogue: 2,0:00:44.63,0:00:48.00,Box,,0,0,300,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,120)}60% VENDIDO\NEM 1 SEMANA
+Dialogue: 3,0:00:48.00,0:00:51.93,Box,,0,0,760,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,120)}ME CHAMA AQUI
+Dialogue: 3,0:00:48.20,0:00:51.93,Sub,,0,0,910,,{\fad(120,0)}E RECEBA TODAS AS INFORMAÇÕES
+Dialogue: 1,0:00:19.25,0:00:32.85,Disc,,0,0,0,,{\fad(200,200)}*Valores estimados. Rentabilidade não garantida.
+Dialogue: 1,0:00:36.50,0:00:42.13,Disc,,0,0,0,,{\fad(200,200)}*Valores estimados. Rentabilidade não garantida.
