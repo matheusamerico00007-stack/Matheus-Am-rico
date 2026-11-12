@@ -4,13 +4,11 @@ import sys, subprocess
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 src,out,dur=sys.argv[1],sys.argv[2],float(sys.argv[3])
-FPS=30; W,H=1080,680; CW,CH=1020,560; CX,CY=30,47; R=30
+FPS=30; W,H=1080,940; R=28
 im=Image.open(src).convert("RGB"); SW,SH=im.size
 # janela de enquadramento (mostra o mall inteiro): proporção do cartão
-ar=CW/CH; ch=SH; cw=ch*ar
-if cw>SW: cw=SW; ch=cw/ar
-X0=(SW-cw)/2; Y0=(SH-ch)/2
-base=im.crop((int(X0),int(Y0),int(X0+cw),int(Y0+ch))).resize((CW*2,CH*2),Image.LANCZOS)  # 2x para zoom suave
+sc=min(1020/SW,860/SH); CW=int(round(SW*sc/2)*2); CH=int(round(SH*sc/2)*2); CX=(W-CW)//2; CY=40
+base=im.resize((CW*2,CH*2),Image.LANCZOS)   # imagem inteira, sem recorte
 # --- planta técnica (bordas) ---
 g=np.asarray(base.convert("L").filter(ImageFilter.GaussianBlur(1.2))).astype(float)
 gx=np.zeros_like(g); gy=np.zeros_like(g)
@@ -47,7 +45,7 @@ for i in range(n):
         frame=frame+np.array([120,190,255])[None,None,:]*glow[...,None]*0.55
     frame=np.clip(frame,0,255).astype(np.uint8)
     # push-in suave ao longo de todo o clipe
-    z=1.0+0.07*ss(0,dur,t)
+    z=1.0   # sem zoom: imagem sempre inteira
     big=Image.fromarray(frame); bw,bh=big.size; cw2,ch2=bw/z,bh/z
     card=big.crop((int((bw-cw2)/2),int((bh-ch2)/2),int((bw+cw2)/2),int((bh+ch2)/2))).resize((CW,CH),Image.BICUBIC).convert("RGBA")
     card.alpha_composite(border)

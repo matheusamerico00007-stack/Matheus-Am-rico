@@ -25,25 +25,33 @@ def o(t):
 VT=sum(b-a for a,b in SEGS); ENDC=3.0; T=VT+ENDC; SPEED=1.1
 # cartões do book: (src_ini, src_fim, pagina, rect, x0, x1, z0, z1, rótulo, sub)
 MALL=[.47,.615,.97,.885]
-BR=[(22.20,24.70,"04",[.20,.24,.86,.75],.415,.43,1.90,2.00,"VIEW ESTORIL","BY EMCCAMP"),
-    (25.70,31.10,"ANIM",None,0,0,0,0,"OPEN MALL",None),
-    (31.10,33.20,"04",[.20,.24,.86,.75],.52,.56,1.00,1.05,"+18 MIL M² DE TERRENO",None),
-    (33.20,36.95,"07",[.38,.02,.99,.98],.66,.70,1.00,1.05,"3 TORRES","1, 2 E 3 QUARTOS"),
-    (49.30,53.60,"mall.jpg",[0,0,1,1],.42,.58,1.00,1.06,"SEU SHOPPING NA PORTA","VIEW OPEN MALL"),
-    (61.90,63.50,"15",[.0,.30,.50,.80],.25,.25,1.00,1.05,"LIVING",None),
-    (63.50,65.00,"20",[.03,.13,.95,.90],.50,.50,1.00,1.05,"APARTAMENTO DECORADO",None),
-    (65.00,67.40,"11",[.0,.20,1.0,1.0],.50,.56,1.00,1.05,"PISCINA ADULTO E INFANTIL",None),
-    (67.40,69.10,"08",[.0,.18,1.0,.98],.50,.46,1.00,1.05,"ACADEMIA",None),
-    (69.10,70.90,"10",[.0,.07,1.0,.90],.50,.54,1.00,1.05,"SALÃO DE FESTAS",None),
-    (70.90,72.80,"09",[.0,.11,1.0,.93],.50,.46,1.00,1.05,"CHURRASQUEIRA GOURMET",None)]
+AER=[0,0,1,.765]   # vista aérea inteira (sem a faixa de texto do book)
+FULL=[0,0,1,1]
+BR=[(25.70,31.10,"ANIM",None,"OPEN MALL",None),
+    (31.10,33.20,"04",AER,"+18 MIL M² DE TERRENO",None),
+    (33.20,36.95,"04",AER,"3 TORRES","1, 2 E 3 QUARTOS"),
+    (49.30,53.60,"mall.jpg",FULL,"SEU SHOPPING NA PORTA","VIEW OPEN MALL"),
+    (61.90,63.50,"15",[0,0,.5,1],"LIVING",None),
+    (63.50,65.00,"20",[.034,.047,.966,.957],"APARTAMENTO DECORADO",None),
+    (65.00,67.40,"11",FULL,"PISCINA ADULTO E INFANTIL",None),
+    (67.40,69.10,"08",FULL,"ACADEMIA",None),
+    (69.10,70.90,"10",FULL,"SALÃO DE FESTAS",None),
+    (70.90,72.80,"09",FULL,"CHURRASQUEIRA GOURMET",None)]
+from PIL import Image as _I
+def card_h(pg,rect):
+    img=f"{HR}/{pg}" if "." in pg else f"{HR}/p-{pg}.png"
+    iw,ih=_I.open(img).size
+    if rect: iw,ih=iw*(rect[2]-rect[0]),ih*(rect[3]-rect[1])
+    sc=min(1020/iw,860/ih); return int(round(ih*sc/2)*2)
 CARD_Y=330
 os.makedirs(f"{D}/clips",exist_ok=True)
-clips=[]
-for k,(s_,e_,pg,rect,x0,x1,z0,z1,lab,sub) in enumerate(BR):
+clips=[]; CH={}
+for k,(s_,e_,pg,rect,lab,sub) in enumerate(BR):
     A=round(o(s_)*FPS)/FPS; B=round(o(e_)*FPS)/FPS
-    contig=bool(clips) and abs(clips[-1][1]-A)<0.1
-    if contig: A=clips[-1][1]
-    clips.append([A,B,f"{D}/clips/c{k}.mov",lab,sub,pg,rect,x0,x1,z0,z1,not contig])
+    prev_same=bool(clips) and abs(clips[-1][1]-A)<0.1
+    if prev_same: A=clips[-1][1]
+    clips.append([A,B,f"{D}/clips/c{k}.mov",lab,sub,pg,rect,not prev_same])
+    CH[k]=card_h("mall.jpg" if pg=="ANIM" else pg, None if pg=="ANIM" else rect)
 for k,c in enumerate(clips):
     dur=round((c[1]-c[0])*FPS)/FPS; c[1]=c[0]+dur
     fout=(k==len(clips)-1) or abs(clips[k+1][0]-c[1])>0.1
@@ -51,11 +59,15 @@ for k,c in enumerate(clips):
         if c[5]=="ANIM":
             subprocess.run(["python3","-I",f"{D}/anim.py",f"{HR}/mall.jpg",c[2],str(dur)],check=True); continue
         img=f"{HR}/{c[5]}" if "." in c[5] else f"{HR}/p-{c[5]}.png"
-        subprocess.run(["python3","-I",f"{D}/kbo.py",img,c[2],str(dur),json.dumps(c[6]),str(c[7]),str(c[8]),str(c[9]),str(c[10]),str(int(c[11])),str(int(fout))],check=True)
+        # mesma imagem em sequência (aérea): sem fade entre elas
+        same_next = k+1<len(clips) and clips[k+1][5]==c[5] and not fout
+        same_prev = k>0 and clips[k-1][5]==c[5] and not c[7]
+        subprocess.run(["python3","-I",f"{D}/kbf.py",img,c[2],str(dur),json.dumps(c[6]),str(int(c[7] and not same_prev)),str(int(fout))],check=True)
 clips=[tuple(c[:5]) for c in clips]
 endclip=f"{D}/clips/end.mov"
 if not os.path.exists(endclip):
-    subprocess.run(["python3","-I",f"{D}/kbo.py",f"{HR}/mall.jpg",endclip,str(ENDC),json.dumps([0,0,1,1]),".50",".50","1.06","1.0","1","0"],check=True)
+    subprocess.run(["python3","-I",f"{D}/kbf.py",f"{HR}/mall.jpg",endclip,str(ENDC),json.dumps(FULL),"1","0"],check=True)
+def sub_y(k): return CARD_Y+40+CH[k]+26
 # ---------- textos ----------
 def ts(x): x=max(0,x); return f"{int(x//3600)}:{int(x%3600//60):02d}:{x%60:05.2f}"
 LB="&HFFB85C&"; W="&HFFFFFF&"
@@ -103,18 +115,20 @@ add(0,o(5.00),"Box","O QUE DÁ CERTO,\\NSE REPETE.")
 add(o(10.48),o(17.55),"Box","BRIZZE ESTORIL")
 add(o(11.3),o(17.55),"PriceS","SUCESSO DE VENDAS · RECÉM-ENTREGUE",fx="{\\fad(200,150)\\pos(540,410)}")
 add(o(18.0),o(22.15),"Box","NA MESMA AVENIDA:\\NALGO AINDA MAIOR")
-for (A,B,f,lab,sub) in clips:
+for k,(A,B,f,lab,sub) in enumerate(clips):
     if lab: add(A+0.05,B,"Lab",lab,fx="{\\fad(120,100)\\fscx92\\fscy92\\t(0,180,\\fscx100\\fscy100)}")
-    if sub: add(A+0.12,B,"LabS",sub)
-ANIM_A=[c for c in clips if c[2].endswith("c1.mov")][0][0]; ANIM_B=[c for c in clips if c[2].endswith("c1.mov")][0][1]
-add(ANIM_A+0.25,ANIM_A+1.5,"LabS","O PROJETO",fx="{\\fad(150,150)}")
-add(ANIM_A+3.05,ANIM_A+4.35,"LabS","ASSINATURA DAVID GUERRA",fx="{\\fad(200,120)}")
-add(ANIM_A+4.35,ANIM_B,"LabS","17 LOJAS + 4 SALAS",fx="{\\fad(150,150)}")
+    if sub: add(A+0.12,B,"LabS",sub,fx="{\\fad(160,160)\\an8\\pos(540,%d)}"%sub_y(k))
+ANIM_A=clips[0][0]; ANIM_B=clips[0][1]; AY=sub_y(0)
+add(ANIM_A+0.25,ANIM_A+1.5,"LabS","O PROJETO",fx="{\\fad(150,150)\\an8\\pos(540,%d)}"%AY)
+add(ANIM_A+3.05,ANIM_A+4.35,"LabS","ASSINATURA DAVID GUERRA",fx="{\\fad(200,120)\\an8\\pos(540,%d)}"%AY)
+add(ANIM_A+4.35,ANIM_B,"LabS","17 LOJAS + 4 SALAS",fx="{\\fad(150,150)\\an8\\pos(540,%d)}"%AY)
 grp=[]
 for (A,B,f,lab,sub) in clips:
     if grp and abs(grp[-1][1]-A)<0.05: grp[-1][1]=B
     else: grp.append([A,B])
 for A,B in grp: add(A,B,"Disc","Imagens meramente ilustrativas",fx="",layer=1)
+add(o(22.20),o(24.70),"Box","VIEW ESTORIL")
+add(o(22.45),o(24.70),"PriceS","BY EMCCAMP",fx="{\\fad(200,150)\\pos(540,370)}")
 add(o(37.36),o(44.15),"Box","PARA O INVESTIDOR")
 add(o(40.0),o(44.15),"PriceS","A REGIÃO QUE MAIS ALUGA EM BH",fx="{\\fad(200,150)\\pos(540,410)}")
 add(o(44.22),o(47.35),"BoxL","5 MIN DO BH SHOPPING")
@@ -126,8 +140,8 @@ add(o(57.40),o(61.85),"Box","MODALIDADE ASSOCIATIVA",fx="{\\fad(200,150)\\pos(54
 add(o(72.86),VT,"BoxL","ME CHAMA AQUI")
 # cartela final
 add(VT,T,"Brand","VIEW",fx="{\\fad(300,0)\\fsp40\\t(0,1500,\\fsp26)}")
-add(VT+0.3,T,"LabS","OPEN MALL · ESTORIL · BH",fx="{\\fad(250,0)}")
-add(VT+0.5,T,"BoxL","ME CHAMA AQUI",fx="{\\fad(250,0)\\pos(540,1110)\\an8}")
+add(VT+0.3,T,"LabS","OPEN MALL · ESTORIL · BH",fx="{\\fad(250,0)\\an8\\pos(540,%d)}"%(CARD_Y+40+card_h("mall.jpg",None)+26))
+add(VT+0.5,T,"BoxL","ME CHAMA AQUI",fx="{\\fad(250,0)\\pos(540,%d)\\an8}"%(CARD_Y+40+card_h("mall.jpg",None)+110))
 add(VT,T,"Disc","Imagens meramente ilustrativas",fx="",layer=1)
 open(f"{D}/v7.ass","w").write(HEAD+"\n".join(ev)+"\n")
 print(f"video {VT:.2f}s total {T:.2f}s, {len(clips)} cartões")
@@ -164,7 +178,7 @@ for k,(A,B,f,lab,sub) in enumerate(clips):
 if NFT>cur: pieces.append(("gap",NFT-cur))
 lbl=[]
 for j,(kind,nf) in enumerate(pieces):
-    if kind=="gap": fg.append(f"color=c=black@0.0:s=1080x680:r={FPS},format=yuva420p,trim=end_frame={nf},setpts=PTS-STARTPTS[p{j}]")
+    if kind=="gap": fg.append(f"color=c=black@0.0:s=1080x940:r={FPS},format=yuva420p,trim=end_frame={nf},setpts=PTS-STARTPTS[p{j}]")
     else: fg.append(f"[{NB+kind}:v]fps={FPS},format=yuva420p,tpad=stop_mode=clone:stop_duration=1,trim=end_frame={nf},setpts=PTS-STARTPTS[p{j}]")
     lbl.append(f"[p{j}]")
 fg.append("".join(lbl)+f"concat=n={len(lbl)}:v=1:a=0,format=yuva420p[trk]")
