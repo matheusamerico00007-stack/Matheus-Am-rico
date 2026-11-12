@@ -1,0 +1,91 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;overflow:hidden;font-family:'Inter',sans-serif;color:#fff;background:#0d0d10}
+.card{position:absolute;inset:0;display:none;background:radial-gradient(1200px 900px at 50% 30%,#23232b 0%,#0d0d10 70%)}
+.glow{position:absolute;width:900px;height:900px;border-radius:50%;filter:blur(130px);opacity:.33;animation:drift 10s linear both}
+@keyframes drift{from{transform:translate(-150px,-80px)}to{transform:translate(250px,200px)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@keyframes pop{0%{opacity:0;transform:scale(.6)}70%{opacity:1;transform:scale(1.07)}100%{opacity:1;transform:scale(1)}}
+@keyframes slam{0%{opacity:0;transform:scale(2.4);filter:blur(10px)}60%{opacity:1;transform:scale(.96);filter:blur(0)}100%{opacity:1;transform:scale(1)}}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes barup{from{height:0}to{height:var(--h)}}
+@keyframes shine{from{background-position:-400px 0}to{background-position:1400px 0}}
+.a{opacity:0;animation-fill-mode:both}
+.kicker{position:absolute;top:250px;width:100%;text-align:center;font-weight:800;letter-spacing:10px;font-size:38px;color:#FFD633}
+.c{position:absolute;width:100%;text-align:center}
+.y{color:#FFD633}
+.pill{display:inline-block;background:#FFD633;color:#111;padding:14px 34px;border-radius:20px;font-weight:900}
+/* calculadora */
+.cols{position:absolute;top:390px;left:60px;right:60px;display:flex;gap:36px}
+.col{flex:1;background:#18181f;border:3px solid #2c2c36;border-radius:34px;padding:34px 26px;text-align:center;height:700px;position:relative}
+.col.win{border-color:#FFD633;background:#211f12}
+.col h3{font-size:40px;font-weight:900;letter-spacing:2px;margin-bottom:26px}
+.row{font-size:34px;font-weight:700;color:#cfcfd6;margin:14px 0}
+.row b{display:block;font-size:52px;color:#fff;font-weight:900}
+.row b.y{color:#FFD633}
+.row b.plus{font-size:44px;font-weight:900;color:#4ade80}
+.res{position:absolute;left:20px;right:20px;bottom:30px;border-radius:24px;padding:22px 10px;background:#0d0d10}
+.res span{display:block;font-size:30px;color:#bbb;font-weight:700}
+.res b{font-size:76px;font-weight:900}
+.disc{position:absolute;top:1250px;width:100%;text-align:center;font-size:26px;color:#8a8a95}
+/* fontes */
+.chip{position:absolute;left:110px;right:110px;display:flex;align-items:center;gap:34px;background:#1b1b22;border:3px solid #2e2e38;border-radius:34px;padding:28px 40px}
+.chip .ic{font-family:'Noto Color Emoji';font-size:80px}
+.chip .tx{font-size:58px;font-weight:900}
+</style></head><body>
+
+<!-- G1 ALAVANCAGEM (2.3s) -->
+<div class="card" id="g1">
+  <div class="glow" style="background:#FFD633;left:-100px;top:350px"></div>
+  <div class="c a" style="top:520px;font-size:56px;font-weight:800;color:#cfcfd6;animation:fadeUp .35s both;animation-delay:0s">ISSO TEM NOME:</div>
+  <div class="c a" style="top:650px;font-size:122px;font-weight:900;letter-spacing:-2px;animation:slam .45s both;animation-delay:.82s;
+     background:linear-gradient(90deg,#FFD633 0%,#fff3b0 45%,#FFD633 60%);-webkit-background-clip:text;color:transparent;background-size:600px 100%">ALAVANCAGEM</div>
+  <div class="c a" style="top:800px;font-size:64px;font-weight:900;animation:fadeUp .35s both;animation-delay:1.55s">DE PATRIMÔNIO</div>
+</div>
+
+<!-- G2 CALCULADORA (8.3s) -->
+<div class="card" id="g2">
+  <div class="glow" style="background:#FFD633;right:-350px;top:600px;opacity:.22"></div>
+  <div class="kicker a" style="animation:fadeUp .4s both;font-size:30px;letter-spacing:5px">MESMO CAPITAL · MESMA VALORIZAÇÃO</div>
+  <div class="c a" style="top:300px;font-size:60px;font-weight:900;animation:fadeUp .4s both;animation-delay:.15s">QUANTO VOCÊ GANHA?</div>
+  <div class="cols">
+    <div class="col a" style="animation:pop .4s both;animation-delay:.3s">
+      <h3>BOLSA / BANCO</h3>
+      <div class="row a" style="animation:fadeUp .35s both;animation-delay:.7s">Você investe<b>R$ 100 mil</b></div>
+      <div class="row a" style="animation:fadeUp .35s both;animation-delay:1.3s;margin-top:90px">Valoriza<b class="plus">+10%</b></div>
+      <div class="res a" style="animation:pop .4s both;animation-delay:1.9s"><span>VOCÊ GANHA</span><b>R$ 10 mil</b></div>
+    </div>
+    <div class="col win a" style="animation:pop .4s both;animation-delay:2.3s">
+      <h3 class="y">IMÓVEL</h3>
+      <div class="row a" style="animation:fadeUp .35s both;animation-delay:2.6s">Você investe<b>R$ 100 mil</b></div>
+      <div class="row a" style="animation:fadeUp .35s both;animation-delay:3.2s">+ terceiros<b class="y">R$ 400 mil</b></div>
+      <div class="row a" style="animation:fadeUp .35s both;animation-delay:3.9s">Valoriza<b class="plus">+10%</b><span style="font-size:28px">sobre R$ 500 mil</span></div>
+      <div class="res a" style="animation:pop .45s cubic-bezier(.2,.9,.3,1.3) both;animation-delay:4.7s;background:#FFD633;color:#111"><span style="color:#5a4a00">VOCÊ GANHA</span><b>R$ 50 mil</b></div>
+    </div>
+  </div>
+  <div class="c a" style="top:1115px;animation:slam .5s both;animation-delay:6.2s"><span class="pill" style="font-size:64px;padding:16px 44px">5x MAIS GANHO</span></div>
+  <div class="disc a" style="top:1250px;animation:fadeUp .4s both;animation-delay:6.6s">Exemplo ilustrativo. Não considera juros, custos e impostos.</div>
+</div>
+
+<!-- G3 FONTES (6.05s) -->
+<div class="card" id="g3">
+  <div class="glow" style="background:#FFD633;left:-300px;top:500px;opacity:.25"></div>
+  <div class="kicker a" style="animation:fadeUp .4s both">DINHEIRO DE TERCEIROS</div>
+  <div class="c a" style="top:310px;font-size:62px;font-weight:900;animation:fadeUp .4s both;animation-delay:.1s">DE ONDE ELE VEM?</div>
+  <div class="chip a" style="top:470px;animation:pop .4s both;animation-delay:.58s"><div class="ic">🏦</div><div class="tx">Financiamento</div></div>
+  <div class="chip a" style="top:660px;animation:pop .4s both;animation-delay:1.40s"><div class="ic">🤝</div><div class="tx">Consórcio</div></div>
+  <div class="chip a" style="top:850px;animation:pop .4s both;animation-delay:2.58s"><div class="ic">🏗️</div><div class="tx">Fluxo da construtora</div></div>
+  <div class="c a" style="top:1070px;animation:slam .45s both;animation-delay:4.86s"><span class="pill" style="font-size:52px">= PATRIMÔNIO ALAVANCADO</span></div>
+</div>
+
+<!-- G4 FIM DA SÉRIE (3.8s) -->
+<div class="card" id="g4">
+  <div class="glow" style="background:#FFD633;left:90px;top:450px;opacity:.3"></div>
+  <div class="kicker a" style="top:330px;animation:fadeUp .4s both">SÉRIE · INVESTIR NO GOVERNO LULA</div>
+  <div class="c a" style="top:420px;font-size:72px;font-weight:900;animation:fadeUp .4s both;animation-delay:.1s">5 DE 5 MOTIVOS <span style="font-family:'Noto Color Emoji'">✅</span></div>
+  <div class="c a" style="top:660px;font-size:50px;font-weight:800;color:#cfcfd6;animation:fadeUp .4s both;animation-delay:.8s">AMANHÃ</div>
+  <div class="c a" style="top:740px;font-size:112px;line-height:1.02;font-weight:900;animation:slam .5s both;animation-delay:1.1s;color:#FFD633">PLANO DA<br>PROSPERIDADE</div>
+  <div class="c a" style="top:1010px;font-size:46px;font-weight:800;animation:fadeUp .4s both;animation-delay:1.7s">NO MERCADO IMOBILIÁRIO</div>
+  <div class="c a" style="top:1180px;animation:pop .4s both;animation-delay:2.3s"><span class="pill" style="font-size:46px"><span style="font-family:'Noto Color Emoji'">🔔</span> ATIVA AS NOTIFICAÇÕES</span></div>
+</div>
+</body></html>
