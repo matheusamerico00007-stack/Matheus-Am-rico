@@ -242,8 +242,6 @@ Dialogue: 0,0:01:10.81,0:01:11.17,Cap,,0,0,0,,{\c&HFFB85C&}ME{\c&HFFFFFF&} CHAMA
 Dialogue: 0,0:01:11.17,0:01:11.39,Cap,,0,0,0,,ME {\c&HFFB85C&}CHAMA{\c&HFFFFFF&} AQUI
 Dialogue: 0,0:01:11.39,0:01:12.05,Cap,,0,0,0,,ME CHAMA {\c&HFFB85C&}AQUI{\c&HFFFFFF&}
 Dialogue: 2,0:00:00.00,0:00:04.30,Box,,0,0,0,,{\fscx55\fscy55\t(0,110,\fscx106\fscy106)\t(110,190,\fscx100\fscy100)\fad(0,150)}O QUE DÁ CERTO,\NSE REPETE.
-Dialogue: 2,0:00:00.60,0:00:04.30,LT,,0,0,0,,{\fad(250,200)\move(130,1190,80,1190,0,350)}VAGNO SILVA
-Dialogue: 2,0:00:00.80,0:00:04.30,LTs,,0,0,0,,{\fad(250,200)\pos(82,1244)}GERENTE · MYBROKER RAJA
 Dialogue: 2,0:00:09.78,0:00:16.44,Box,,0,0,0,,{\fscx55\fscy55\t(0,110,\fscx106\fscy106)\t(110,190,\fscx100\fscy100)\fad(0,150)}BRIZZE ESTORIL
 Dialogue: 2,0:00:10.60,0:00:16.44,PriceS,,0,0,0,,{\fad(200,150)\pos(540,410)}SUCESSO DE VENDAS · RECÉM-ENTREGUE
 Dialogue: 2,0:00:16.60,0:00:20.75,Box,,0,0,0,,{\fscx55\fscy55\t(0,110,\fscx106\fscy106)\t(110,190,\fscx100\fscy100)\fad(0,150)}NA MESMA AVENIDA:\NALGO AINDA MAIOR

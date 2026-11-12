@@ -22,7 +22,7 @@ def o(t):
         if t<=b: return p+t-a
         p+=b-a
     return p+(t-SEGS[-1][1])
-VT=sum(b-a for a,b in SEGS); ENDC=3.0; T=VT+ENDC
+VT=sum(b-a for a,b in SEGS); ENDC=3.0; T=VT+ENDC; SPEED=1.1
 # cartões do book: (src_ini, src_fim, pagina, rect, x0, x1, z0, z1, rótulo, sub)
 MALL=[.47,.615,.97,.885]
 BR=[(22.20,24.70,"04",[.20,.24,.86,.75],.415,.43,1.90,2.00,"VIEW ESTORIL","BY EMCCAMP"),
@@ -98,8 +98,6 @@ FADE="{\\fad(160,160)}"
 def add(a,b,style,text,fx=None,layer=2):
     ev.append(f"Dialogue: {layer},{ts(a)},{ts(b)},{style},,0,0,0,,{fx if fx is not None else (POP if style in ('Box','BoxL','Price') else FADE)}{text}")
 add(0,o(5.00),"Box","O QUE DÁ CERTO,\\NSE REPETE.")
-add(0.6,o(5.00),"LT","VAGNO SILVA",fx="{\\fad(250,200)\\move(130,1190,80,1190,0,350)}")
-add(0.8,o(5.00),"LTs","GERENTE · MYBROKER RAJA",fx="{\\fad(250,200)\\pos(82,1244)}")
 add(o(10.48),o(17.55),"Box","BRIZZE ESTORIL")
 add(o(11.3),o(17.55),"PriceS","SUCESSO DE VENDAS · RECÉM-ENTREGUE",fx="{\\fad(200,150)\\pos(540,410)}")
 add(o(18.0),o(22.15),"Box","NA MESMA AVENIDA:\\NALGO AINDA MAIOR")
@@ -146,7 +144,7 @@ if not os.path.exists(endseg):
          f"[0:v]trim=end_frame=1,scale=1080:1920,setsar=1,{GRADE},eq=brightness=-0.22,gblur=sigma=10,loop=loop={nfe}:size=1,fps={FPS},trim=end_frame={nfe},setpts=PTS-STARTPTS[bg];"
          f"[1:v]format=yuva420p[cd];[bg][cd]overlay=0:{CARD_Y}:eof_action=repeat,trim=end_frame={nfe},format=yuv420p[v];[2:a]atrim=0:{nfe/FPS:.6f}[a]",
          "-map","[v]","-map","[a]","-c:v","libx264","-crf","14","-preset","fast","-c:a","pcm_s16le",endseg])
-subprocess.run(["python3","-I",f"{D}/music3.py",f"{D}/music.wav",f"{T:.3f}",f"{o(10.48):.3f}",f"{o(26.30):.3f}",f"{VT:.3f}"],check=True)
+subprocess.run(["python3","-I",f"{D}/music3.py",f"{D}/music.wav",f"{T/SPEED:.3f}",f"{o(10.48)/SPEED:.3f}",f"{o(26.30)/SPEED:.3f}",f"{VT/SPEED:.3f}"],check=True)
 ins=[]
 for i in range(n+1): ins+=["-i",f"{D}/s{i}.mkv"]
 for c in clips: ins+=["-i",c[2]]
@@ -165,13 +163,13 @@ for j,(kind,nf) in enumerate(pieces):
     lbl.append(f"[p{j}]")
 fg.append("".join(lbl)+f"concat=n={len(lbl)}:v=1:a=0,format=yuva420p[trk]")
 fg.append(f"[b0][trk]overlay=0:{CARD_Y}:eof_action=pass[b1]")
-fg.append(f"[b1]ass={D}/v7.ass,format=yuv420p[vo]")
+fg.append(f"[b1]ass={D}/v7.ass,setpts=PTS/{SPEED},fps={FPS},format=yuv420p[vo]")
 VOICE=("highpass=f=90,afftdn=nr=8:nf=-40:tn=1,atrim=start=0.025,asetpts=PTS-STARTPTS,apad=pad_dur=0.05,"
        "deesser=i=0.3,equalizer=f=200:t=q:w=1:g=1.2,equalizer=f=3000:t=q:w=1.5:g=1.2,"
        "acompressor=threshold=-20dB:ratio=2.5:attack=15:release=200,loudnorm=I=-14:TP=-2:LRA=7,aresample=48000,aformat=channel_layouts=stereo")
 MI=NB+NC
-fg+=[f"[ca]{VOICE},asplit[voz][key]",f"[{MI}:a]volume=0.30,aformat=channel_layouts=stereo[mus]",
+fg+=[f"[ca]atempo={SPEED},{VOICE},asplit[voz][key]",f"[{MI}:a]volume=0.30,aformat=channel_layouts=stereo[mus]",
      "[mus][key]sidechaincompress=threshold=0.05:ratio=3:attack=30:release=400[mduck]",
      "[voz][mduck]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.89[ao]"]
 run(ins+["-i",f"{D}/music.wav","-filter_complex",";".join(fg),"-map","[vo]","-map","[ao]",
-    "-c:v","libx264","-preset","medium","-crf","20","-maxrate","9M","-bufsize","18M","-c:a","aac","-b:a","192k","-movflags","+faststart",f"{D}/view.mp4"])
+    "-c:v","libx264","-preset","medium","-crf","20","-maxrate","9M","-bufsize","18M","-c:a","aac","-b:a","192k","-movflags","+faststart",f"{D}/view11.mp4"])
