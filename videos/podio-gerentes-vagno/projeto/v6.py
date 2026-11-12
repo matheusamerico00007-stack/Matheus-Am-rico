@@ -147,13 +147,14 @@ def add(a,b,style,text,fx="{\\fad(200,200)}",layer=2,pos=None):
 # abertura
 p0=pieces[0][2]/FPS; p1=p0+pieces[1][2]/FPS; p2=p1+pieces[2][2]/FPS
 add(0.15,p0,"Kick","PÓDIO DE GERENTES",pos=(540,330))
-add(p1,E-0.1,"Big","1º LUGAR",fx=SLAM,pos=(540,760))
-add(p1+0.25,E-0.1,"Kick","EQUIPE VAGNO SILVA",pos=(540,920))
+add(p1,p2,"Big","1º LUGAR",fx=SLAM,pos=(540,760))
+add(p1+0.25,p2,"Kick","EQUIPE SEALS",pos=(540,920))
 # lower third quando ele se levanta
-add(p2+0.4,E-0.1,"LT","VAGNO SILVA",fx="{\\fad(250,200)\\move(40,0,0,0,0,300)}")
-add(p2+0.6,E-0.1,"LTs","GERENTE · MYBROKER RAJA",fx="{\\fad(250,200)}")
+add(p2+0.4,E-0.1,"LT","VAGNO SILVA",fx="{\\fad(250,200)\\move(130,1352,80,1352,0,350)}")
+add(p2+0.6,E-0.1,"LTs","GERENTE · EQUIPE SEALS",fx="{\\fad(250,200)\\pos(82,1408)}")
 # celebração no meio
-add(BRK+0.2,BRKEND-0.1,"Big","1º LUGAR",fx=SLAM,pos=(540,820))
+add(BRK+0.2,BRKEND-0.1,"Big","SEALS",fx=SLAM,pos=(540,780))
+add(BRK+0.6,BRKEND-0.1,"Kick","OPERANDO EM QUALQUER CENÁRIO",fx="{\\fad(250,200)}",pos=(540,930))
 # números
 def numcard(src_a,src_b,big,sub):
     a=o_voice(src_a); b=o_voice(src_b)
@@ -164,8 +165,8 @@ numcard(123.80,127.10,"6","CORRETORES ACIMA\\NDE R$ 1 MILHÃO")
 numcard(129.90,131.70,"+R$ 10 MI","EM VENDAS")
 # final
 add(END+0.15,T,"Big","1º LUGAR",fx=SLAM,pos=(540,1330))
-add(END+0.45,T,"Kick","EQUIPE VAGNO SILVA · MYBROKER RAJA",fx="{\\fad(250,0)}",pos=(540,1490))
-add(END+1.1,T,"Tag","\"O trabalho devolve.\"",fx="{\\fad(400,0)}",pos=(540,1620))
+add(END+0.45,T,"Kick","EQUIPE SEALS\\NMYBROKER RAJA",fx="{\\fad(250,0)}",pos=(540,1485))
+add(END+1.1,T,"Tag","Operando em qualquer cenário.",fx="{\\fad(400,0)}",pos=(540,1610))
 ev.append(f"Dialogue: 1,{ts(END)},{ts(T)},Cap,,0,0,0,,{{\\fad(400,0)\\an7\\pos(0,1100)\\bord0\\shad0\\1c&H000000&\\1a&H60&\\blur40\\p1}}m 0 0 l 1080 0 1080 820 0 820{{\\p0}}")
 open(f"{D}/v6.ass","w").write(HEAD+"\n".join(ev)+"\n")
 # ---------- composição final ----------

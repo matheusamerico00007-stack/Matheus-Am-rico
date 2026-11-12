@@ -97,11 +97,12 @@ Dialogue: 0,0:01:21.47,0:01:23.15,Cap,,0,0,0,,{\fad(110,110)}DE {\c&H5EC7F2&\b1}
 Dialogue: 0,0:01:23.15,0:01:23.83,Cap,,0,0,0,,{\fad(110,110)}VAMOS EMBORA?
 Dialogue: 0,0:01:23.83,0:01:24.44,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}BORA!{\c&HFFFFFF&\b0}
 Dialogue: 2,0:00:00.15,0:00:02.70,Kick,,0,0,0,,{\fad(200,200)\pos(540,330)}PÓDIO DE GERENTES
-Dialogue: 2,0:00:05.10,0:00:09.80,Big,,0,0,0,,{\fscx140\fscy140\alpha&HFF&\t(0,180,\fscx100\fscy100\alpha&H00&)\fad(0,250)\pos(540,760)}1º LUGAR
-Dialogue: 2,0:00:05.35,0:00:09.80,Kick,,0,0,0,,{\fad(200,200)\pos(540,920)}EQUIPE VAGNO SILVA
-Dialogue: 2,0:00:07.10,0:00:09.80,LT,,0,0,0,,{\fad(250,200)\move(40,0,0,0,0,300)}VAGNO SILVA
-Dialogue: 2,0:00:07.30,0:00:09.80,LTs,,0,0,0,,{\fad(250,200)}GERENTE · MYBROKER RAJA
-Dialogue: 2,0:00:38.07,0:00:43.57,Big,,0,0,0,,{\fscx140\fscy140\alpha&HFF&\t(0,180,\fscx100\fscy100\alpha&H00&)\fad(0,250)\pos(540,820)}1º LUGAR
+Dialogue: 2,0:00:05.10,0:00:06.70,Big,,0,0,0,,{\fscx140\fscy140\alpha&HFF&\t(0,180,\fscx100\fscy100\alpha&H00&)\fad(0,250)\pos(540,760)}1º LUGAR
+Dialogue: 2,0:00:05.35,0:00:06.70,Kick,,0,0,0,,{\fad(200,200)\pos(540,920)}EQUIPE SEALS
+Dialogue: 2,0:00:07.10,0:00:09.80,LT,,0,0,0,,{\fad(250,200)\move(130,1352,80,1352,0,350)}VAGNO SILVA
+Dialogue: 2,0:00:07.30,0:00:09.80,LTs,,0,0,0,,{\fad(250,200)\pos(82,1408)}GERENTE · EQUIPE SEALS
+Dialogue: 2,0:00:38.07,0:00:43.57,Big,,0,0,0,,{\fscx140\fscy140\alpha&HFF&\t(0,180,\fscx100\fscy100\alpha&H00&)\fad(0,250)\pos(540,780)}SEALS
+Dialogue: 2,0:00:38.47,0:00:43.57,Kick,,0,0,0,,{\fad(250,200)\pos(540,930)}OPERANDO EM QUALQUER CENÁRIO
 Dialogue: 2,0:00:44.21,0:00:45.91,Num,,0,0,0,,{\fscx60\fscy60\t(0,140,\fscx106\fscy106)\t(140,230,\fscx100\fscy100)\fad(0,200)}80%
 Dialogue: 2,0:00:44.36,0:00:45.91,NumS,,0,0,0,,{\fad(200,200)}DA EQUIPE VENDEU
 Dialogue: 2,0:00:46.36,0:00:48.96,Num,,0,0,0,,{\fscx60\fscy60\t(0,140,\fscx106\fscy106)\t(140,230,\fscx100\fscy100)\fad(0,200)}8 DE 10
@@ -111,6 +112,6 @@ Dialogue: 2,0:00:49.19,0:00:52.34,NumS,,0,0,0,,{\fad(200,200)}CORRETORES ACIMA\N
 Dialogue: 2,0:00:55.14,0:00:56.94,Num,,0,0,0,,{\fscx60\fscy60\t(0,140,\fscx106\fscy106)\t(140,230,\fscx100\fscy100)\fad(0,200)}+R$ 10 MI
 Dialogue: 2,0:00:55.29,0:00:56.94,NumS,,0,0,0,,{\fad(200,200)}EM VENDAS
 Dialogue: 2,0:01:24.85,0:01:28.30,Big,,0,0,0,,{\fscx140\fscy140\alpha&HFF&\t(0,180,\fscx100\fscy100\alpha&H00&)\fad(0,250)\pos(540,1330)}1º LUGAR
-Dialogue: 2,0:01:25.15,0:01:28.30,Kick,,0,0,0,,{\fad(250,0)\pos(540,1490)}EQUIPE VAGNO SILVA · MYBROKER RAJA
-Dialogue: 2,0:01:25.80,0:01:28.30,Tag,,0,0,0,,{\fad(400,0)\pos(540,1620)}"O trabalho devolve."
+Dialogue: 2,0:01:25.15,0:01:28.30,Kick,,0,0,0,,{\fad(250,0)\pos(540,1485)}EQUIPE SEALS\NMYBROKER RAJA
+Dialogue: 2,0:01:25.80,0:01:28.30,Tag,,0,0,0,,{\fad(400,0)\pos(540,1610)}Operando em qualquer cenário.
 Dialogue: 1,0:01:24.70,0:01:28.30,Cap,,0,0,0,,{\fad(400,0)\an7\pos(0,1100)\bord0\shad0\1c&H000000&\1a&H60&\blur40\p1}m 0 0 l 1080 0 1080 820 0 820{\p0}
