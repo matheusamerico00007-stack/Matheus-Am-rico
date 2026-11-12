@@ -247,10 +247,7 @@ Dialogue: 2,0:00:10.60,0:00:16.44,PriceS,,0,0,0,,{\fad(200,150)\pos(540,410)}SUC
 Dialogue: 2,0:00:16.60,0:00:20.75,Box,,0,0,0,,{\fscx55\fscy55\t(0,110,\fscx106\fscy106)\t(110,190,\fscx100\fscy100)\fad(0,150)}NA MESMA AVENIDA:\NALGO AINDA MAIOR
 Dialogue: 2,0:00:20.85,0:00:23.30,Lab,,0,0,0,,{\fad(120,100)\fscx92\fscy92\t(0,180,\fscx100\fscy100)}VIEW ESTORIL
 Dialogue: 2,0:00:20.92,0:00:23.30,LabS,,0,0,0,,{\fad(160,160)}BY EMCCAMP
-Dialogue: 2,0:00:24.95,0:00:28.07,Lab,,0,0,0,,{\fad(120,100)\fscx92\fscy92\t(0,180,\fscx100\fscy100)}OPEN MALL
-Dialogue: 2,0:00:25.02,0:00:28.07,LabS,,0,0,0,,{\fad(160,160)}ASSINATURA DAVID GUERRA
-Dialogue: 2,0:00:28.12,0:00:29.70,Lab,,0,0,0,,{\fad(120,100)\fscx92\fscy92\t(0,180,\fscx100\fscy100)}17 LOJAS + 4 SALAS
-Dialogue: 2,0:00:28.19,0:00:29.70,LabS,,0,0,0,,{\fad(160,160)}VIRADO PARA A BARÃO
+Dialogue: 2,0:00:24.35,0:00:29.70,Lab,,0,0,0,,{\fad(120,100)\fscx92\fscy92\t(0,180,\fscx100\fscy100)}OPEN MALL
 Dialogue: 2,0:00:29.75,0:00:31.80,Lab,,0,0,0,,{\fad(120,100)\fscx92\fscy92\t(0,180,\fscx100\fscy100)}+18 MIL M² DE TERRENO
 Dialogue: 2,0:00:31.85,0:00:35.57,Lab,,0,0,0,,{\fad(120,100)\fscx92\fscy92\t(0,180,\fscx100\fscy100)}3 TORRES
 Dialogue: 2,0:00:31.92,0:00:35.57,LabS,,0,0,0,,{\fad(160,160)}1, 2 E 3 QUARTOS
@@ -262,8 +259,11 @@ Dialogue: 2,0:01:03.02,0:01:05.37,Lab,,0,0,0,,{\fad(120,100)\fscx92\fscy92\t(0,1
 Dialogue: 2,0:01:05.42,0:01:07.07,Lab,,0,0,0,,{\fad(120,100)\fscx92\fscy92\t(0,180,\fscx100\fscy100)}ACADEMIA
 Dialogue: 2,0:01:07.12,0:01:08.87,Lab,,0,0,0,,{\fad(120,100)\fscx92\fscy92\t(0,180,\fscx100\fscy100)}SALÃO DE FESTAS
 Dialogue: 2,0:01:08.92,0:01:10.77,Lab,,0,0,0,,{\fad(120,100)\fscx92\fscy92\t(0,180,\fscx100\fscy100)}CHURRASQUEIRA GOURMET
+Dialogue: 2,0:00:24.55,0:00:25.80,LabS,,0,0,0,,{\fad(150,150)}O PROJETO
+Dialogue: 2,0:00:27.35,0:00:28.65,LabS,,0,0,0,,{\fad(200,120)}ASSINATURA DAVID GUERRA
+Dialogue: 2,0:00:28.65,0:00:29.70,LabS,,0,0,0,,{\fad(150,150)}17 LOJAS + 4 SALAS
 Dialogue: 1,0:00:20.80,0:00:23.30,Disc,,0,0,0,,Imagens meramente ilustrativas
-Dialogue: 1,0:00:24.90,0:00:35.57,Disc,,0,0,0,,Imagens meramente ilustrativas
+Dialogue: 1,0:00:24.30,0:00:35.57,Disc,,0,0,0,,Imagens meramente ilustrativas
 Dialogue: 1,0:00:47.27,0:00:51.57,Disc,,0,0,0,,Imagens meramente ilustrativas
 Dialogue: 1,0:00:59.87,0:01:10.77,Disc,,0,0,0,,Imagens meramente ilustrativas
 Dialogue: 2,0:00:35.96,0:00:42.39,Box,,0,0,0,,{\fscx55\fscy55\t(0,110,\fscx106\fscy106)\t(110,190,\fscx100\fscy100)\fad(0,150)}PARA O INVESTIDOR

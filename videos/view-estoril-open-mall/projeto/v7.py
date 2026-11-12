@@ -26,11 +26,10 @@ VT=sum(b-a for a,b in SEGS); ENDC=3.0; T=VT+ENDC; SPEED=1.1
 # cartões do book: (src_ini, src_fim, pagina, rect, x0, x1, z0, z1, rótulo, sub)
 MALL=[.47,.615,.97,.885]
 BR=[(22.20,24.70,"04",[.20,.24,.86,.75],.415,.43,1.90,2.00,"VIEW ESTORIL","BY EMCCAMP"),
-    (26.30,29.45,"05",MALL,.62,.80,1.00,1.04,"OPEN MALL","ASSINATURA DAVID GUERRA"),
-    (29.45,31.10,"05",MALL,.62,.66,1.75,1.85,"17 LOJAS + 4 SALAS","VIRADO PARA A BARÃO"),
+    (25.70,31.10,"ANIM",None,0,0,0,0,"OPEN MALL",None),
     (31.10,33.20,"04",[.20,.24,.86,.75],.52,.56,1.00,1.05,"+18 MIL M² DE TERRENO",None),
     (33.20,36.95,"07",[.38,.02,.99,.98],.66,.70,1.00,1.05,"3 TORRES","1, 2 E 3 QUARTOS"),
-    (49.30,53.60,"05",MALL,.80,.64,1.10,1.18,"SEU SHOPPING NA PORTA","VIEW OPEN MALL"),
+    (49.30,53.60,"mall.jpg",[0,0,1,1],.42,.58,1.00,1.06,"SEU SHOPPING NA PORTA","VIEW OPEN MALL"),
     (61.90,63.50,"15",[.0,.30,.50,.80],.25,.25,1.00,1.05,"LIVING",None),
     (63.50,65.00,"20",[.03,.13,.95,.90],.50,.50,1.00,1.05,"APARTAMENTO DECORADO",None),
     (65.00,67.40,"11",[.0,.20,1.0,1.0],.50,.56,1.00,1.05,"PISCINA ADULTO E INFANTIL",None),
@@ -49,11 +48,14 @@ for k,c in enumerate(clips):
     dur=round((c[1]-c[0])*FPS)/FPS; c[1]=c[0]+dur
     fout=(k==len(clips)-1) or abs(clips[k+1][0]-c[1])>0.1
     if not os.path.exists(c[2]):
-        subprocess.run(["python3","-I",f"{D}/kbo.py",f"{HR}/p-{c[5]}.png",c[2],str(dur),json.dumps(c[6]),str(c[7]),str(c[8]),str(c[9]),str(c[10]),str(int(c[11])),str(int(fout))],check=True)
+        if c[5]=="ANIM":
+            subprocess.run(["python3","-I",f"{D}/anim.py",f"{HR}/mall.jpg",c[2],str(dur)],check=True); continue
+        img=f"{HR}/{c[5]}" if "." in c[5] else f"{HR}/p-{c[5]}.png"
+        subprocess.run(["python3","-I",f"{D}/kbo.py",img,c[2],str(dur),json.dumps(c[6]),str(c[7]),str(c[8]),str(c[9]),str(c[10]),str(int(c[11])),str(int(fout))],check=True)
 clips=[tuple(c[:5]) for c in clips]
 endclip=f"{D}/clips/end.mov"
 if not os.path.exists(endclip):
-    subprocess.run(["python3","-I",f"{D}/kbo.py",f"{HR}/p-05.png",endclip,str(ENDC),json.dumps(MALL),".70",".72","1.0","1.05","1","0"],check=True)
+    subprocess.run(["python3","-I",f"{D}/kbo.py",f"{HR}/mall.jpg",endclip,str(ENDC),json.dumps([0,0,1,1]),".50",".50","1.06","1.0","1","0"],check=True)
 # ---------- textos ----------
 def ts(x): x=max(0,x); return f"{int(x//3600)}:{int(x%3600//60):02d}:{x%60:05.2f}"
 LB="&HFFB85C&"; W="&HFFFFFF&"
@@ -104,6 +106,10 @@ add(o(18.0),o(22.15),"Box","NA MESMA AVENIDA:\\NALGO AINDA MAIOR")
 for (A,B,f,lab,sub) in clips:
     if lab: add(A+0.05,B,"Lab",lab,fx="{\\fad(120,100)\\fscx92\\fscy92\\t(0,180,\\fscx100\\fscy100)}")
     if sub: add(A+0.12,B,"LabS",sub)
+ANIM_A=[c for c in clips if c[2].endswith("c1.mov")][0][0]; ANIM_B=[c for c in clips if c[2].endswith("c1.mov")][0][1]
+add(ANIM_A+0.25,ANIM_A+1.5,"LabS","O PROJETO",fx="{\\fad(150,150)}")
+add(ANIM_A+3.05,ANIM_A+4.35,"LabS","ASSINATURA DAVID GUERRA",fx="{\\fad(200,120)}")
+add(ANIM_A+4.35,ANIM_B,"LabS","17 LOJAS + 4 SALAS",fx="{\\fad(150,150)}")
 grp=[]
 for (A,B,f,lab,sub) in clips:
     if grp and abs(grp[-1][1]-A)<0.05: grp[-1][1]=B
