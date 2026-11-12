@@ -1,0 +1,116 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter Display Bold,70,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,2,0,1,4.5,3,2,80,80,430,1
+Style: Big,Inter Display Black,210,&H005EC7F2,&H00FFFFFF,&H00000000,&H78000000,-1,0,0,0,100,100,4,0,1,5,7,5,60,60,0,1
+Style: Kick,Inter Display Bold,48,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,-1,0,0,0,100,100,12,0,1,3.5,3,5,60,60,0,1
+Style: Num,Inter Display Black,200,&H005EC7F2,&H00FFFFFF,&H00000000,&H78000000,-1,0,0,0,100,100,2,0,1,5,6,8,60,60,300,1
+Style: NumS,Inter Display Bold,56,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,-1,0,0,0,100,100,6,0,1,4,4,8,60,60,535,1
+Style: LT,Inter Display Black,74,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,-1,0,0,0,100,100,6,0,1,4.5,4,1,80,80,560,1
+Style: LTs,Inter Display Bold,40,&H005EC7F2,&H00FFFFFF,&H00000000,&H78000000,-1,0,0,0,100,100,8,0,1,3.5,3,1,82,80,515,1
+Style: Tag,Inter Display SemiBold,60,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,0,0,0,0,100,100,4,0,1,3.5,4,5,80,80,0,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:09.82,0:00:11.48,Cap,,0,0,0,,{\fad(110,110)}PORQUE ESSE {\c&H5EC7F2&\b1}RESULTADO{\c&HFFFFFF&\b0} AQUI
+Dialogue: 0,0:00:11.48,0:00:13.60,Cap,,0,0,0,,{\fad(110,110)}É SIMPLESMENTE UMA {\c&H5EC7F2&\b1}RESPOSTA{\c&HFFFFFF&\b0}
+Dialogue: 0,0:00:13.60,0:00:14.64,Cap,,0,0,0,,{\fad(110,110)}DE {\c&H5EC7F2&\b1}DEUS{\c&HFFFFFF&\b0} MESMO
+Dialogue: 0,0:00:14.64,0:00:15.34,Cap,,0,0,0,,{\fad(110,110)}QUE EU PEDI
+Dialogue: 0,0:00:15.34,0:00:16.04,Cap,,0,0,0,,{\fad(110,110)}EU SOU {\c&H5EC7F2&\b1}OUSADO{\c&HFFFFFF&\b0}
+Dialogue: 0,0:00:16.04,0:00:17.02,Cap,,0,0,0,,{\fad(110,110)}EU PEÇO {\c&H5EC7F2&\b1}RESPOSTA{\c&HFFFFFF&\b0} PRA
+Dialogue: 0,0:00:17.02,0:00:17.32,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}DEUS{\c&HFFFFFF&\b0}
+Dialogue: 0,0:00:17.32,0:00:18.30,Cap,,0,0,0,,{\fad(110,110)}EU PEÇO {\c&H5EC7F2&\b1}DIREÇÃO{\c&HFFFFFF&\b0}
+Dialogue: 0,0:00:18.30,0:00:19.46,Cap,,0,0,0,,{\fad(110,110)}ENTÃO A GENTE VEIO
+Dialogue: 0,0:00:19.46,0:00:20.18,Cap,,0,0,0,,{\fad(110,110)}DE UM MÊS FRACO
+Dialogue: 0,0:00:20.18,0:00:21.38,Cap,,0,0,0,,{\fad(110,110)}EU TENHO MUITA RESPONSABILIDADE
+Dialogue: 0,0:00:21.38,0:00:22.00,Cap,,0,0,0,,{\fad(110,110)}DA VIDA DE {\c&H5EC7F2&\b1}CADA{\c&HFFFFFF&\b0}
+Dialogue: 0,0:00:22.00,0:00:22.60,Cap,,0,0,0,,{\fad(110,110)}UM AQUI
+Dialogue: 0,0:00:22.60,0:00:23.78,Cap,,0,0,0,,{\fad(110,110)}EU PEDI {\c&H5EC7F2&\b1}RESPOSTA{\c&HFFFFFF&\b0} A
+Dialogue: 0,0:00:23.78,0:00:24.00,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}DEUS{\c&HFFFFFF&\b0}
+Dialogue: 0,0:00:24.00,0:00:24.34,Cap,,0,0,0,,{\fad(110,110)}CARA
+Dialogue: 0,0:00:24.34,0:00:24.94,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}DEUS{\c&HFFFFFF&\b0}
+Dialogue: 0,0:00:24.94,0:00:26.52,Cap,,0,0,0,,{\fad(110,110)}ME MOSTRA AQUI O
+Dialogue: 0,0:00:26.52,0:00:27.87,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}CAMINHO{\c&HFFFFFF&\b0} E TAL
+Dialogue: 0,0:00:27.96,0:00:28.64,Cap,,0,0,0,,{\fad(110,110)}HONRAR A VIDA DE
+Dialogue: 0,0:00:28.64,0:00:29.16,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}VOCÊS{\c&HFFFFFF&\b0} AÍ
+Dialogue: 0,0:00:29.16,0:00:29.66,Cap,,0,0,0,,{\fad(110,110)}DE {\c&H5EC7F2&\b1}CADA{\c&HFFFFFF&\b0} UM DE
+Dialogue: 0,0:00:29.66,0:00:30.08,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}VOCÊS{\c&HFFFFFF&\b0}
+Dialogue: 0,0:00:30.08,0:00:30.98,Cap,,0,0,0,,{\fad(110,110)}ESSE {\c&H5EC7F2&\b1}RESULTADO{\c&HFFFFFF&\b0} AQUI NÃO
+Dialogue: 0,0:00:30.98,0:00:31.48,Cap,,0,0,0,,{\fad(110,110)}É MEU
+Dialogue: 0,0:00:31.48,0:00:32.60,Cap,,0,0,0,,{\fad(110,110)}SOZINHO
+Dialogue: 0,0:00:32.60,0:00:33.72,Cap,,0,0,0,,{\fad(110,110)}ENTÃO É {\c&H5EC7F2&\b1}RESULTADO{\c&HFFFFFF&\b0} DE
+Dialogue: 0,0:00:33.72,0:00:34.64,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}CADA{\c&HFFFFFF&\b0} UM DE {\c&H5EC7F2&\b1}VOCÊS{\c&HFFFFFF&\b0}
+Dialogue: 0,0:00:34.64,0:00:35.78,Cap,,0,0,0,,{\fad(110,110)}O TRABALHO {\c&H5EC7F2&\b1}DEVOLVE{\c&HFFFFFF&\b0}
+Dialogue: 0,0:00:35.78,0:00:35.90,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}VOCÊS{\c&HFFFFFF&\b0}
+Dialogue: 0,0:00:35.91,0:00:37.11,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}IMOBILIÁRIA{\c&HFFFFFF&\b0} VIU O MOVIMENTO
+Dialogue: 0,0:00:37.11,0:00:37.87,Cap,,0,0,0,,{\fad(110,110)}DE {\c&H5EC7F2&\b1}VOCÊS{\c&HFFFFFF&\b0} AQUI
+Dialogue: 0,0:00:43.70,0:00:44.26,Cap,,0,0,0,,{\fad(110,110)}É
+Dialogue: 0,0:00:44.26,0:00:45.40,Cap,,0,0,0,,{\fad(110,110)}80 % DA {\c&H5EC7F2&\b1}EQUIPE{\c&HFFFFFF&\b0}
+Dialogue: 0,0:00:45.40,0:00:45.90,Cap,,0,0,0,,{\fad(110,110)}VENDEU
+Dialogue: 0,0:00:45.90,0:00:47.14,Cap,,0,0,0,,{\fad(110,110)}ENTÃO DE 10 CORRETORES
+Dialogue: 0,0:00:47.14,0:00:47.76,Cap,,0,0,0,,{\fad(110,110)}QUE A GENTE TINHA
+Dialogue: 0,0:00:47.76,0:00:49.00,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}8{\c&HFFFFFF&\b0} PESSOAS VENDEU
+Dialogue: 0,0:00:48.92,0:00:50.58,Cap,,0,0,0,,{\fad(110,110)}E {\c&H5EC7F2&\b1}6{\c&HFFFFFF&\b0} CORRETORES ACIMA
+Dialogue: 0,0:00:50.58,0:00:51.10,Cap,,0,0,0,,{\fad(110,110)}DE 1 {\c&H5EC7F2&\b1}MILHÃO{\c&HFFFFFF&\b0} DE
+Dialogue: 0,0:00:51.10,0:00:51.52,Cap,,0,0,0,,{\fad(110,110)}REAIS
+Dialogue: 0,0:00:51.52,0:00:52.40,Cap,,0,0,0,,{\fad(110,110)}ENTÃO
+Dialogue: 0,0:00:52.40,0:00:53.88,Cap,,0,0,0,,{\fad(110,110)}EU FIQUEI MUITO FELIZ
+Dialogue: 0,0:00:53.88,0:00:54.54,Cap,,0,0,0,,{\fad(110,110)}NÃO SÓ COM O
+Dialogue: 0,0:00:54.54,0:00:55.28,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}RESULTADO{\c&HFFFFFF&\b0} AQUI
+Dialogue: 0,0:00:55.28,0:00:56.14,Cap,,0,0,0,,{\fad(110,110)}DE ACIMA DE 10
+Dialogue: 0,0:00:56.14,0:00:56.97,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}MILHÕES{\c&HFFFFFF&\b0} DE REAIS
+Dialogue: 0,0:00:57.06,0:00:57.96,Cap,,0,0,0,,{\fad(110,110)}ISSO AÍ ME {\c&H5EC7F2&\b1}MOVE{\c&HFFFFFF&\b0}
+Dialogue: 0,0:00:57.96,0:00:58.38,Cap,,0,0,0,,{\fad(110,110)}DEMAIS
+Dialogue: 0,0:00:58.38,0:00:58.54,Cap,,0,0,0,,{\fad(110,110)}CARA
+Dialogue: 0,0:00:58.54,0:00:59.04,Cap,,0,0,0,,{\fad(110,110)}ISSO AÍ ME {\c&H5EC7F2&\b1}MOVE{\c&HFFFFFF&\b0}
+Dialogue: 0,0:00:59.04,0:00:59.50,Cap,,0,0,0,,{\fad(110,110)}DEMAIS
+Dialogue: 0,0:00:59.50,0:00:59.68,Cap,,0,0,0,,{\fad(110,110)}ENTÃO
+Dialogue: 0,0:00:59.68,0:01:00.56,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}VOCÊS{\c&HFFFFFF&\b0} ACHAM QUE EU
+Dialogue: 0,0:01:00.56,0:01:01.42,Cap,,0,0,0,,{\fad(110,110)}MOTIVO {\c&H5EC7F2&\b1}VOCÊS{\c&HFFFFFF&\b0}
+Dialogue: 0,0:01:01.42,0:01:03.20,Cap,,0,0,0,,{\fad(110,110)}MAS A RESPONSIVIDADE E
+Dialogue: 0,0:01:03.20,0:01:04.24,Cap,,0,0,0,,{\fad(110,110)}VER ISSO AÍ
+Dialogue: 0,0:01:04.24,0:01:05.00,Cap,,0,0,0,,{\fad(110,110)}ACONTECENDO
+Dialogue: 0,0:01:05.00,0:01:05.28,Cap,,0,0,0,,{\fad(110,110)}É O QUE ME
+Dialogue: 0,0:01:05.28,0:01:06.22,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}MOTIVA{\c&HFFFFFF&\b0} A {\c&H5EC7F2&\b1}CADA{\c&HFFFFFF&\b0} DIA
+Dialogue: 0,0:01:06.22,0:01:07.20,Cap,,0,0,0,,{\fad(110,110)}TODO DIA TÁ AQUI
+Dialogue: 0,0:01:07.20,0:01:08.28,Cap,,0,0,0,,{\fad(110,110)}TODO DIA TÁ {\c&H5EC7F2&\b1}PLANTANDO{\c&HFFFFFF&\b0}
+Dialogue: 0,0:01:08.28,0:01:09.03,Cap,,0,0,0,,{\fad(110,110)}NA VIDA DE {\c&H5EC7F2&\b1}VOCÊS{\c&HFFFFFF&\b0}
+Dialogue: 0,0:01:09.33,0:01:10.41,Cap,,0,0,0,,{\fad(110,110)}ANTES DESSE {\c&H5EC7F2&\b1}RESULTADO{\c&HFFFFFF&\b0} AQUI
+Dialogue: 0,0:01:10.41,0:01:11.21,Cap,,0,0,0,,{\fad(110,110)}A GENTE SENTOU NAQUELA
+Dialogue: 0,0:01:11.21,0:01:11.59,Cap,,0,0,0,,{\fad(110,110)}SALA
+Dialogue: 0,0:01:11.59,0:01:12.35,Cap,,0,0,0,,{\fad(110,110)}E EU ESCUTEI {\c&H5EC7F2&\b1}CADA{\c&HFFFFFF&\b0}
+Dialogue: 0,0:01:12.35,0:01:13.09,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}HISTÓRIA{\c&HFFFFFF&\b0} AQUI
+Dialogue: 0,0:01:13.09,0:01:13.10,Cap,,0,0,0,,{\fad(110,110)}QUE
+Dialogue: 0,0:01:13.06,0:01:14.32,Cap,,0,0,0,,{\fad(110,110)}VOCÊ PODE TER CERTEZA
+Dialogue: 0,0:01:14.32,0:01:15.18,Cap,,0,0,0,,{\fad(110,110)}QUE DEPENDENDO DE MIM
+Dialogue: 0,0:01:15.18,0:01:16.34,Cap,,0,0,0,,{\fad(110,110)}DEPENDENDO DESSES CARAS AQUI
+Dialogue: 0,0:01:16.34,0:01:17.88,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}VOCÊS{\c&HFFFFFF&\b0} VÃO {\c&H5EC7F2&\b1}REALIZAR{\c&HFFFFFF&\b0} ISSO
+Dialogue: 0,0:01:17.88,0:01:18.28,Cap,,0,0,0,,{\fad(110,110)}AQUI E A GENTE
+Dialogue: 0,0:01:18.28,0:01:18.10,Cap,,0,0,0,,{\fad(110,110)}VAI
+Dialogue: 0,0:01:18.25,0:01:19.07,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}CADA{\c&HFFFFFF&\b0} {\c&H5EC7F2&\b1}HISTÓRIA{\c&HFFFFFF&\b0} QUE A
+Dialogue: 0,0:01:19.07,0:01:19.75,Cap,,0,0,0,,{\fad(110,110)}GENTE OUVIU ALI VAI
+Dialogue: 0,0:01:19.75,0:01:21.47,Cap,,0,0,0,,{\fad(110,110)}SER {\c&H5EC7F2&\b1}REALIZADA{\c&HFFFFFF&\b0} DIA {\c&H5EC7F2&\b1}31{\c&HFFFFFF&\b0}
+Dialogue: 0,0:01:21.47,0:01:23.15,Cap,,0,0,0,,{\fad(110,110)}DE {\c&H5EC7F2&\b1}DEZEMBRO{\c&HFFFFFF&\b0} FECHADO?
+Dialogue: 0,0:01:23.15,0:01:23.83,Cap,,0,0,0,,{\fad(110,110)}VAMOS EMBORA?
+Dialogue: 0,0:01:23.83,0:01:24.44,Cap,,0,0,0,,{\fad(110,110)}{\c&H5EC7F2&\b1}BORA!{\c&HFFFFFF&\b0}
+Dialogue: 2,0:00:00.15,0:00:02.70,Kick,,0,0,0,,{\fad(200,200)\pos(540,330)}PÓDIO DE GERENTES
+Dialogue: 2,0:00:05.10,0:00:09.80,Big,,0,0,0,,{\fscx140\fscy140\alpha&HFF&\t(0,180,\fscx100\fscy100\alpha&H00&)\fad(0,250)\pos(540,760)}1º LUGAR
+Dialogue: 2,0:00:05.35,0:00:09.80,Kick,,0,0,0,,{\fad(200,200)\pos(540,920)}EQUIPE VAGNO SILVA
+Dialogue: 2,0:00:07.10,0:00:09.80,LT,,0,0,0,,{\fad(250,200)\move(40,0,0,0,0,300)}VAGNO SILVA
+Dialogue: 2,0:00:07.30,0:00:09.80,LTs,,0,0,0,,{\fad(250,200)}GERENTE · MYBROKER RAJA
+Dialogue: 2,0:00:38.07,0:00:43.57,Big,,0,0,0,,{\fscx140\fscy140\alpha&HFF&\t(0,180,\fscx100\fscy100\alpha&H00&)\fad(0,250)\pos(540,820)}1º LUGAR
+Dialogue: 2,0:00:44.21,0:00:45.91,Num,,0,0,0,,{\fscx60\fscy60\t(0,140,\fscx106\fscy106)\t(140,230,\fscx100\fscy100)\fad(0,200)}80%
+Dialogue: 2,0:00:44.36,0:00:45.91,NumS,,0,0,0,,{\fad(200,200)}DA EQUIPE VENDEU
+Dialogue: 2,0:00:46.36,0:00:48.96,Num,,0,0,0,,{\fscx60\fscy60\t(0,140,\fscx106\fscy106)\t(140,230,\fscx100\fscy100)\fad(0,200)}8 DE 10
+Dialogue: 2,0:00:46.51,0:00:48.96,NumS,,0,0,0,,{\fad(200,200)}CORRETORES VENDERAM
+Dialogue: 2,0:00:49.04,0:00:52.34,Num,,0,0,0,,{\fscx60\fscy60\t(0,140,\fscx106\fscy106)\t(140,230,\fscx100\fscy100)\fad(0,200)}6
+Dialogue: 2,0:00:49.19,0:00:52.34,NumS,,0,0,0,,{\fad(200,200)}CORRETORES ACIMA\NDE R$ 1 MILHÃO
+Dialogue: 2,0:00:55.14,0:00:56.94,Num,,0,0,0,,{\fscx60\fscy60\t(0,140,\fscx106\fscy106)\t(140,230,\fscx100\fscy100)\fad(0,200)}+R$ 10 MI
+Dialogue: 2,0:00:55.29,0:00:56.94,NumS,,0,0,0,,{\fad(200,200)}EM VENDAS
+Dialogue: 2,0:01:24.85,0:01:28.30,Big,,0,0,0,,{\fscx140\fscy140\alpha&HFF&\t(0,180,\fscx100\fscy100\alpha&H00&)\fad(0,250)\pos(540,1330)}1º LUGAR
+Dialogue: 2,0:01:25.15,0:01:28.30,Kick,,0,0,0,,{\fad(250,0)\pos(540,1490)}EQUIPE VAGNO SILVA · MYBROKER RAJA
+Dialogue: 2,0:01:25.80,0:01:28.30,Tag,,0,0,0,,{\fad(400,0)\pos(540,1620)}"O trabalho devolve."
+Dialogue: 1,0:01:24.70,0:01:28.30,Cap,,0,0,0,,{\fad(400,0)\an7\pos(0,1100)\bord0\shad0\1c&H000000&\1a&H60&\blur40\p1}m 0 0 l 1080 0 1080 820 0 820{\p0}
