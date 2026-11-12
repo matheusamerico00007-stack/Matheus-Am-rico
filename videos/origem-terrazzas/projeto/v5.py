@@ -9,8 +9,8 @@ for w in words:
     if m and w[2].startswith("-"): m[-1]=[m[-1][0],w[1],m[-1][2]+w[2]]
     else: m.append(w)
 words=m
-CUTS=[(0.0,0.30),(8.05,8.47),(13.45,13.80),(14.40,14.85),(20.05,21.62),(23.52,23.82),(29.82,30.16),(39.28,39.60),(43.36,43.74)]
-END_SRC=46.95
+CUTS=[]  # fala 100% preservada
+END_SRC=47.25
 keep=[];pos=0.0
 for a,b in CUTS:
     if a>pos: keep.append((pos,a))
@@ -26,15 +26,15 @@ def o(t):
     return p+(t-SEGS[-1][1])
 VT=sum(b-a for a,b in SEGS); ENDC=2.6; T=VT+ENDC
 # B-roll do book: (src_ini, src_fim, pagina, rect, x0, x1, z0, z1, rotulo, sub)
-BR=[(5.30,7.95,"08",[0,0,1,1],.22,.31,1.0,1.08,None,None),
-    (16.55,22.45,"10",[0,0,.735,1],.30,.50,1.0,1.06,"+3 MIL M² DE LAZER",None),
-    (22.45,23.90,"14",[.25,.08,.965,.97],.47,.56,1.0,1.06,"SALÃO DE FESTAS",None),
-    (23.90,26.50,"37",[.64,0,1,1],.72,.84,1.0,1.06,"ESPAÇO KIDS",None),
-    (26.50,29.80,"29",[.16,0,.505,.88],.22,.33,1.0,1.06,"BARBEARIA",None),
-    (30.16,30.95,"24",[.265,.08,.965,1],.58,.66,1.03,1.08,"PISCINA AQUECIDA","COM RAIA DE 25 M"),
-    (30.95,31.75,"21",[.03,0,.745,.97],.36,.46,1.03,1.08,"QUADRA DE TÊNIS","DE SAIBRO"),
-    (31.75,32.55,"22",[.04,.11,.985,.88],.48,.58,1.03,1.08,"PISCINA COM","DECK MOLHADO"),
-    (32.55,33.36,"36",[.03,.08,.745,.88],.18,.28,1.03,1.08,"PLAYGROUND",None)]
+BR=[(5.30,7.95,"08",[0,0,1,1],.30,.36,1.0,1.05,None,None),
+    (16.55,22.45,"10",[0,0,.735,1],.31,.43,1.0,1.04,"+3 MIL M² DE LAZER",None),
+    (22.45,23.90,"14",[.25,.08,.965,.97],.56,.64,1.0,1.04,"SALÃO DE FESTAS",None),
+    (23.90,26.50,"37",[.64,0,1,1],.82,.82,1.0,1.05,"ESPAÇO KIDS",None),
+    (26.50,29.80,"29",[.16,0,.505,.88],.3325,.3325,1.0,1.05,"BARBEARIA",None),
+    (29.80,30.95,"24",[.265,.08,.965,1],.58,.64,1.0,1.04,"PISCINA AQUECIDA","COM RAIA DE 25 M"),
+    (30.95,31.75,"21",[.03,0,.745,.97],.34,.42,1.0,1.04,"QUADRA DE TÊNIS","DE SAIBRO"),
+    (31.75,32.55,"22",[.04,.11,.985,.88],.46,.56,1.0,1.04,"PISCINA COM","DECK MOLHADO"),
+    (32.55,33.36,"36",[.03,.08,.745,.88],.28,.35,1.0,1.04,"PLAYGROUND",None)]
 os.makedirs(f"{D}/clips",exist_ok=True)
 clips=[]
 for k,(s,e,pg,rect,x0,x1,z0,z1,lab,sub) in enumerate(BR):
@@ -42,11 +42,11 @@ for k,(s,e,pg,rect,x0,x1,z0,z1,lab,sub) in enumerate(BR):
     if clips and abs(clips[-1][1]-A)<0.1: A=clips[-1][1]
     dur=round((B-A)*FPS)/FPS; f=f"{D}/clips/c{k}.mp4"
     if not os.path.exists(f):
-        subprocess.run(["python3","-I",f"{D}/kb.py",f"{HI}/p-{pg}.png",f,str(dur),json.dumps(rect),str(x0),str(x1),str(z0),str(z1)],check=True)
+        subprocess.run(["python3","-I",f"{D}/kbh.py",f"{HI}/p-{pg}.png",f,str(dur),json.dumps(rect),str(x0),str(x1),str(z0),str(z1)],check=True)
     clips.append((A,A+dur,f,lab,sub))
 endclip=f"{D}/clips/end.mp4"
 if not os.path.exists(endclip):
-    subprocess.run(["python3","-I",f"{D}/kb.py",f"{HI}/p-08.png",endclip,str(ENDC),json.dumps([0,0,1,1]),".30",".30","1.10","1.0"],check=True)
+    subprocess.run(["python3","-I",f"{D}/kbh.py",f"{HI}/p-08.png",endclip,str(ENDC),json.dumps([0,0,1,1]),".33",".33","1.06","1.0"],check=True)
 def ts(t): t=max(0,t); return f"{int(t//3600)}:{int(t%3600//60):02d}:{t%60:05.2f}"
 Y="&H33D6FF&"; W_="&HFFFFFF&"
 HEAD="""[Script Info]
@@ -59,10 +59,10 @@ Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour,
 Style: Cap,Inter ExtraBold,84,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,6,2,2,80,80,520,1
 Style: Box,Inter ExtraBold,78,&H00111111,&H00FFFFFF,&H0033D6FF,&H0033D6FF,-1,0,0,0,100,100,0,0,3,20,0,8,80,80,260,1
 Style: Dark,Inter ExtraBold,52,&H00FFFFFF,&H00FFFFFF,&H00141418,&H00141418,-1,0,0,0,100,100,1,0,3,18,0,8,90,90,0,1
-Style: Lab,Inter ExtraBold,66,&H00FFFFFF,&H00FFFFFF,&H50101014,&H50101014,-1,0,0,0,100,100,6,0,3,18,0,8,60,60,290,1
-Style: LabS,Inter ExtraBold,42,&H0033D6FF,&H00FFFFFF,&H50101014,&H50101014,-1,0,0,0,100,100,8,0,3,12,0,8,60,60,398,1
-Style: Brand,Inter Display Light,150,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,0,0,0,0,100,100,30,0,1,0,8,8,60,60,330,1
-Style: BrandS,Inter Medium,38,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,0,0,0,0,100,100,14,0,1,0,6,8,60,60,520,1
+Style: Lab,Inter ExtraBold,66,&H00FFFFFF,&H00FFFFFF,&H50101014,&H50101014,-1,0,0,0,100,100,6,0,3,18,0,8,60,60,420,1
+Style: LabS,Inter ExtraBold,42,&H0033D6FF,&H00FFFFFF,&H50101014,&H50101014,-1,0,0,0,100,100,8,0,3,12,0,8,60,60,528,1
+Style: Brand,Inter Display Light,140,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,0,0,0,0,100,100,30,0,1,0,8,8,60,60,340,1
+Style: BrandS,Inter Medium,36,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,0,0,0,0,100,100,12,0,1,0,6,8,60,60,520,1
 Style: Chk,Inter ExtraBold,62,&H00FFFFFF,&H00FFFFFF,&H30101014,&H30101014,-1,0,0,0,100,100,0,0,3,14,0,7,90,80,0,1
 Style: Disc,Inter Medium,28,&H50FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,1,0,1,2,0,2,60,60,60,1
 [Events]
@@ -88,7 +88,7 @@ FADE="{\\fad(150,150)}"
 def add(A,B,style,text,y=0,layer=2,fx=None,sfx=True):
     ev.append(f"Dialogue: {layer},{ts(A)},{ts(B)},{style},,0,0,{y},,{fx if fx is not None else (POP if style=='Box' else FADE)}{text}")
     if sfx: SFX.append(A)
-add(0,o(3.40),"Box","4 QUARTOS COM\\NQUADRA DE TÊNIS?",sfx=False)
+add(0,o(3.40),"Box","4 QUARTOS COM\\NQUADRA DE TÊNIS\\NNA ZONA SUL?",sfx=False)
 # marca sobre a fachada
 a,b=clips[0][0],clips[0][1]
 add(a+0.1,b,"Brand","ORIGEM",fx="{\\fad(300,200)\\fsp30\\t(0,1200,\\fsp18)}")
@@ -113,9 +113,9 @@ add(o(44.62),VT,"Box","ME CHAMA AQUI")
 # cartela final sobre a fachada
 add(VT,T,"Brand","ORIGEM",fx="{\\fad(250,0)}",sfx=False)
 add(VT+0.2,T,"BrandS","LUXURY RESIDENCE · GUTIERREZ · BH",sfx=False)
-add(VT+0.4,T,"Box","ME CHAMA AQUI",y=1240)
+add(VT+0.4,T,"Box","ME CHAMA AQUI",y=1250)
 add(VT,T,"Disc","Imagens meramente ilustrativas",layer=1,sfx=False)
-for (A,B,f,lab,sub) in clips: SFX.append(A)
+SFX=[x for x in SFX if x<clips[1][0]-0.5 or x>clips[-1][1]+0.5]+[clips[0][0],clips[1][0]]
 open(f"{D}/v5.ass","w").write(HEAD+"\n".join(ev)+"\n")
 print(f"video {VT:.2f}s total {T:.2f}s, {len(clips)} imagens do book")
 def run(c): subprocess.run(["ffmpeg","-v","error","-y"]+c,check=True)
@@ -144,13 +144,13 @@ for k,(A,B,f,lab,sub) in enumerate(clips):
     fg.append(f"[{NB+k}:v]setpts=PTS-STARTPTS+{A:.4f}/TB[o{k}]")
     fg.append(f"[{last}][o{k}]overlay=enable='between(t,{A:.4f},{B-0.001:.4f})':eof_action=pass[b{k+1}]"); last=f"b{k+1}"
 fg.append(f"[{last}]ass={D}/v5.ass,format=yuv420p[vo]")
-VOICE=("highpass=f=80,afftdn=nr=12:nf=-38:tn=1,atrim=start=0.025,asetpts=PTS-STARTPTS,apad=pad_dur=0.05,"
+VOICE=("highpass=f=80,afftdn=nr=7:nf=-42:tn=1,atrim=start=0.025,asetpts=PTS-STARTPTS,apad=pad_dur=0.05,"
        "deesser=i=0.4:m=0.5:f=0.5,equalizer=f=180:t=q:w=1:g=1.5,equalizer=f=3000:t=q:w=1.5:g=1.0,"
        "acompressor=threshold=-20dB:ratio=2.5:attack=15:release=200,loudnorm=I=-14:TP=-2:LRA=7,aresample=48000,aformat=channel_layouts=stereo")
 MI=NB+NC
 fg+=[f"[ca]{VOICE},asplit[voz][key]",f"[{MI}:a]volume=0.27,aformat=channel_layouts=stereo[mus]",
      "[mus][key]sidechaincompress=threshold=0.05:ratio=3:attack=30:release=400[mduck]",
-     f"[{MI+1}:a]volume=0.22,aformat=channel_layouts=stereo[fx]",
+     f"[{MI+1}:a]volume=0.14,aformat=channel_layouts=stereo[fx]",
      "[voz][mduck][fx]amix=inputs=3:duration=first:normalize=0,alimiter=limit=0.89[ao]"]
 run(ins+["-i",f"{D}/beat.wav","-i",f"{D}/sfx.wav","-filter_complex",";".join(fg),"-map","[vo]","-map","[ao]",
     "-c:v","libx264","-preset","medium","-crf","20","-maxrate","9M","-bufsize","18M","-c:a","aac","-b:a","192k","-movflags","+faststart",f"{D}/origem.mp4"])

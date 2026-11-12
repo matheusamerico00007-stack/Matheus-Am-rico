@@ -8,187 +8,187 @@ Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour,
 Style: Cap,Inter ExtraBold,84,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,6,2,2,80,80,520,1
 Style: Box,Inter ExtraBold,78,&H00111111,&H00FFFFFF,&H0033D6FF,&H0033D6FF,-1,0,0,0,100,100,0,0,3,20,0,8,80,80,260,1
 Style: Dark,Inter ExtraBold,52,&H00FFFFFF,&H00FFFFFF,&H00141418,&H00141418,-1,0,0,0,100,100,1,0,3,18,0,8,90,90,0,1
-Style: Lab,Inter ExtraBold,66,&H00FFFFFF,&H00FFFFFF,&H50101014,&H50101014,-1,0,0,0,100,100,6,0,3,18,0,8,60,60,290,1
-Style: LabS,Inter ExtraBold,42,&H0033D6FF,&H00FFFFFF,&H50101014,&H50101014,-1,0,0,0,100,100,8,0,3,12,0,8,60,60,398,1
-Style: Brand,Inter Display Light,150,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,0,0,0,0,100,100,30,0,1,0,8,8,60,60,330,1
-Style: BrandS,Inter Medium,38,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,0,0,0,0,100,100,14,0,1,0,6,8,60,60,520,1
+Style: Lab,Inter ExtraBold,66,&H00FFFFFF,&H00FFFFFF,&H50101014,&H50101014,-1,0,0,0,100,100,6,0,3,18,0,8,60,60,420,1
+Style: LabS,Inter ExtraBold,42,&H0033D6FF,&H00FFFFFF,&H50101014,&H50101014,-1,0,0,0,100,100,8,0,3,12,0,8,60,60,528,1
+Style: Brand,Inter Display Light,140,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,0,0,0,0,100,100,30,0,1,0,8,8,60,60,340,1
+Style: BrandS,Inter Medium,36,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,0,0,0,0,100,100,12,0,1,0,6,8,60,60,520,1
 Style: Chk,Inter ExtraBold,62,&H00FFFFFF,&H00FFFFFF,&H30101014,&H30101014,-1,0,0,0,100,100,0,0,3,14,0,7,90,80,0,1
 Style: Disc,Inter Medium,28,&H50FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,1,0,1,2,0,2,60,60,60,1
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,0:00:00.08,Cap,,0,0,0,,{\c&H33D6FF&}ME{\c&HFFFFFF&} FALA O
-Dialogue: 0,0:00:00.08,0:00:00.24,Cap,,0,0,0,,ME {\c&H33D6FF&}FALA{\c&HFFFFFF&} O
-Dialogue: 0,0:00:00.24,0:00:00.34,Cap,,0,0,0,,ME FALA {\c&H33D6FF&}O{\c&HFFFFFF&}
-Dialogue: 0,0:00:00.34,0:00:00.66,Cap,,0,0,0,,{\c&H33D6FF&}EMPREENDIMENTO{\c&HFFFFFF&} DE
-Dialogue: 0,0:00:00.66,0:00:00.80,Cap,,0,0,0,,EMPREENDIMENTO {\c&H33D6FF&}DE{\c&HFFFFFF&}
-Dialogue: 0,0:00:00.80,0:00:00.96,Cap,,0,0,0,,{\c&H33D6FF&}4{\c&HFFFFFF&} QUARTOS COM
-Dialogue: 0,0:00:00.96,0:00:01.68,Cap,,0,0,0,,4 {\c&H33D6FF&}QUARTOS{\c&HFFFFFF&} COM
-Dialogue: 0,0:00:01.68,0:00:01.86,Cap,,0,0,0,,4 QUARTOS {\c&H33D6FF&}COM{\c&HFFFFFF&}
-Dialogue: 0,0:00:01.86,0:00:02.16,Cap,,0,0,0,,{\c&H33D6FF&}QUADRA{\c&HFFFFFF&} DE TÊNIS
-Dialogue: 0,0:00:02.16,0:00:02.22,Cap,,0,0,0,,QUADRA {\c&H33D6FF&}DE{\c&HFFFFFF&} TÊNIS
-Dialogue: 0,0:00:02.22,0:00:02.54,Cap,,0,0,0,,QUADRA DE {\c&H33D6FF&}TÊNIS{\c&HFFFFFF&}
-Dialogue: 0,0:00:02.54,0:00:02.64,Cap,,0,0,0,,{\c&H33D6FF&}NA{\c&HFFFFFF&} ZONA SUL
-Dialogue: 0,0:00:02.64,0:00:02.86,Cap,,0,0,0,,NA {\c&H33D6FF&}ZONA{\c&HFFFFFF&} SUL
-Dialogue: 0,0:00:02.86,0:00:03.24,Cap,,0,0,0,,NA ZONA {\c&H33D6FF&}SUL{\c&HFFFFFF&}
-Dialogue: 0,0:00:03.24,0:00:03.54,Cap,,0,0,0,,{\c&H33D6FF&}EU{\c&HFFFFFF&} TE FALO
-Dialogue: 0,0:00:03.54,0:00:03.64,Cap,,0,0,0,,EU {\c&H33D6FF&}TE{\c&HFFFFFF&} FALO
-Dialogue: 0,0:00:03.64,0:00:04.08,Cap,,0,0,0,,EU TE {\c&H33D6FF&}FALO{\c&HFFFFFF&}
-Dialogue: 0,0:00:04.08,0:00:04.48,Cap,,0,0,0,,{\c&H33D6FF&}ESSE{\c&HFFFFFF&} É O
-Dialogue: 0,0:00:04.48,0:00:04.74,Cap,,0,0,0,,ESSE {\c&H33D6FF&}É{\c&HFFFFFF&} O
-Dialogue: 0,0:00:04.74,0:00:05.04,Cap,,0,0,0,,ESSE É {\c&H33D6FF&}O{\c&HFFFFFF&}
-Dialogue: 0,0:00:05.04,0:00:05.64,Cap,,0,0,0,,{\c&H33D6FF&}ORIGEM{\c&HFFFFFF&} DA TERRAZZAS
-Dialogue: 0,0:00:05.64,0:00:06.02,Cap,,0,0,0,,ORIGEM {\c&H33D6FF&}DA{\c&HFFFFFF&} TERRAZZAS
-Dialogue: 0,0:00:06.02,0:00:06.52,Cap,,0,0,0,,ORIGEM DA {\c&H33D6FF&}TERRAZZAS{\c&HFFFFFF&}
-Dialogue: 0,0:00:06.52,0:00:06.80,Cap,,0,0,0,,{\c&H33D6FF&}EMPREENDIMENTO{\c&HFFFFFF&} DE
-Dialogue: 0,0:00:06.80,0:00:06.90,Cap,,0,0,0,,EMPREENDIMENTO {\c&H33D6FF&}DE{\c&HFFFFFF&}
-Dialogue: 0,0:00:06.90,0:00:07.02,Cap,,0,0,0,,{\c&H33D6FF&}4{\c&HFFFFFF&} QUARTOS
-Dialogue: 0,0:00:07.02,0:00:07.68,Cap,,0,0,0,,4 {\c&H33D6FF&}QUARTOS{\c&HFFFFFF&}
-Dialogue: 0,0:00:07.68,0:00:07.88,Cap,,0,0,0,,{\c&H33D6FF&}SENDO{\c&HFFFFFF&} DUAS SUÍTES
-Dialogue: 0,0:00:07.88,0:00:08.26,Cap,,0,0,0,,SENDO {\c&H33D6FF&}DUAS{\c&HFFFFFF&} SUÍTES
-Dialogue: 0,0:00:08.26,0:00:08.80,Cap,,0,0,0,,SENDO DUAS {\c&H33D6FF&}SUÍTES{\c&HFFFFFF&}
-Dialogue: 0,0:00:08.80,0:00:08.96,Cap,,0,0,0,,{\c&H33D6FF&}E{\c&HFFFFFF&} DUAS SEMI-SUÍTES
-Dialogue: 0,0:00:08.96,0:00:09.16,Cap,,0,0,0,,E {\c&H33D6FF&}DUAS{\c&HFFFFFF&} SEMI-SUÍTES
-Dialogue: 0,0:00:09.16,0:00:09.80,Cap,,0,0,0,,E DUAS {\c&H33D6FF&}SEMI-SUÍTES{\c&HFFFFFF&}
-Dialogue: 0,0:00:09.80,0:00:09.90,Cap,,0,0,0,,{\c&H33D6FF&}MEU{\c&HFFFFFF&} AMIGO
-Dialogue: 0,0:00:09.90,0:00:10.30,Cap,,0,0,0,,MEU {\c&H33D6FF&}AMIGO{\c&HFFFFFF&}
-Dialogue: 0,0:00:10.30,0:00:10.78,Cap,,0,0,0,,{\c&H33D6FF&}OLHA{\c&HFFFFFF&} O TAMANHO
-Dialogue: 0,0:00:10.78,0:00:11.02,Cap,,0,0,0,,OLHA {\c&H33D6FF&}O{\c&HFFFFFF&} TAMANHO
-Dialogue: 0,0:00:11.02,0:00:11.46,Cap,,0,0,0,,OLHA O {\c&H33D6FF&}TAMANHO{\c&HFFFFFF&}
-Dialogue: 0,0:00:11.46,0:00:12.34,Cap,,0,0,0,,{\c&H33D6FF&}DESSA{\c&HFFFFFF&} SUÍTE MASTER
-Dialogue: 0,0:00:12.34,0:00:12.93,Cap,,0,0,0,,DESSA {\c&H33D6FF&}SUÍTE{\c&HFFFFFF&} MASTER
-Dialogue: 0,0:00:12.93,0:00:13.33,Cap,,0,0,0,,DESSA SUÍTE {\c&H33D6FF&}MASTER{\c&HFFFFFF&}
-Dialogue: 0,0:00:13.33,0:00:13.44,Cap,,0,0,0,,{\c&H33D6FF&}MAS{\c&HFFFFFF&} VOCÊ NÃO
-Dialogue: 0,0:00:13.44,0:00:13.62,Cap,,0,0,0,,MAS {\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} NÃO
-Dialogue: 0,0:00:13.62,0:00:13.74,Cap,,0,0,0,,MAS VOCÊ {\c&H33D6FF&}NÃO{\c&HFFFFFF&}
-Dialogue: 0,0:00:13.74,0:00:13.92,Cap,,0,0,0,,{\c&H33D6FF&}TEM{\c&HFFFFFF&} NOÇÃO DO
-Dialogue: 0,0:00:13.92,0:00:14.52,Cap,,0,0,0,,TEM {\c&H33D6FF&}NOÇÃO{\c&HFFFFFF&} DO
-Dialogue: 0,0:00:14.52,0:00:15.08,Cap,,0,0,0,,TEM NOÇÃO {\c&H33D6FF&}DO{\c&HFFFFFF&}
-Dialogue: 0,0:00:15.08,0:00:15.58,Cap,,0,0,0,,{\c&H33D6FF&}LAZER{\c&HFFFFFF&} DESSE PRÉDIO
-Dialogue: 0,0:00:15.58,0:00:16.12,Cap,,0,0,0,,LAZER {\c&H33D6FF&}DESSE{\c&HFFFFFF&} PRÉDIO
-Dialogue: 0,0:00:16.12,0:00:16.72,Cap,,0,0,0,,LAZER DESSE {\c&H33D6FF&}PRÉDIO{\c&HFFFFFF&}
-Dialogue: 0,0:00:16.72,0:00:16.92,Cap,,0,0,0,,{\c&H33D6FF&}O{\c&HFFFFFF&} LAZER DESSE
-Dialogue: 0,0:00:16.92,0:00:17.16,Cap,,0,0,0,,O {\c&H33D6FF&}LAZER{\c&HFFFFFF&} DESSE
-Dialogue: 0,0:00:17.16,0:00:17.30,Cap,,0,0,0,,O LAZER {\c&H33D6FF&}DESSE{\c&HFFFFFF&}
-Dialogue: 0,0:00:17.30,0:00:17.60,Cap,,0,0,0,,{\c&H33D6FF&}PRÉDIO{\c&HFFFFFF&} AQUI É
-Dialogue: 0,0:00:17.60,0:00:17.78,Cap,,0,0,0,,PRÉDIO {\c&H33D6FF&}AQUI{\c&HFFFFFF&} É
-Dialogue: 0,0:00:17.78,0:00:17.92,Cap,,0,0,0,,PRÉDIO AQUI {\c&H33D6FF&}É{\c&HFFFFFF&}
-Dialogue: 0,0:00:17.92,0:00:18.53,Cap,,0,0,0,,{\c&H33D6FF&}COMPLETÍSSIMO{\c&HFFFFFF&}
-Dialogue: 0,0:00:18.53,0:00:18.69,Cap,,0,0,0,,{\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} PRECISA IR
-Dialogue: 0,0:00:18.69,0:00:19.03,Cap,,0,0,0,,VOCÊ {\c&H33D6FF&}PRECISA{\c&HFFFFFF&} IR
-Dialogue: 0,0:00:19.03,0:00:19.17,Cap,,0,0,0,,VOCÊ PRECISA {\c&H33D6FF&}IR{\c&HFFFFFF&}
-Dialogue: 0,0:00:19.17,0:00:19.31,Cap,,0,0,0,,{\c&H33D6FF&}VER{\c&HFFFFFF&} O SALÃO
-Dialogue: 0,0:00:19.31,0:00:19.39,Cap,,0,0,0,,VER {\c&H33D6FF&}O{\c&HFFFFFF&} SALÃO
-Dialogue: 0,0:00:19.39,0:00:19.71,Cap,,0,0,0,,VER O {\c&H33D6FF&}SALÃO{\c&HFFFFFF&}
-Dialogue: 0,0:00:19.71,0:00:19.81,Cap,,0,0,0,,{\c&H33D6FF&}DE{\c&HFFFFFF&} FESTAS E
-Dialogue: 0,0:00:19.81,0:00:20.37,Cap,,0,0,0,,DE {\c&H33D6FF&}FESTAS{\c&HFFFFFF&} E
-Dialogue: 0,0:00:20.37,0:00:20.45,Cap,,0,0,0,,DE FESTAS {\c&H33D6FF&}E{\c&HFFFFFF&}
-Dialogue: 0,0:00:20.45,0:00:20.55,Cap,,0,0,0,,{\c&H33D6FF&}O{\c&HFFFFFF&} ESPAÇO CRIANÇA
-Dialogue: 0,0:00:20.55,0:00:20.87,Cap,,0,0,0,,O {\c&H33D6FF&}ESPAÇO{\c&HFFFFFF&} CRIANÇA
-Dialogue: 0,0:00:20.87,0:00:21.43,Cap,,0,0,0,,O ESPAÇO {\c&H33D6FF&}CRIANÇA{\c&HFFFFFF&}
-Dialogue: 0,0:00:21.43,0:00:21.89,Cap,,0,0,0,,{\c&H33D6FF&}AQUI{\c&HFFFFFF&}
-Dialogue: 0,0:00:21.89,0:00:21.99,Cap,,0,0,0,,{\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} NÃO TEM
-Dialogue: 0,0:00:21.99,0:00:22.09,Cap,,0,0,0,,VOCÊ {\c&H33D6FF&}NÃO{\c&HFFFFFF&} TEM
-Dialogue: 0,0:00:22.09,0:00:22.21,Cap,,0,0,0,,VOCÊ NÃO {\c&H33D6FF&}TEM{\c&HFFFFFF&}
-Dialogue: 0,0:00:22.21,0:00:22.53,Cap,,0,0,0,,{\c&H33D6FF&}NOÇÃO{\c&HFFFFFF&}
-Dialogue: 0,0:00:22.53,0:00:23.19,Cap,,0,0,0,,{\c&H33D6FF&}ATÉ{\c&HFFFFFF&} ESPAÇO PARA
-Dialogue: 0,0:00:23.19,0:00:23.49,Cap,,0,0,0,,ATÉ {\c&H33D6FF&}ESPAÇO{\c&HFFFFFF&} PARA
-Dialogue: 0,0:00:23.49,0:00:23.81,Cap,,0,0,0,,ATÉ ESPAÇO {\c&H33D6FF&}PARA{\c&HFFFFFF&}
-Dialogue: 0,0:00:23.81,0:00:23.85,Cap,,0,0,0,,{\c&H33D6FF&}O{\c&HFFFFFF&} SEU BARBEIRO
-Dialogue: 0,0:00:23.85,0:00:23.95,Cap,,0,0,0,,O {\c&H33D6FF&}SEU{\c&HFFFFFF&} BARBEIRO
-Dialogue: 0,0:00:23.95,0:00:24.41,Cap,,0,0,0,,O SEU {\c&H33D6FF&}BARBEIRO{\c&HFFFFFF&}
-Dialogue: 0,0:00:24.41,0:00:24.63,Cap,,0,0,0,,{\c&H33D6FF&}CORTAR{\c&HFFFFFF&} O SEU
-Dialogue: 0,0:00:24.63,0:00:24.93,Cap,,0,0,0,,CORTAR {\c&H33D6FF&}O{\c&HFFFFFF&} SEU
-Dialogue: 0,0:00:24.93,0:00:25.21,Cap,,0,0,0,,CORTAR O {\c&H33D6FF&}SEU{\c&HFFFFFF&}
-Dialogue: 0,0:00:25.21,0:00:25.59,Cap,,0,0,0,,{\c&H33D6FF&}CABELO{\c&HFFFFFF&} AQUI NESSE
-Dialogue: 0,0:00:25.59,0:00:25.71,Cap,,0,0,0,,CABELO {\c&H33D6FF&}AQUI{\c&HFFFFFF&} NESSE
-Dialogue: 0,0:00:25.71,0:00:25.87,Cap,,0,0,0,,CABELO AQUI {\c&H33D6FF&}NESSE{\c&HFFFFFF&}
-Dialogue: 0,0:00:25.87,0:00:26.17,Cap,,0,0,0,,{\c&H33D6FF&}PRÉDIO{\c&HFFFFFF&} TEM
-Dialogue: 0,0:00:26.17,0:00:26.41,Cap,,0,0,0,,PRÉDIO {\c&H33D6FF&}TEM{\c&HFFFFFF&}
-Dialogue: 0,0:00:26.41,0:00:26.49,Cap,,0,0,0,,{\c&H33D6FF&}ENTÃO{\c&HFFFFFF&} VOCÊ TEM
-Dialogue: 0,0:00:26.49,0:00:26.73,Cap,,0,0,0,,ENTÃO {\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} TEM
-Dialogue: 0,0:00:26.73,0:00:26.91,Cap,,0,0,0,,ENTÃO VOCÊ {\c&H33D6FF&}TEM{\c&HFFFFFF&}
-Dialogue: 0,0:00:26.91,0:00:27.17,Cap,,0,0,0,,{\c&H33D6FF&}ISSO{\c&HFFFFFF&}
-Dialogue: 0,0:00:27.17,0:00:27.63,Cap,,0,0,0,,{\c&H33D6FF&}IMAGINA{\c&HFFFFFF&} O QUE
-Dialogue: 0,0:00:27.63,0:00:28.01,Cap,,0,0,0,,IMAGINA {\c&H33D6FF&}O{\c&HFFFFFF&} QUE
-Dialogue: 0,0:00:28.01,0:00:28.17,Cap,,0,0,0,,IMAGINA O {\c&H33D6FF&}QUE{\c&HFFFFFF&}
-Dialogue: 0,0:00:28.17,0:00:28.39,Cap,,0,0,0,,{\c&H33D6FF&}MAIS{\c&HFFFFFF&} PODE TER
-Dialogue: 0,0:00:28.39,0:00:28.93,Cap,,0,0,0,,MAIS {\c&H33D6FF&}PODE{\c&HFFFFFF&} TER
-Dialogue: 0,0:00:28.93,0:00:29.13,Cap,,0,0,0,,MAIS PODE {\c&H33D6FF&}TER{\c&HFFFFFF&}
-Dialogue: 0,0:00:29.13,0:00:29.45,Cap,,0,0,0,,{\c&H33D6FF&}AQUI{\c&HFFFFFF&}
-Dialogue: 0,0:00:29.45,0:00:29.63,Cap,,0,0,0,,{\c&H33D6FF&}NÉ{\c&HFFFFFF&}
-Dialogue: 0,0:00:29.63,0:00:30.03,Cap,,0,0,0,,{\c&H33D6FF&}MAS{\c&HFFFFFF&} SE VOCÊ
-Dialogue: 0,0:00:30.03,0:00:30.15,Cap,,0,0,0,,MAS {\c&H33D6FF&}SE{\c&HFFFFFF&} VOCÊ
-Dialogue: 0,0:00:30.15,0:00:30.27,Cap,,0,0,0,,MAS SE {\c&H33D6FF&}VOCÊ{\c&HFFFFFF&}
-Dialogue: 0,0:00:30.27,0:00:30.39,Cap,,0,0,0,,{\c&H33D6FF&}QUER{\c&HFFFFFF&} CONHECER AS
-Dialogue: 0,0:00:30.39,0:00:30.75,Cap,,0,0,0,,QUER {\c&H33D6FF&}CONHECER{\c&HFFFFFF&} AS
-Dialogue: 0,0:00:30.75,0:00:31.25,Cap,,0,0,0,,QUER CONHECER {\c&H33D6FF&}AS{\c&HFFFFFF&}
-Dialogue: 0,0:00:31.25,0:00:31.65,Cap,,0,0,0,,{\c&H33D6FF&}CONDIÇÕES{\c&HFFFFFF&} ESPECIAIS
-Dialogue: 0,0:00:31.65,0:00:32.27,Cap,,0,0,0,,CONDIÇÕES {\c&H33D6FF&}ESPECIAIS{\c&HFFFFFF&}
-Dialogue: 0,0:00:32.27,0:00:32.31,Cap,,0,0,0,,{\c&H33D6FF&}E{\c&HFFFFFF&} QUER SABER
-Dialogue: 0,0:00:32.31,0:00:32.45,Cap,,0,0,0,,E {\c&H33D6FF&}QUER{\c&HFFFFFF&} SABER
-Dialogue: 0,0:00:32.45,0:00:32.67,Cap,,0,0,0,,E QUER {\c&H33D6FF&}SABER{\c&HFFFFFF&}
-Dialogue: 0,0:00:32.67,0:00:32.79,Cap,,0,0,0,,{\c&H33D6FF&}O{\c&HFFFFFF&} QUE TEM
-Dialogue: 0,0:00:32.79,0:00:32.87,Cap,,0,0,0,,O {\c&H33D6FF&}QUE{\c&HFFFFFF&} TEM
-Dialogue: 0,0:00:32.87,0:00:32.93,Cap,,0,0,0,,O QUE {\c&H33D6FF&}TEM{\c&HFFFFFF&}
-Dialogue: 0,0:00:32.93,0:00:33.09,Cap,,0,0,0,,{\c&H33D6FF&}ATRÁS{\c&HFFFFFF&} DAQUELA PORTA
-Dialogue: 0,0:00:33.09,0:00:33.37,Cap,,0,0,0,,ATRÁS {\c&H33D6FF&}DAQUELA{\c&HFFFFFF&} PORTA
-Dialogue: 0,0:00:33.37,0:00:33.63,Cap,,0,0,0,,ATRÁS DAQUELA {\c&H33D6FF&}PORTA{\c&HFFFFFF&}
-Dialogue: 0,0:00:33.63,0:00:33.91,Cap,,0,0,0,,{\c&H33D6FF&}ALI{\c&HFFFFFF&}
-Dialogue: 0,0:00:33.91,0:00:34.21,Cap,,0,0,0,,{\c&H33D6FF&}QUER{\c&HFFFFFF&} VER A
-Dialogue: 0,0:00:34.21,0:00:34.37,Cap,,0,0,0,,QUER {\c&H33D6FF&}VER{\c&HFFFFFF&} A
-Dialogue: 0,0:00:34.37,0:00:34.41,Cap,,0,0,0,,QUER VER {\c&H33D6FF&}A{\c&HFFFFFF&}
-Dialogue: 0,0:00:34.41,0:00:34.59,Cap,,0,0,0,,{\c&H33D6FF&}SALA{\c&HFFFFFF&} DO SEU
-Dialogue: 0,0:00:34.59,0:00:34.73,Cap,,0,0,0,,SALA {\c&H33D6FF&}DO{\c&HFFFFFF&} SEU
-Dialogue: 0,0:00:34.73,0:00:34.79,Cap,,0,0,0,,SALA DO {\c&H33D6FF&}SEU{\c&HFFFFFF&}
-Dialogue: 0,0:00:34.79,0:00:34.91,Cap,,0,0,0,,{\c&H33D6FF&}NOVO{\c&HFFFFFF&} APARTAMENTO
-Dialogue: 0,0:00:34.91,0:00:35.47,Cap,,0,0,0,,NOVO {\c&H33D6FF&}APARTAMENTO{\c&HFFFFFF&}
-Dialogue: 0,0:00:35.47,0:00:35.57,Cap,,0,0,0,,{\c&H33D6FF&}E{\c&HFFFFFF&} CONHECER AS
-Dialogue: 0,0:00:35.57,0:00:35.79,Cap,,0,0,0,,E {\c&H33D6FF&}CONHECER{\c&HFFFFFF&} AS
-Dialogue: 0,0:00:35.79,0:00:36.43,Cap,,0,0,0,,E CONHECER {\c&H33D6FF&}AS{\c&HFFFFFF&}
-Dialogue: 0,0:00:36.43,0:00:36.75,Cap,,0,0,0,,{\c&H33D6FF&}CONDIÇÕES{\c&HFFFFFF&} ESPECIAIS
-Dialogue: 0,0:00:36.75,0:00:37.31,Cap,,0,0,0,,CONDIÇÕES {\c&H33D6FF&}ESPECIAIS{\c&HFFFFFF&}
-Dialogue: 0,0:00:37.31,0:00:37.69,Cap,,0,0,0,,{\c&H33D6FF&}E{\c&HFFFFFF&} AS ÚLTIMAS
-Dialogue: 0,0:00:37.69,0:00:37.85,Cap,,0,0,0,,E {\c&H33D6FF&}AS{\c&HFFFFFF&} ÚLTIMAS
-Dialogue: 0,0:00:37.85,0:00:38.69,Cap,,0,0,0,,E AS {\c&H33D6FF&}ÚLTIMAS{\c&HFFFFFF&}
-Dialogue: 0,0:00:38.69,0:00:39.25,Cap,,0,0,0,,{\c&H33D6FF&}UNIDADES{\c&HFFFFFF&} DO ORIGEM
-Dialogue: 0,0:00:39.25,0:00:39.39,Cap,,0,0,0,,UNIDADES {\c&H33D6FF&}DO{\c&HFFFFFF&} ORIGEM
-Dialogue: 0,0:00:39.39,0:00:39.69,Cap,,0,0,0,,UNIDADES DO {\c&H33D6FF&}ORIGEM{\c&HFFFFFF&}
-Dialogue: 0,0:00:39.69,0:00:39.73,Cap,,0,0,0,,{\c&H33D6FF&}DA{\c&HFFFFFF&} TERRAZZAS
-Dialogue: 0,0:00:39.73,0:00:40.21,Cap,,0,0,0,,DA {\c&H33D6FF&}TERRAZZAS{\c&HFFFFFF&}
-Dialogue: 0,0:00:40.21,0:00:40.61,Cap,,0,0,0,,{\c&H33D6FF&}ME{\c&HFFFFFF&} CHAMA AQUI
-Dialogue: 0,0:00:40.61,0:00:40.85,Cap,,0,0,0,,ME {\c&H33D6FF&}CHAMA{\c&HFFFFFF&} AQUI
-Dialogue: 0,0:00:40.85,0:00:41.05,Cap,,0,0,0,,ME CHAMA {\c&H33D6FF&}AQUI{\c&HFFFFFF&}
-Dialogue: 0,0:00:41.05,0:00:41.47,Cap,,0,0,0,,{\c&H33D6FF&}QUE{\c&HFFFFFF&} EU TE
-Dialogue: 0,0:00:41.47,0:00:41.57,Cap,,0,0,0,,QUE {\c&H33D6FF&}EU{\c&HFFFFFF&} TE
-Dialogue: 0,0:00:41.57,0:00:41.65,Cap,,0,0,0,,QUE EU {\c&H33D6FF&}TE{\c&HFFFFFF&}
-Dialogue: 0,0:00:41.65,0:00:41.77,Cap,,0,0,0,,{\c&H33D6FF&}FAÇO{\c&HFFFFFF&} TODAS AS
-Dialogue: 0,0:00:41.77,0:00:41.97,Cap,,0,0,0,,FAÇO {\c&H33D6FF&}TODAS{\c&HFFFFFF&} AS
-Dialogue: 0,0:00:41.97,0:00:42.07,Cap,,0,0,0,,FAÇO TODAS {\c&H33D6FF&}AS{\c&HFFFFFF&}
-Dialogue: 0,0:00:42.07,0:00:42.53,Cap,,0,0,0,,{\c&H33D6FF&}INFORMAÇÕES{\c&HFFFFFF&}
-Dialogue: 2,0:00:00.00,0:00:03.10,Box,,0,0,0,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,150)}4 QUARTOS COM\NQUADRA DE TÊNIS?
-Dialogue: 2,0:00:05.10,0:00:07.67,Brand,,0,0,0,,{\fad(300,200)\fsp30\t(0,1200,\fsp18)}ORIGEM
-Dialogue: 2,0:00:05.50,0:00:07.67,BrandS,,0,0,0,,{\fad(150,150)}LUXURY RESIDENCE · TERRAZZAS
-Dialogue: 2,0:00:07.66,0:00:10.30,Chk,,0,0,0,,{\pos(90,330)\fad(150,150)\fscx80\fscy80\t(0,150,\fscx100\fscy100)}{\fnDejaVu Sans\c&H33D6FF&}✔{\fnInter ExtraBold\c&HFFFFFF&} 4 QUARTOS
-Dialogue: 2,0:00:07.88,0:00:10.30,Chk,,0,0,0,,{\pos(90,440)\fad(150,150)\fscx80\fscy80\t(0,150,\fscx100\fscy100)}{\fnDejaVu Sans\c&H33D6FF&}✔{\fnInter ExtraBold\c&HFFFFFF&} 2 SUÍTES
-Dialogue: 2,0:00:08.96,0:00:10.30,Chk,,0,0,0,,{\pos(90,550)\fad(150,150)\fscx80\fscy80\t(0,150,\fscx100\fscy100)}{\fnDejaVu Sans\c&H33D6FF&}✔{\fnInter ExtraBold\c&HFFFFFF&} 2 SEMISSUÍTES
-Dialogue: 2,0:00:10.30,0:00:13.33,Box,,0,0,0,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,150)}SUÍTE MASTER
-Dialogue: 2,0:00:15.08,0:00:19.37,Lab,,0,0,0,,{\fad(120,100)\fscx90\fscy90\t(0,180,\fscx100\fscy100)}+3 MIL M² DE LAZER
-Dialogue: 2,0:00:19.42,0:00:20.50,Lab,,0,0,0,,{\fad(120,100)\fscx90\fscy90\t(0,180,\fscx100\fscy100)}SALÃO DE FESTAS
-Dialogue: 2,0:00:20.55,0:00:23.10,Lab,,0,0,0,,{\fad(120,100)\fscx90\fscy90\t(0,180,\fscx100\fscy100)}ESPAÇO KIDS
-Dialogue: 2,0:00:23.15,0:00:26.40,Lab,,0,0,0,,{\fad(120,100)\fscx90\fscy90\t(0,180,\fscx100\fscy100)}BARBEARIA
-Dialogue: 2,0:00:26.45,0:00:27.23,Lab,,0,0,0,,{\fad(120,100)\fscx90\fscy90\t(0,180,\fscx100\fscy100)}PISCINA AQUECIDA
-Dialogue: 2,0:00:26.52,0:00:27.23,LabS,,0,0,0,,{\fad(150,150)}COM RAIA DE 25 M
-Dialogue: 2,0:00:27.28,0:00:28.03,Lab,,0,0,0,,{\fad(120,100)\fscx90\fscy90\t(0,180,\fscx100\fscy100)}QUADRA DE TÊNIS
-Dialogue: 2,0:00:27.35,0:00:28.03,LabS,,0,0,0,,{\fad(150,150)}DE SAIBRO
-Dialogue: 2,0:00:28.08,0:00:28.83,Lab,,0,0,0,,{\fad(120,100)\fscx90\fscy90\t(0,180,\fscx100\fscy100)}PISCINA COM
-Dialogue: 2,0:00:28.15,0:00:28.83,LabS,,0,0,0,,{\fad(150,150)}DECK MOLHADO
-Dialogue: 2,0:00:28.88,0:00:29.63,Lab,,0,0,0,,{\fad(120,100)\fscx90\fscy90\t(0,180,\fscx100\fscy100)}PLAYGROUND
-Dialogue: 1,0:00:05.00,0:00:07.67,Disc,,0,0,0,,Imagens meramente ilustrativas
-Dialogue: 1,0:00:15.03,0:00:29.63,Disc,,0,0,0,,Imagens meramente ilustrativas
-Dialogue: 2,0:00:31.25,0:00:33.87,Box,,0,0,0,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,150)}CONDIÇÕES\NESPECIAIS
-Dialogue: 2,0:00:37.85,0:00:40.19,Box,,0,0,0,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,150)}ÚLTIMAS\NUNIDADES
-Dialogue: 2,0:00:40.21,0:00:42.53,Box,,0,0,0,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,150)}ME CHAMA AQUI
-Dialogue: 2,0:00:42.53,0:00:45.13,Brand,,0,0,0,,{\fad(250,0)}ORIGEM
-Dialogue: 2,0:00:42.73,0:00:45.13,BrandS,,0,0,0,,{\fad(150,150)}LUXURY RESIDENCE · GUTIERREZ · BH
-Dialogue: 2,0:00:42.93,0:00:45.13,Box,,0,0,1240,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,150)}ME CHAMA AQUI
-Dialogue: 1,0:00:42.53,0:00:45.13,Disc,,0,0,0,,{\fad(150,150)}Imagens meramente ilustrativas
+Dialogue: 0,0:00:00.00,0:00:00.38,Cap,,0,0,0,,{\c&H33D6FF&}ME{\c&HFFFFFF&} FALA O
+Dialogue: 0,0:00:00.38,0:00:00.54,Cap,,0,0,0,,ME {\c&H33D6FF&}FALA{\c&HFFFFFF&} O
+Dialogue: 0,0:00:00.54,0:00:00.64,Cap,,0,0,0,,ME FALA {\c&H33D6FF&}O{\c&HFFFFFF&}
+Dialogue: 0,0:00:00.64,0:00:00.96,Cap,,0,0,0,,{\c&H33D6FF&}EMPREENDIMENTO{\c&HFFFFFF&} DE
+Dialogue: 0,0:00:00.96,0:00:01.10,Cap,,0,0,0,,EMPREENDIMENTO {\c&H33D6FF&}DE{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.10,0:00:01.26,Cap,,0,0,0,,{\c&H33D6FF&}4{\c&HFFFFFF&} QUARTOS COM
+Dialogue: 0,0:00:01.26,0:00:01.98,Cap,,0,0,0,,4 {\c&H33D6FF&}QUARTOS{\c&HFFFFFF&} COM
+Dialogue: 0,0:00:01.98,0:00:02.16,Cap,,0,0,0,,4 QUARTOS {\c&H33D6FF&}COM{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.16,0:00:02.46,Cap,,0,0,0,,{\c&H33D6FF&}QUADRA{\c&HFFFFFF&} DE TÊNIS
+Dialogue: 0,0:00:02.46,0:00:02.52,Cap,,0,0,0,,QUADRA {\c&H33D6FF&}DE{\c&HFFFFFF&} TÊNIS
+Dialogue: 0,0:00:02.52,0:00:02.84,Cap,,0,0,0,,QUADRA DE {\c&H33D6FF&}TÊNIS{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.84,0:00:02.94,Cap,,0,0,0,,{\c&H33D6FF&}NA{\c&HFFFFFF&} ZONA SUL
+Dialogue: 0,0:00:02.94,0:00:03.16,Cap,,0,0,0,,NA {\c&H33D6FF&}ZONA{\c&HFFFFFF&} SUL
+Dialogue: 0,0:00:03.16,0:00:03.54,Cap,,0,0,0,,NA ZONA {\c&H33D6FF&}SUL{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.54,0:00:03.84,Cap,,0,0,0,,{\c&H33D6FF&}EU{\c&HFFFFFF&} TE FALO
+Dialogue: 0,0:00:03.84,0:00:03.94,Cap,,0,0,0,,EU {\c&H33D6FF&}TE{\c&HFFFFFF&} FALO
+Dialogue: 0,0:00:03.94,0:00:04.38,Cap,,0,0,0,,EU TE {\c&H33D6FF&}FALO{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.38,0:00:04.78,Cap,,0,0,0,,{\c&H33D6FF&}ESSE{\c&HFFFFFF&} É O
+Dialogue: 0,0:00:04.78,0:00:05.04,Cap,,0,0,0,,ESSE {\c&H33D6FF&}É{\c&HFFFFFF&} O
+Dialogue: 0,0:00:05.04,0:00:05.34,Cap,,0,0,0,,ESSE É {\c&H33D6FF&}O{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.34,0:00:05.94,Cap,,0,0,0,,{\c&H33D6FF&}ORIGEM{\c&HFFFFFF&} DA TERRAZZAS
+Dialogue: 0,0:00:05.94,0:00:06.32,Cap,,0,0,0,,ORIGEM {\c&H33D6FF&}DA{\c&HFFFFFF&} TERRAZZAS
+Dialogue: 0,0:00:06.32,0:00:06.82,Cap,,0,0,0,,ORIGEM DA {\c&H33D6FF&}TERRAZZAS{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.82,0:00:07.10,Cap,,0,0,0,,{\c&H33D6FF&}EMPREENDIMENTO{\c&HFFFFFF&} DE
+Dialogue: 0,0:00:07.10,0:00:07.20,Cap,,0,0,0,,EMPREENDIMENTO {\c&H33D6FF&}DE{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.20,0:00:07.32,Cap,,0,0,0,,{\c&H33D6FF&}4{\c&HFFFFFF&} QUARTOS
+Dialogue: 0,0:00:07.32,0:00:07.98,Cap,,0,0,0,,4 {\c&H33D6FF&}QUARTOS{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.98,0:00:08.58,Cap,,0,0,0,,{\c&H33D6FF&}SENDO{\c&HFFFFFF&} DUAS SUÍTES
+Dialogue: 0,0:00:08.58,0:00:08.96,Cap,,0,0,0,,SENDO {\c&H33D6FF&}DUAS{\c&HFFFFFF&} SUÍTES
+Dialogue: 0,0:00:08.96,0:00:09.50,Cap,,0,0,0,,SENDO DUAS {\c&H33D6FF&}SUÍTES{\c&HFFFFFF&}
+Dialogue: 0,0:00:09.50,0:00:09.66,Cap,,0,0,0,,{\c&H33D6FF&}E{\c&HFFFFFF&} DUAS SEMI-SUÍTES
+Dialogue: 0,0:00:09.66,0:00:09.86,Cap,,0,0,0,,E {\c&H33D6FF&}DUAS{\c&HFFFFFF&} SEMI-SUÍTES
+Dialogue: 0,0:00:09.86,0:00:10.50,Cap,,0,0,0,,E DUAS {\c&H33D6FF&}SEMI-SUÍTES{\c&HFFFFFF&}
+Dialogue: 0,0:00:10.50,0:00:10.60,Cap,,0,0,0,,{\c&H33D6FF&}MEU{\c&HFFFFFF&} AMIGO
+Dialogue: 0,0:00:10.60,0:00:11.00,Cap,,0,0,0,,MEU {\c&H33D6FF&}AMIGO{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.00,0:00:11.48,Cap,,0,0,0,,{\c&H33D6FF&}OLHA{\c&HFFFFFF&} O TAMANHO
+Dialogue: 0,0:00:11.48,0:00:11.72,Cap,,0,0,0,,OLHA {\c&H33D6FF&}O{\c&HFFFFFF&} TAMANHO
+Dialogue: 0,0:00:11.72,0:00:12.16,Cap,,0,0,0,,OLHA O {\c&H33D6FF&}TAMANHO{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.16,0:00:13.04,Cap,,0,0,0,,{\c&H33D6FF&}DESSA{\c&HFFFFFF&} SUÍTE MASTER
+Dialogue: 0,0:00:13.04,0:00:14.00,Cap,,0,0,0,,DESSA {\c&H33D6FF&}SUÍTE{\c&HFFFFFF&} MASTER
+Dialogue: 0,0:00:14.00,0:00:14.56,Cap,,0,0,0,,DESSA SUÍTE {\c&H33D6FF&}MASTER{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.56,0:00:14.96,Cap,,0,0,0,,{\c&H33D6FF&}MAS{\c&HFFFFFF&} VOCÊ NÃO
+Dialogue: 0,0:00:14.96,0:00:15.14,Cap,,0,0,0,,MAS {\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} NÃO
+Dialogue: 0,0:00:15.14,0:00:15.26,Cap,,0,0,0,,MAS VOCÊ {\c&H33D6FF&}NÃO{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.26,0:00:15.44,Cap,,0,0,0,,{\c&H33D6FF&}TEM{\c&HFFFFFF&} NOÇÃO DO
+Dialogue: 0,0:00:15.44,0:00:16.04,Cap,,0,0,0,,TEM {\c&H33D6FF&}NOÇÃO{\c&HFFFFFF&} DO
+Dialogue: 0,0:00:16.04,0:00:16.60,Cap,,0,0,0,,TEM NOÇÃO {\c&H33D6FF&}DO{\c&HFFFFFF&}
+Dialogue: 0,0:00:16.60,0:00:17.10,Cap,,0,0,0,,{\c&H33D6FF&}LAZER{\c&HFFFFFF&} DESSE PRÉDIO
+Dialogue: 0,0:00:17.10,0:00:17.64,Cap,,0,0,0,,LAZER {\c&H33D6FF&}DESSE{\c&HFFFFFF&} PRÉDIO
+Dialogue: 0,0:00:17.64,0:00:18.24,Cap,,0,0,0,,LAZER DESSE {\c&H33D6FF&}PRÉDIO{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.24,0:00:18.44,Cap,,0,0,0,,{\c&H33D6FF&}O{\c&HFFFFFF&} LAZER DESSE
+Dialogue: 0,0:00:18.44,0:00:18.68,Cap,,0,0,0,,O {\c&H33D6FF&}LAZER{\c&HFFFFFF&} DESSE
+Dialogue: 0,0:00:18.68,0:00:18.82,Cap,,0,0,0,,O LAZER {\c&H33D6FF&}DESSE{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.82,0:00:19.12,Cap,,0,0,0,,{\c&H33D6FF&}PRÉDIO{\c&HFFFFFF&} AQUI É
+Dialogue: 0,0:00:19.12,0:00:19.30,Cap,,0,0,0,,PRÉDIO {\c&H33D6FF&}AQUI{\c&HFFFFFF&} É
+Dialogue: 0,0:00:19.30,0:00:19.44,Cap,,0,0,0,,PRÉDIO AQUI {\c&H33D6FF&}É{\c&HFFFFFF&}
+Dialogue: 0,0:00:19.44,0:00:21.48,Cap,,0,0,0,,{\c&H33D6FF&}COMPLETÍSSIMO{\c&HFFFFFF&}
+Dialogue: 0,0:00:21.48,0:00:21.78,Cap,,0,0,0,,{\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} PRECISA IR
+Dialogue: 0,0:00:21.78,0:00:22.12,Cap,,0,0,0,,VOCÊ {\c&H33D6FF&}PRECISA{\c&HFFFFFF&} IR
+Dialogue: 0,0:00:22.12,0:00:22.26,Cap,,0,0,0,,VOCÊ PRECISA {\c&H33D6FF&}IR{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.26,0:00:22.40,Cap,,0,0,0,,{\c&H33D6FF&}VER{\c&HFFFFFF&} O SALÃO
+Dialogue: 0,0:00:22.40,0:00:22.48,Cap,,0,0,0,,VER {\c&H33D6FF&}O{\c&HFFFFFF&} SALÃO
+Dialogue: 0,0:00:22.48,0:00:22.80,Cap,,0,0,0,,VER O {\c&H33D6FF&}SALÃO{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.80,0:00:22.90,Cap,,0,0,0,,{\c&H33D6FF&}DE{\c&HFFFFFF&} FESTAS E
+Dialogue: 0,0:00:22.90,0:00:23.46,Cap,,0,0,0,,DE {\c&H33D6FF&}FESTAS{\c&HFFFFFF&} E
+Dialogue: 0,0:00:23.46,0:00:23.84,Cap,,0,0,0,,DE FESTAS {\c&H33D6FF&}E{\c&HFFFFFF&}
+Dialogue: 0,0:00:23.84,0:00:23.94,Cap,,0,0,0,,{\c&H33D6FF&}O{\c&HFFFFFF&} ESPAÇO CRIANÇA
+Dialogue: 0,0:00:23.94,0:00:24.26,Cap,,0,0,0,,O {\c&H33D6FF&}ESPAÇO{\c&HFFFFFF&} CRIANÇA
+Dialogue: 0,0:00:24.26,0:00:24.82,Cap,,0,0,0,,O ESPAÇO {\c&H33D6FF&}CRIANÇA{\c&HFFFFFF&}
+Dialogue: 0,0:00:24.82,0:00:25.28,Cap,,0,0,0,,{\c&H33D6FF&}AQUI{\c&HFFFFFF&}
+Dialogue: 0,0:00:25.28,0:00:25.38,Cap,,0,0,0,,{\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} NÃO TEM
+Dialogue: 0,0:00:25.38,0:00:25.48,Cap,,0,0,0,,VOCÊ {\c&H33D6FF&}NÃO{\c&HFFFFFF&} TEM
+Dialogue: 0,0:00:25.48,0:00:25.60,Cap,,0,0,0,,VOCÊ NÃO {\c&H33D6FF&}TEM{\c&HFFFFFF&}
+Dialogue: 0,0:00:25.60,0:00:25.92,Cap,,0,0,0,,{\c&H33D6FF&}NOÇÃO{\c&HFFFFFF&}
+Dialogue: 0,0:00:25.92,0:00:26.58,Cap,,0,0,0,,{\c&H33D6FF&}ATÉ{\c&HFFFFFF&} ESPAÇO PARA
+Dialogue: 0,0:00:26.58,0:00:26.88,Cap,,0,0,0,,ATÉ {\c&H33D6FF&}ESPAÇO{\c&HFFFFFF&} PARA
+Dialogue: 0,0:00:26.88,0:00:27.20,Cap,,0,0,0,,ATÉ ESPAÇO {\c&H33D6FF&}PARA{\c&HFFFFFF&}
+Dialogue: 0,0:00:27.20,0:00:27.24,Cap,,0,0,0,,{\c&H33D6FF&}O{\c&HFFFFFF&} SEU BARBEIRO
+Dialogue: 0,0:00:27.24,0:00:27.34,Cap,,0,0,0,,O {\c&H33D6FF&}SEU{\c&HFFFFFF&} BARBEIRO
+Dialogue: 0,0:00:27.34,0:00:27.80,Cap,,0,0,0,,O SEU {\c&H33D6FF&}BARBEIRO{\c&HFFFFFF&}
+Dialogue: 0,0:00:27.80,0:00:28.02,Cap,,0,0,0,,{\c&H33D6FF&}CORTAR{\c&HFFFFFF&} O SEU
+Dialogue: 0,0:00:28.02,0:00:28.32,Cap,,0,0,0,,CORTAR {\c&H33D6FF&}O{\c&HFFFFFF&} SEU
+Dialogue: 0,0:00:28.32,0:00:28.60,Cap,,0,0,0,,CORTAR O {\c&H33D6FF&}SEU{\c&HFFFFFF&}
+Dialogue: 0,0:00:28.60,0:00:28.98,Cap,,0,0,0,,{\c&H33D6FF&}CABELO{\c&HFFFFFF&} AQUI NESSE
+Dialogue: 0,0:00:28.98,0:00:29.10,Cap,,0,0,0,,CABELO {\c&H33D6FF&}AQUI{\c&HFFFFFF&} NESSE
+Dialogue: 0,0:00:29.10,0:00:29.26,Cap,,0,0,0,,CABELO AQUI {\c&H33D6FF&}NESSE{\c&HFFFFFF&}
+Dialogue: 0,0:00:29.26,0:00:29.56,Cap,,0,0,0,,{\c&H33D6FF&}PRÉDIO{\c&HFFFFFF&} TEM
+Dialogue: 0,0:00:29.56,0:00:29.80,Cap,,0,0,0,,PRÉDIO {\c&H33D6FF&}TEM{\c&HFFFFFF&}
+Dialogue: 0,0:00:29.80,0:00:30.22,Cap,,0,0,0,,{\c&H33D6FF&}ENTÃO{\c&HFFFFFF&} VOCÊ TEM
+Dialogue: 0,0:00:30.22,0:00:30.46,Cap,,0,0,0,,ENTÃO {\c&H33D6FF&}VOCÊ{\c&HFFFFFF&} TEM
+Dialogue: 0,0:00:30.46,0:00:30.64,Cap,,0,0,0,,ENTÃO VOCÊ {\c&H33D6FF&}TEM{\c&HFFFFFF&}
+Dialogue: 0,0:00:30.64,0:00:30.90,Cap,,0,0,0,,{\c&H33D6FF&}ISSO{\c&HFFFFFF&}
+Dialogue: 0,0:00:30.90,0:00:31.36,Cap,,0,0,0,,{\c&H33D6FF&}IMAGINA{\c&HFFFFFF&} O QUE
+Dialogue: 0,0:00:31.36,0:00:31.74,Cap,,0,0,0,,IMAGINA {\c&H33D6FF&}O{\c&HFFFFFF&} QUE
+Dialogue: 0,0:00:31.74,0:00:31.90,Cap,,0,0,0,,IMAGINA O {\c&H33D6FF&}QUE{\c&HFFFFFF&}
+Dialogue: 0,0:00:31.90,0:00:32.12,Cap,,0,0,0,,{\c&H33D6FF&}MAIS{\c&HFFFFFF&} PODE TER
+Dialogue: 0,0:00:32.12,0:00:32.66,Cap,,0,0,0,,MAIS {\c&H33D6FF&}PODE{\c&HFFFFFF&} TER
+Dialogue: 0,0:00:32.66,0:00:32.86,Cap,,0,0,0,,MAIS PODE {\c&H33D6FF&}TER{\c&HFFFFFF&}
+Dialogue: 0,0:00:32.86,0:00:33.18,Cap,,0,0,0,,{\c&H33D6FF&}AQUI{\c&HFFFFFF&}
+Dialogue: 0,0:00:33.18,0:00:33.36,Cap,,0,0,0,,{\c&H33D6FF&}NÉ{\c&HFFFFFF&}
+Dialogue: 0,0:00:33.36,0:00:33.76,Cap,,0,0,0,,{\c&H33D6FF&}MAS{\c&HFFFFFF&} SE VOCÊ
+Dialogue: 0,0:00:33.76,0:00:33.88,Cap,,0,0,0,,MAS {\c&H33D6FF&}SE{\c&HFFFFFF&} VOCÊ
+Dialogue: 0,0:00:33.88,0:00:34.00,Cap,,0,0,0,,MAS SE {\c&H33D6FF&}VOCÊ{\c&HFFFFFF&}
+Dialogue: 0,0:00:34.00,0:00:34.12,Cap,,0,0,0,,{\c&H33D6FF&}QUER{\c&HFFFFFF&} CONHECER AS
+Dialogue: 0,0:00:34.12,0:00:34.48,Cap,,0,0,0,,QUER {\c&H33D6FF&}CONHECER{\c&HFFFFFF&} AS
+Dialogue: 0,0:00:34.48,0:00:34.98,Cap,,0,0,0,,QUER CONHECER {\c&H33D6FF&}AS{\c&HFFFFFF&}
+Dialogue: 0,0:00:34.98,0:00:35.38,Cap,,0,0,0,,{\c&H33D6FF&}CONDIÇÕES{\c&HFFFFFF&} ESPECIAIS
+Dialogue: 0,0:00:35.38,0:00:36.00,Cap,,0,0,0,,CONDIÇÕES {\c&H33D6FF&}ESPECIAIS{\c&HFFFFFF&}
+Dialogue: 0,0:00:36.00,0:00:36.04,Cap,,0,0,0,,{\c&H33D6FF&}E{\c&HFFFFFF&} QUER SABER
+Dialogue: 0,0:00:36.04,0:00:36.18,Cap,,0,0,0,,E {\c&H33D6FF&}QUER{\c&HFFFFFF&} SABER
+Dialogue: 0,0:00:36.18,0:00:36.40,Cap,,0,0,0,,E QUER {\c&H33D6FF&}SABER{\c&HFFFFFF&}
+Dialogue: 0,0:00:36.40,0:00:36.52,Cap,,0,0,0,,{\c&H33D6FF&}O{\c&HFFFFFF&} QUE TEM
+Dialogue: 0,0:00:36.52,0:00:36.60,Cap,,0,0,0,,O {\c&H33D6FF&}QUE{\c&HFFFFFF&} TEM
+Dialogue: 0,0:00:36.60,0:00:36.66,Cap,,0,0,0,,O QUE {\c&H33D6FF&}TEM{\c&HFFFFFF&}
+Dialogue: 0,0:00:36.66,0:00:36.82,Cap,,0,0,0,,{\c&H33D6FF&}ATRÁS{\c&HFFFFFF&} DAQUELA PORTA
+Dialogue: 0,0:00:36.82,0:00:37.10,Cap,,0,0,0,,ATRÁS {\c&H33D6FF&}DAQUELA{\c&HFFFFFF&} PORTA
+Dialogue: 0,0:00:37.10,0:00:37.36,Cap,,0,0,0,,ATRÁS DAQUELA {\c&H33D6FF&}PORTA{\c&HFFFFFF&}
+Dialogue: 0,0:00:37.36,0:00:37.64,Cap,,0,0,0,,{\c&H33D6FF&}ALI{\c&HFFFFFF&}
+Dialogue: 0,0:00:37.64,0:00:37.94,Cap,,0,0,0,,{\c&H33D6FF&}QUER{\c&HFFFFFF&} VER A
+Dialogue: 0,0:00:37.94,0:00:38.10,Cap,,0,0,0,,QUER {\c&H33D6FF&}VER{\c&HFFFFFF&} A
+Dialogue: 0,0:00:38.10,0:00:38.14,Cap,,0,0,0,,QUER VER {\c&H33D6FF&}A{\c&HFFFFFF&}
+Dialogue: 0,0:00:38.14,0:00:38.32,Cap,,0,0,0,,{\c&H33D6FF&}SALA{\c&HFFFFFF&} DO SEU
+Dialogue: 0,0:00:38.32,0:00:38.46,Cap,,0,0,0,,SALA {\c&H33D6FF&}DO{\c&HFFFFFF&} SEU
+Dialogue: 0,0:00:38.46,0:00:38.52,Cap,,0,0,0,,SALA DO {\c&H33D6FF&}SEU{\c&HFFFFFF&}
+Dialogue: 0,0:00:38.52,0:00:38.64,Cap,,0,0,0,,{\c&H33D6FF&}NOVO{\c&HFFFFFF&} APARTAMENTO
+Dialogue: 0,0:00:38.64,0:00:39.20,Cap,,0,0,0,,NOVO {\c&H33D6FF&}APARTAMENTO{\c&HFFFFFF&}
+Dialogue: 0,0:00:39.20,0:00:39.54,Cap,,0,0,0,,{\c&H33D6FF&}E{\c&HFFFFFF&} CONHECER AS
+Dialogue: 0,0:00:39.54,0:00:39.82,Cap,,0,0,0,,E {\c&H33D6FF&}CONHECER{\c&HFFFFFF&} AS
+Dialogue: 0,0:00:39.82,0:00:40.46,Cap,,0,0,0,,E CONHECER {\c&H33D6FF&}AS{\c&HFFFFFF&}
+Dialogue: 0,0:00:40.46,0:00:40.78,Cap,,0,0,0,,{\c&H33D6FF&}CONDIÇÕES{\c&HFFFFFF&} ESPECIAIS
+Dialogue: 0,0:00:40.78,0:00:41.34,Cap,,0,0,0,,CONDIÇÕES {\c&H33D6FF&}ESPECIAIS{\c&HFFFFFF&}
+Dialogue: 0,0:00:41.34,0:00:41.72,Cap,,0,0,0,,{\c&H33D6FF&}E{\c&HFFFFFF&} AS ÚLTIMAS
+Dialogue: 0,0:00:41.72,0:00:41.88,Cap,,0,0,0,,E {\c&H33D6FF&}AS{\c&HFFFFFF&} ÚLTIMAS
+Dialogue: 0,0:00:41.88,0:00:42.72,Cap,,0,0,0,,E AS {\c&H33D6FF&}ÚLTIMAS{\c&HFFFFFF&}
+Dialogue: 0,0:00:42.72,0:00:43.28,Cap,,0,0,0,,{\c&H33D6FF&}UNIDADES{\c&HFFFFFF&} DO ORIGEM
+Dialogue: 0,0:00:43.28,0:00:43.80,Cap,,0,0,0,,UNIDADES {\c&H33D6FF&}DO{\c&HFFFFFF&} ORIGEM
+Dialogue: 0,0:00:43.80,0:00:44.10,Cap,,0,0,0,,UNIDADES DO {\c&H33D6FF&}ORIGEM{\c&HFFFFFF&}
+Dialogue: 0,0:00:44.10,0:00:44.14,Cap,,0,0,0,,{\c&H33D6FF&}DA{\c&HFFFFFF&} TERRAZZAS
+Dialogue: 0,0:00:44.14,0:00:44.62,Cap,,0,0,0,,DA {\c&H33D6FF&}TERRAZZAS{\c&HFFFFFF&}
+Dialogue: 0,0:00:44.62,0:00:45.02,Cap,,0,0,0,,{\c&H33D6FF&}ME{\c&HFFFFFF&} CHAMA AQUI
+Dialogue: 0,0:00:45.02,0:00:45.26,Cap,,0,0,0,,ME {\c&H33D6FF&}CHAMA{\c&HFFFFFF&} AQUI
+Dialogue: 0,0:00:45.26,0:00:45.46,Cap,,0,0,0,,ME CHAMA {\c&H33D6FF&}AQUI{\c&HFFFFFF&}
+Dialogue: 0,0:00:45.46,0:00:45.88,Cap,,0,0,0,,{\c&H33D6FF&}QUE{\c&HFFFFFF&} EU TE
+Dialogue: 0,0:00:45.88,0:00:45.98,Cap,,0,0,0,,QUE {\c&H33D6FF&}EU{\c&HFFFFFF&} TE
+Dialogue: 0,0:00:45.98,0:00:46.06,Cap,,0,0,0,,QUE EU {\c&H33D6FF&}TE{\c&HFFFFFF&}
+Dialogue: 0,0:00:46.06,0:00:46.18,Cap,,0,0,0,,{\c&H33D6FF&}FAÇO{\c&HFFFFFF&} TODAS AS
+Dialogue: 0,0:00:46.18,0:00:46.38,Cap,,0,0,0,,FAÇO {\c&H33D6FF&}TODAS{\c&HFFFFFF&} AS
+Dialogue: 0,0:00:46.38,0:00:46.48,Cap,,0,0,0,,FAÇO TODAS {\c&H33D6FF&}AS{\c&HFFFFFF&}
+Dialogue: 0,0:00:46.48,0:00:47.20,Cap,,0,0,0,,{\c&H33D6FF&}INFORMAÇÕES{\c&HFFFFFF&}
+Dialogue: 2,0:00:00.00,0:00:03.40,Box,,0,0,0,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,150)}4 QUARTOS COM\NQUADRA DE TÊNIS\NNA ZONA SUL?
+Dialogue: 2,0:00:05.40,0:00:07.93,Brand,,0,0,0,,{\fad(300,200)\fsp30\t(0,1200,\fsp18)}ORIGEM
+Dialogue: 2,0:00:05.80,0:00:07.93,BrandS,,0,0,0,,{\fad(150,150)}LUXURY RESIDENCE · TERRAZZAS
+Dialogue: 2,0:00:07.96,0:00:11.00,Chk,,0,0,0,,{\pos(90,330)\fad(150,150)\fscx80\fscy80\t(0,150,\fscx100\fscy100)}{\fnDejaVu Sans\c&H33D6FF&}✔{\fnInter ExtraBold\c&HFFFFFF&} 4 QUARTOS
+Dialogue: 2,0:00:08.58,0:00:11.00,Chk,,0,0,0,,{\pos(90,440)\fad(150,150)\fscx80\fscy80\t(0,150,\fscx100\fscy100)}{\fnDejaVu Sans\c&H33D6FF&}✔{\fnInter ExtraBold\c&HFFFFFF&} 2 SUÍTES
+Dialogue: 2,0:00:09.66,0:00:11.00,Chk,,0,0,0,,{\pos(90,550)\fad(150,150)\fscx80\fscy80\t(0,150,\fscx100\fscy100)}{\fnDejaVu Sans\c&H33D6FF&}✔{\fnInter ExtraBold\c&HFFFFFF&} 2 SEMISSUÍTES
+Dialogue: 2,0:00:11.00,0:00:14.40,Box,,0,0,0,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,150)}SUÍTE MASTER
+Dialogue: 2,0:00:16.58,0:00:22.47,Lab,,0,0,0,,{\fad(120,100)\fscx90\fscy90\t(0,180,\fscx100\fscy100)}+3 MIL M² DE LAZER
+Dialogue: 2,0:00:22.52,0:00:23.90,Lab,,0,0,0,,{\fad(120,100)\fscx90\fscy90\t(0,180,\fscx100\fscy100)}SALÃO DE FESTAS
+Dialogue: 2,0:00:23.95,0:00:26.50,Lab,,0,0,0,,{\fad(120,100)\fscx90\fscy90\t(0,180,\fscx100\fscy100)}ESPAÇO KIDS
+Dialogue: 2,0:00:26.55,0:00:29.80,Lab,,0,0,0,,{\fad(120,100)\fscx90\fscy90\t(0,180,\fscx100\fscy100)}BARBEARIA
+Dialogue: 2,0:00:29.85,0:00:30.93,Lab,,0,0,0,,{\fad(120,100)\fscx90\fscy90\t(0,180,\fscx100\fscy100)}PISCINA AQUECIDA
+Dialogue: 2,0:00:29.92,0:00:30.93,LabS,,0,0,0,,{\fad(150,150)}COM RAIA DE 25 M
+Dialogue: 2,0:00:30.98,0:00:31.73,Lab,,0,0,0,,{\fad(120,100)\fscx90\fscy90\t(0,180,\fscx100\fscy100)}QUADRA DE TÊNIS
+Dialogue: 2,0:00:31.05,0:00:31.73,LabS,,0,0,0,,{\fad(150,150)}DE SAIBRO
+Dialogue: 2,0:00:31.78,0:00:32.53,Lab,,0,0,0,,{\fad(120,100)\fscx90\fscy90\t(0,180,\fscx100\fscy100)}PISCINA COM
+Dialogue: 2,0:00:31.85,0:00:32.53,LabS,,0,0,0,,{\fad(150,150)}DECK MOLHADO
+Dialogue: 2,0:00:32.58,0:00:33.37,Lab,,0,0,0,,{\fad(120,100)\fscx90\fscy90\t(0,180,\fscx100\fscy100)}PLAYGROUND
+Dialogue: 1,0:00:05.30,0:00:07.93,Disc,,0,0,0,,Imagens meramente ilustrativas
+Dialogue: 1,0:00:16.53,0:00:33.37,Disc,,0,0,0,,Imagens meramente ilustrativas
+Dialogue: 2,0:00:34.98,0:00:37.60,Box,,0,0,0,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,150)}CONDIÇÕES\NESPECIAIS
+Dialogue: 2,0:00:41.88,0:00:44.60,Box,,0,0,0,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,150)}ÚLTIMAS\NUNIDADES
+Dialogue: 2,0:00:44.62,0:00:47.27,Box,,0,0,0,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,150)}ME CHAMA AQUI
+Dialogue: 2,0:00:47.27,0:00:49.87,Brand,,0,0,0,,{\fad(250,0)}ORIGEM
+Dialogue: 2,0:00:47.47,0:00:49.87,BrandS,,0,0,0,,{\fad(150,150)}LUXURY RESIDENCE · GUTIERREZ · BH
+Dialogue: 2,0:00:47.67,0:00:49.87,Box,,0,0,1250,,{\fscx55\fscy55\t(0,110,\fscx108\fscy108)\t(110,190,\fscx100\fscy100)\fad(0,150)}ME CHAMA AQUI
+Dialogue: 1,0:00:47.27,0:00:49.87,Disc,,0,0,0,,{\fad(150,150)}Imagens meramente ilustrativas
