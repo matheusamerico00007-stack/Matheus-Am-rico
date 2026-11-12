@@ -111,8 +111,8 @@ Dialogue: 2,0:00:49.04,0:00:52.34,Num,,0,0,0,,{\fscx60\fscy60\t(0,140,\fscx106\f
 Dialogue: 2,0:00:49.19,0:00:52.34,NumS,,0,0,0,,{\fad(200,200)}CORRETORES ACIMA\NDE R$ 1 MILHÃO
 Dialogue: 2,0:00:55.14,0:00:56.94,Num,,0,0,0,,{\fscx60\fscy60\t(0,140,\fscx106\fscy106)\t(140,230,\fscx100\fscy100)\fad(0,200)}+R$ 10 MI
 Dialogue: 2,0:00:55.29,0:00:56.94,NumS,,0,0,0,,{\fad(200,200)}EM VENDAS
-Dialogue: 2,0:01:24.85,0:01:28.30,Big,,0,0,0,,{\fscx140\fscy140\alpha&HFF&\t(0,180,\fscx100\fscy100\alpha&H00&)\fad(0,250)\pos(540,330)}1º LUGAR
-Dialogue: 2,0:01:25.15,0:01:28.30,Kick,,0,0,0,,{\fad(250,0)\fs40\fsp6\pos(540,470)}EQUIPE SEALS · MYBROKER RAJA
-Dialogue: 2,0:01:25.60,0:01:28.30,Tag,,0,0,0,,{\fad(400,0)\pos(540,560)}"O trabalho devolve."
-Dialogue: 2,0:01:26.20,0:01:28.30,Kick,,0,0,0,,{\fad(400,0)\fs40\fsp6\pos(540,640)}{\c&H5EC7F2&}OPERANDO EM QUALQUER CENÁRIO
+Dialogue: 2,0:01:24.85,0:01:28.30,Big,,0,0,0,,{\fscx140\fscy140\alpha&HFF&\t(0,180,\fscx100\fscy100\alpha&H00&)\fad(0,250)\pos(540,280)}1º LUGAR
+Dialogue: 2,0:01:25.15,0:01:28.30,Kick,,0,0,0,,{\fad(250,0)\fs40\fsp6\pos(540,410)}EQUIPE SEALS · MYBROKER RAJA
+Dialogue: 2,0:01:25.60,0:01:28.30,Tag,,0,0,0,,{\fad(400,0)\pos(540,490)}"O trabalho devolve."
+Dialogue: 2,0:01:26.20,0:01:28.30,Kick,,0,0,0,,{\fad(400,0)\fs40\fsp6\pos(540,560)}{\c&H5EC7F2&}OPERANDO EM QUALQUER CENÁRIO
 Dialogue: 1,0:01:24.70,0:01:28.30,Cap,,0,0,0,,{\fad(400,0)\an7\pos(0,-80)\bord0\shad0\1c&H000000&\1a&H60&\blur40\p1}m 0 0 l 1080 0 1080 860 0 860{\p0}
