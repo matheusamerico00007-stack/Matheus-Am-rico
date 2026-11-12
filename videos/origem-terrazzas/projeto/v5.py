@@ -26,27 +26,32 @@ def o(t):
     return p+(t-SEGS[-1][1])
 VT=sum(b-a for a,b in SEGS); ENDC=2.6; T=VT+ENDC
 # B-roll do book: (src_ini, src_fim, pagina, rect, x0, x1, z0, z1, rotulo, sub)
-BR=[(5.30,7.95,"08",[0,0,1,1],.30,.36,1.0,1.05,None,None),
-    (16.55,22.45,"10",[0,0,.735,1],.31,.43,1.0,1.04,"+3 MIL M² DE LAZER",None),
+BR=[(5.30,7.95,"08",[.15,0,.75,1],.42,.44,1.18,1.25,None,None),
+    (16.55,20.00,"10",[0,0,.735,1],.31,.42,1.0,1.04,"+3 MIL M² DE LAZER",None),
     (22.45,23.90,"14",[.25,.08,.965,.97],.56,.64,1.0,1.04,"SALÃO DE FESTAS",None),
-    (23.90,26.50,"37",[.64,0,1,1],.82,.82,1.0,1.05,"ESPAÇO KIDS",None),
+    (23.90,26.50,"37",[.64,.02,.87,.98],.755,.755,1.0,1.05,"ESPAÇO KIDS",None),
     (26.50,29.80,"29",[.16,0,.505,.88],.3325,.3325,1.0,1.05,"BARBEARIA",None),
     (29.80,30.95,"24",[.265,.08,.965,1],.58,.64,1.0,1.04,"PISCINA AQUECIDA","COM RAIA DE 25 M"),
     (30.95,31.75,"21",[.03,0,.745,.97],.34,.42,1.0,1.04,"QUADRA DE TÊNIS","DE SAIBRO"),
-    (31.75,32.55,"22",[.04,.11,.985,.88],.46,.56,1.0,1.04,"PISCINA COM","DECK MOLHADO"),
+    (31.75,32.55,"22",[.04,.11,.86,.88],.42,.52,1.0,1.04,"PISCINA COM","DECK MOLHADO"),
     (32.55,33.36,"36",[.03,.08,.745,.88],.28,.35,1.0,1.04,"PLAYGROUND",None)]
+CARD_Y=330
 os.makedirs(f"{D}/clips",exist_ok=True)
 clips=[]
-for k,(s,e,pg,rect,x0,x1,z0,z1,lab,sub) in enumerate(BR):
-    A=round(o(s)*FPS)/FPS; B=round(o(e)*FPS)/FPS
-    if clips and abs(clips[-1][1]-A)<0.1: A=clips[-1][1]
-    dur=round((B-A)*FPS)/FPS; f=f"{D}/clips/c{k}.mp4"
-    if not os.path.exists(f):
-        subprocess.run(["python3","-I",f"{D}/kbh.py",f"{HI}/p-{pg}.png",f,str(dur),json.dumps(rect),str(x0),str(x1),str(z0),str(z1)],check=True)
-    clips.append((A,A+dur,f,lab,sub))
-endclip=f"{D}/clips/end.mp4"
+for k,(s_,e_,pg,rect,x0,x1,z0,z1,lab,sub) in enumerate(BR):
+    A=round(o(s_)*FPS)/FPS; B=round(o(e_)*FPS)/FPS
+    contig_prev=bool(clips) and abs(clips[-1][1]-A)<0.1
+    if contig_prev: A=clips[-1][1]
+    clips.append([A,B,f"{D}/clips/c{k}.mov",lab,sub,pg,rect,x0,x1,z0,z1,not contig_prev])
+for k,c in enumerate(clips):
+    A,B=c[0],c[1]; dur=round((B-A)*FPS)/FPS; c[1]=A+dur
+    fout=(k==len(clips)-1) or abs(clips[k+1][0]-c[1])>0.1
+    if not os.path.exists(c[2]):
+        subprocess.run(["python3","-I",f"{D}/kbo.py",f"{HI}/p-{c[5]}.png",c[2],str(dur),json.dumps(c[6]),str(c[7]),str(c[8]),str(c[9]),str(c[10]),str(int(c[11])),str(int(fout))],check=True)
+clips=[tuple(c[:5]) for c in clips]
+endclip=f"{D}/clips/end.mov"
 if not os.path.exists(endclip):
-    subprocess.run(["python3","-I",f"{D}/kbh.py",f"{HI}/p-08.png",endclip,str(ENDC),json.dumps([0,0,1,1]),".33",".33","1.06","1.0"],check=True)
+    subprocess.run(["python3","-I",f"{D}/kbo.py",f"{HI}/p-08.png",endclip,str(ENDC),json.dumps([.15,0,.75,1]),".43",".43","1.28","1.2","1","0"],check=True)
 def ts(t): t=max(0,t); return f"{int(t//3600)}:{int(t%3600//60):02d}:{t%60:05.2f}"
 Y="&H33D6FF&"; W_="&HFFFFFF&"
 HEAD="""[Script Info]
@@ -59,10 +64,10 @@ Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour,
 Style: Cap,Inter ExtraBold,84,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,6,2,2,80,80,520,1
 Style: Box,Inter ExtraBold,78,&H00111111,&H00FFFFFF,&H0033D6FF,&H0033D6FF,-1,0,0,0,100,100,0,0,3,20,0,8,80,80,260,1
 Style: Dark,Inter ExtraBold,52,&H00FFFFFF,&H00FFFFFF,&H00141418,&H00141418,-1,0,0,0,100,100,1,0,3,18,0,8,90,90,0,1
-Style: Lab,Inter ExtraBold,66,&H00FFFFFF,&H00FFFFFF,&H50101014,&H50101014,-1,0,0,0,100,100,6,0,3,18,0,8,60,60,420,1
-Style: LabS,Inter ExtraBold,42,&H0033D6FF,&H00FFFFFF,&H50101014,&H50101014,-1,0,0,0,100,100,8,0,3,12,0,8,60,60,528,1
-Style: Brand,Inter Display Light,140,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,0,0,0,0,100,100,30,0,1,0,8,8,60,60,340,1
-Style: BrandS,Inter Medium,36,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,0,0,0,0,100,100,12,0,1,0,6,8,60,60,520,1
+Style: Lab,Inter ExtraBold,62,&H00FFFFFF,&H00FFFFFF,&H40101014,&H40101014,-1,0,0,0,100,100,6,0,3,16,0,8,60,60,262,1
+Style: LabS,Inter ExtraBold,42,&H0033D6FF,&H00FFFFFF,&H40101014,&H40101014,-1,0,0,0,100,100,8,0,3,12,0,8,60,60,972,1
+Style: Brand,Inter Display Light,120,&H00FFFFFF,&H00FFFFFF,&H00000000,&HA0000000,0,0,0,0,100,100,26,0,1,3,6,8,60,60,195,1
+Style: BrandS,Inter SemiBold,36,&H00FFFFFF,&H00FFFFFF,&H40101014,&H40101014,0,0,0,0,100,100,10,0,3,12,0,8,60,60,975,1
 Style: Chk,Inter ExtraBold,62,&H00FFFFFF,&H00FFFFFF,&H30101014,&H30101014,-1,0,0,0,100,100,0,0,3,14,0,7,90,80,0,1
 Style: Disc,Inter Medium,28,&H50FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,1,0,1,2,0,2,60,60,60,1
 [Events]
@@ -113,7 +118,7 @@ add(o(44.62),VT,"Box","ME CHAMA AQUI")
 # cartela final sobre a fachada
 add(VT,T,"Brand","ORIGEM",fx="{\\fad(250,0)}",sfx=False)
 add(VT+0.2,T,"BrandS","LUXURY RESIDENCE · GUTIERREZ · BH",sfx=False)
-add(VT+0.4,T,"Box","ME CHAMA AQUI",y=1250)
+add(VT+0.4,T,"Box","ME CHAMA AQUI",y=1090)
 add(VT,T,"Disc","Imagens meramente ilustrativas",layer=1,sfx=False)
 SFX=[x for x in SFX if x<clips[1][0]-0.5 or x>clips[-1][1]+0.5]+[clips[0][0],clips[1][0]]
 open(f"{D}/v5.ass","w").write(HEAD+"\n".join(ev)+"\n")
@@ -131,7 +136,11 @@ for i,(a,b) in enumerate(SEGS):
          "-c:v","libx264","-crf","14","-preset","fast","-c:a","pcm_s16le",out])
 endseg=f"{D}/s{n}.mkv"
 if not os.path.exists(endseg):
-    run(["-i",endclip,"-f","lavfi","-i","anullsrc=r=48000:cl=mono","-map","0:v","-map","1:a","-t",f"{ENDC:.6f}","-c:v","libx264","-crf","14","-preset","fast","-c:a","pcm_s16le",endseg])
+    nfe=round(ENDC*FPS)
+    run(["-ss","45.3","-i",SRC,"-i",endclip,"-f","lavfi","-i","anullsrc=r=48000:cl=mono","-filter_complex",
+         f"[0:v]trim=end_frame=1,scale=1080:1920,setsar=1,{GRADE},eq=brightness=-0.18,gblur=sigma=6,loop=loop={nfe}:size=1,fps={FPS},trim=end_frame={nfe},setpts=PTS-STARTPTS[bg];"
+         f"[1:v]format=yuva420p[cd];[bg][cd]overlay=0:{CARD_Y}:eof_action=repeat,trim=end_frame={nfe},format=yuv420p[v];[2:a]atrim=0:{nfe/FPS:.6f}[a]",
+         "-map","[v]","-map","[a]","-c:v","libx264","-crf","14","-preset","fast","-c:a","pcm_s16le",endseg])
 subprocess.run(["python3","-I",f"{D}/beat.py",f"{D}/beat.wav",str(T),"0","0",str(VT)],check=True)
 subprocess.run(["python3","-I",f"{D}/sfx.py",f"{D}/sfx.wav",str(T)]+[f"{x:.3f}" for x in sorted(set(round(s,2) for s in SFX))],check=True)
 ins=[]
@@ -141,8 +150,8 @@ NB=n+1; NC=len(clips)
 fg=["".join(f"[{i}:v][{i}:a]" for i in range(NB))+f"concat=n={NB}:v=1:a=1[b0][ca]"]
 last="b0"
 for k,(A,B,f,lab,sub) in enumerate(clips):
-    fg.append(f"[{NB+k}:v]setpts=PTS-STARTPTS+{A:.4f}/TB[o{k}]")
-    fg.append(f"[{last}][o{k}]overlay=enable='between(t,{A:.4f},{B-0.001:.4f})':eof_action=pass[b{k+1}]"); last=f"b{k+1}"
+    fg.append(f"[{NB+k}:v]format=yuva420p,setpts=PTS-STARTPTS+{A:.4f}/TB[o{k}]")
+    fg.append(f"[{last}][o{k}]overlay=0:{CARD_Y}:enable='between(t,{A:.4f},{B-0.001:.4f})':eof_action=pass[b{k+1}]"); last=f"b{k+1}"
 fg.append(f"[{last}]ass={D}/v5.ass,format=yuv420p[vo]")
 VOICE=("highpass=f=80,afftdn=nr=7:nf=-42:tn=1,atrim=start=0.025,asetpts=PTS-STARTPTS,apad=pad_dur=0.05,"
        "deesser=i=0.4:m=0.5:f=0.5,equalizer=f=180:t=q:w=1:g=1.5,equalizer=f=3000:t=q:w=1.5:g=1.0,"
