@@ -148,10 +148,22 @@ for i in range(n+1): ins+=["-i",f"{D}/s{i}.mkv"]
 for c in clips: ins+=["-i",c[2]]
 NB=n+1; NC=len(clips)
 fg=["".join(f"[{i}:v][{i}:a]" for i in range(NB))+f"concat=n={NB}:v=1:a=1[b0][ca]"]
-last="b0"
+# trilha única de cartões: preenchimento transparente + clipes, emendados quadro a quadro (sem brechas)
+pieces=[]; cur=0; NFT=round(VT*FPS)
 for k,(A,B,f,lab,sub) in enumerate(clips):
-    fg.append(f"[{NB+k}:v]format=yuva420p,setpts=PTS-STARTPTS+{A:.4f}/TB[o{k}]")
-    fg.append(f"[{last}][o{k}]overlay=0:{CARD_Y}:enable='between(t,{A:.4f},{B-0.001:.4f})':eof_action=pass[b{k+1}]"); last=f"b{k+1}"
+    a=round(A*FPS); b=round(B*FPS)
+    if a>cur: pieces.append(("gap",a-cur))
+    pieces.append((k,b-a)); cur=b
+if NFT>cur: pieces.append(("gap",NFT-cur))
+labels=[]
+for j,(kind,nf) in enumerate(pieces):
+    if kind=="gap":
+        fg.append(f"color=c=black@0.0:s=1080x680:r={FPS},format=yuva420p,trim=end_frame={nf},setpts=PTS-STARTPTS[p{j}]")
+    else:
+        fg.append(f"[{NB+kind}:v]fps={FPS},format=yuva420p,tpad=stop_mode=clone:stop_duration=1,trim=end_frame={nf},setpts=PTS-STARTPTS[p{j}]")
+    labels.append(f"[p{j}]")
+fg.append("".join(labels)+f"concat=n={len(labels)}:v=1:a=0,format=yuva420p[trk]")
+fg.append(f"[b0][trk]overlay=0:{CARD_Y}:eof_action=pass:format=auto[b1]"); last="b1"
 fg.append(f"[{last}]ass={D}/v5.ass,format=yuv420p[vo]")
 VOICE=("highpass=f=80,afftdn=nr=7:nf=-42:tn=1,atrim=start=0.025,asetpts=PTS-STARTPTS,apad=pad_dur=0.05,"
        "deesser=i=0.4:m=0.5:f=0.5,equalizer=f=180:t=q:w=1:g=1.5,equalizer=f=3000:t=q:w=1.5:g=1.0,"
