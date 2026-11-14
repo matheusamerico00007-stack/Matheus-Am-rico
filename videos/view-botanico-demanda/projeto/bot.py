@@ -78,7 +78,7 @@ def pop(t,t0,t1,fade=0.2): u=(t-t0)/0.3; return (1.4-0.4*ease_out_back(u)) if u<
 # 1) objeção
 def hook(cv,t):
     a=ss(0,0.25,t)*(1-ss(o(3.3)-0.2,o(3.3),t)); d=ImageDraw.Draw(cv)
-    f=font("serif_i",64); txt="“O shopping de baixo\nnão dá demanda…”"
+    f=font("serif_i",64); txt="“O shopping de bairro\nnão dá demanda…”"
     p=Image.new("RGBA",(W,H),(0,0,0,0)); dp=ImageDraw.Draw(p)
     dp.rounded_rectangle((90,250,990,500),30,fill=(255,255,255,int(235*a)))
     dp.multiline_text((540,375),txt,font=f,fill=(20,20,20,int(255*a)),anchor="mm",align="center",spacing=10); cv.alpha_composite(p)
@@ -90,9 +90,9 @@ def lower3(cv,t):
     t0,t1=o(3.6),o(11.3); a=ss(t0,t0+0.3,t)*(1-ss(t1-0.25,t1,t)); dx=(1-ss(t0,t0+0.35,t))*-200
     p=Image.new("RGBA",(W,H),(0,0,0,0)); d=ImageDraw.Draw(p)
     d.rounded_rectangle((50+dx,1120,140+dx,1166),10,fill=(10,132,255,int(255*a))); d.text((95+dx,1143),"HOJE",font=font("black",28),fill=W_+(int(255*a),),anchor="mm")
-    d.rounded_rectangle((50+dx,1176,760+dx,1270),14,fill=NAVY+(int(235*a),))
-    d.text((80+dx,1200),"BOTÂNICO SHOPPING",font=font("black",44),fill=W_+(int(255*a),))
-    d.text((80+dx,1250),"BELVEDERE · BELO HORIZONTE",font=font("semi",26),fill=LBc+(int(255*a),),anchor="ls"); cv.alpha_composite(p)
+    d.rounded_rectangle((50+dx,1176,760+dx,1300),14,fill=NAVY+(int(235*a),))
+    d.text((80+dx,1192),"BOTÂNICO SHOPPING",font=font("black",44),fill=W_+(int(255*a),),anchor="la")
+    d.text((82+dx,1252),"BELVEDERE · BELO HORIZONTE",font=font("semi",28),fill=LBc+(int(255*a),),anchor="la"); cv.alpha_composite(p)
 els.append(Func(lower3,o(3.6),o(11.3)))
 els.append(Func(lambda cv,t: (lambda sc,a: box_text(cv,"MUSICAL DE NATAL",420,int(64*sc),a))(*pop(t,o(7.3),o(8.65))),o(7.3),o(8.65)))
 els.append(Func(lambda cv,t: (lambda sc,a: box_text(cv,"LOTADO",620,int(150*sc),a,fg=W_,bg=(10,132,255)))(*pop(t,o(10.5),o(11.3))),o(10.5),o(11.3)))
@@ -104,15 +104,12 @@ def publico(cv,t):
 els.append(Func(publico,o(12.2),o(16.95)))
 # 3) dados do Botânico (fonte citada)
 def dados(cv,t):
-    t0,t1=o(17.9),o(23.4); a=ss(t0,t0+0.3,t)*(1-ss(t1-0.2,t1,t)); dy=(1-ss(t0,t0+0.35,t))*40
+    t0,t1=o(17.9),o(23.4); a=ss(t0,t0+0.3,t)*(1-ss(t1-0.2,t1,t)); dy=(1-ss(t0,t0+0.35,t))*40-60
     p=Image.new("RGBA",(W,H),(0,0,0,0)); d=ImageDraw.Draw(p)
-    dy-=60; d.rounded_rectangle((80,250+dy,1000,640+dy),28,fill=NAVY+(int(235*a),),outline=LBc+(int(255*a),),width=3)
+    d.rounded_rectangle((120,250+dy,960,640+dy),28,fill=NAVY+(int(235*a),),outline=LBc+(int(255*a),),width=3)
     d.text((540,300+dy),"BOTÂNICO SHOPPING",font=font("semi",34),fill=LBc+(int(255*a),),anchor="mm")
-    v=int(120*ss(t0+0.2,t0+1.0,t)); d.text((310,430+dy),f"R$ {v} MI",font=font("black",76),fill=W_+(int(255*a),),anchor="mm")
-    d.text((310,500+dy),"DE INVESTIMENTO",font=font("bold",28),fill=W_+(int(220*a),),anchor="mm")
-    pc=int(100*ss(t0+0.6,t0+1.4,t)); d.text((770,430+dy),f"{pc}%",font=font("black",76),fill=W_+(int(255*a),),anchor="mm")
-    d.text((770,500+dy),"DE OCUPAÇÃO",font=font("bold",28),fill=W_+(int(220*a),),anchor="mm")
-    d.line((540,385+dy,540,525+dy),fill=LBc+(int(160*a),),width=2)
+    pc=int(100*ss(t0+0.2,t0+1.1,t)); d.text((540,420+dy),f"{pc}%",font=font("black",110),fill=W_+(int(255*a),),anchor="mm")
+    d.text((540,510+dy),"DAS LOJAS OCUPADAS EM 7 MESES",font=font("bold",34),fill=W_+(int(230*a),),anchor="mm")
     d.text((540,590+dy),"Fonte: Diário do Comércio",font=font("med",24),fill=(200,210,225,int(230*a)),anchor="mm"); cv.alpha_composite(p)
 els.append(Func(dados,o(17.9),o(23.4)))
 # 4) "muda tudo": lista com ícones (emoji via HTML)
@@ -194,6 +191,8 @@ ov=f"{B}/overlay.mov"
 if not os.path.exists(ov): render_overlay(els,T,ov)
 # ---------- legendas ----------
 words=load_words(f"{S}/b1/tr.json")
+for w in words:
+    if w[2].startswith("baixo") and w[0]<3: w[2]=w[2].replace("baixo","bairro")
 def remap(ws):
     out=[]
     for s,e,x in ws:
@@ -219,7 +218,7 @@ n=len(files)+1
 fg=["".join(f"[{i}:v]" for i in range(n))+f"concat=n={n}:v=1:a=0[cv]",
     f"[{n}:v]format=yuva420p[ov]",f"[cv][ov]overlay=0:0:eof_action=pass[c2]",
     f"[c2]ass={assf},setpts=PTS/{SPEED},fps={FPS},format=yuv420p[vo]",
-    f"[{n+1}:a]atempo={SPEED},{VOICE},asplit[voz][key]",
+    f"[{n+1}:a]atempo={SPEED},highpass=f=100,afftdn=nr=5:nf=-45:tn=1,atrim=start=0.025,asetpts=PTS-STARTPTS,apad=pad_dur=0.05,equalizer=f=250:t=q:w=1.0:g=-3.5,equalizer=f=500:t=q:w=1.2:g=-2.5,equalizer=f=2500:t=q:w=1.2:g=4.5,equalizer=f=4500:t=q:w=1.2:g=5,treble=g=4:f=9000,deesser=i=0.2,acompressor=threshold=-20dB:ratio=2.5:attack=10:release=180,loudnorm=I=-14:TP=-2:LRA=7,aresample=48000,aformat=channel_layouts=stereo,asplit[voz][key]",
     f"[{n+2}:a]atempo={SPEED},aformat=channel_layouts=stereo,volume=1.0[amb]",
     f"[{n+3}:a]volume=0.24,aformat=channel_layouts=stereo[mus]",
     "[mus][key]sidechaincompress=threshold=0.05:ratio=3:attack=30:release=400[md]",
