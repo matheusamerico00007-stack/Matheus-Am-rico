@@ -4,6 +4,7 @@ sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 from eng import *
 S=sys.argv[1]; ENG=os.path.dirname(os.path.abspath(__file__))
 SRC=f"{S}/m2/original.mov"; B=f"{S}/m2/build"; os.makedirs(B,exist_ok=True)
+SPEED=1.0; MODE=sys.argv[2] if len(sys.argv)>2 else "full"; O=f"{S}/m2/out_{MODE}"; os.makedirs(O,exist_ok=True)
 END=117.65; ENDC=3.0; T=END+ENDC
 words=load_words(f"{S}/m2/tr.json")
 for w in words:
@@ -50,11 +51,27 @@ def big_text(cv,txt,y,size,col=WHITE,a=1.0,fname="serif_i",shadow=True,x=W/2):
         sh=Image.new("RGBA",(W,H),(0,0,0,0)); ImageDraw.Draw(sh).text((x+3,y+6),txt,font=f,fill=(0,0,0,int(160*a)),anchor="mm"); sh=sh.filter(ImageFilter.GaussianBlur(8)); cv.alpha_composite(sh)
     ImageDraw.Draw(cv).text((x,y),txt,font=f,fill=col+(int(255*a),),anchor="mm")
 def scene_alpha(t,t0,t1,fi=0.18,fo=0.18): return ss(t0,t0+fi,t)*(1-ss(t1-fo,t1,t))
+_mask={}
+def card_mask(w,h,r=44):
+    k=(w,h)
+    if k not in _mask:
+        m=Image.new("L",(w,h),0); ImageDraw.Draw(m).rounded_rectangle((0,0,w-1,h-1),r,fill=255); _mask[k]=m
+    return _mask[k]
+HY0,HY1=230,1310; HS=0.80; HTOP=880   # metade de baixo: recorte do miolo da cena -> cartão
 class Scene:
-    def __init__(s,t0,t1,fn): s.t0=t0; s.t1=t1; s.fn=fn
+    def __init__(s,t0,t1,fn,full=False): s.t0=t0; s.t1=t1; s.fn=fn; s.full=full
     def draw(s,cv,t):
         if not (s.t0<=t<s.t1): return
         a=scene_alpha(t,s.t0,s.t1); lay=scene_bg(); s.fn(lay,t,t-s.t0)
+        if MODE=="half" and not s.full:
+            crop=lay.crop((0,HY0,W,HY1)); w,h=int(W*HS),int((HY1-HY0)*HS)
+            u=min(1,(t-s.t0)/0.35); sc=0.9+0.1*ease_out_back(u)
+            w2,h2=max(2,int(w*sc)),max(2,int(h*sc)); crop=crop.resize((w2,h2),Image.LANCZOS)
+            card=Image.new("RGBA",(w2,h2),(0,0,0,0)); card.paste(crop,(0,0),card_mask(w2,h2))
+            ImageDraw.Draw(card).rounded_rectangle((0,0,w2-1,h2-1),44,outline=(242,199,94,170),width=3)
+            x=(W-w2)//2; y=HTOP+(h-h2)//2
+            sh=Image.new("RGBA",(W,H),(0,0,0,0)); ImageDraw.Draw(sh).rounded_rectangle((x+6,y+14,x+w2+6,y+h2+14),44,fill=(0,0,0,150)); sh=sh.filter(ImageFilter.GaussianBlur(18))
+            lay=Image.new("RGBA",(W,H),(0,0,0,0)); lay.alpha_composite(sh); lay.alpha_composite(card,(x,y))
         if a<1: lay.putalpha(lay.getchannel("A").point(lambda v:int(v*a)))
         cv.alpha_composite(lay)
 SC=[]   # (t0,t1) das cenas em tela cheia (para a tipografia descer)
@@ -212,7 +229,7 @@ def s_end(cv,t,u):
     if u>0.8:
         a=ss(0.8,1.1,u); d=ImageDraw.Draw(cv); x0,y0=540-160,1280
         d.rounded_rectangle((x0,y0,x0+320,y0+90),24,fill=(0,149,246,int(245*a))); d.text((540,y0+45),"Seguir",font=font("black",46),fill=WHITE+(int(255*a),),anchor="mm")
-els.append(Scene(END,T,s_end)); SC.append((END,T))
+els.append(Scene(END,T,s_end,full=True)); SC.append((END,T))
 # ---------- tipografia animada (estilo do modelo) ----------
 EMPH={"investidor","incertezas","patrimônio","necessidade","básica","moradia","teto","governo","cidade","crédito","associativo","banco","planta","financiamento","inquilino","parcela","shopping","aberto","torres","chave","bitcoin","bolsa","dólar","certeza","onda","vagno","silva","seguro","proteger","construir","estoril","buritis","lançamento","capital","surfando","investir"}
 def is_num(s): return any(ch.isdigit() for ch in s)
@@ -227,7 +244,7 @@ def typo(cv,t):
     for i,ch in enumerate(chunks):
         st=ch[0][0]-0.05; en=min(chunks[i+1][0][0]-0.02 if i+1<len(chunks) else END, ch[-1][1]+0.7)
         if not (st<=t<en): continue
-        yc=1480
+        yc=(250 if (MODE=='half' and (in_scene(st+0.05) or in_scene(t))) else 1480)
         toks=[]
         for w in ch:
             raw=w[2]; clean=raw.strip(",.?!").lower()
@@ -251,7 +268,15 @@ def typo(cv,t):
                     ImageDraw.Draw(cv).text((x,y+dy),s_,font=f,fill=col+(int(255*a),),anchor="ls")
                 x+=widths[k]+sp
 els.append(Func(typo,0,END))
-ov=f"{B}/overlay.mov"
+if os.environ.get("PREVIEW"):
+    for t in [float(x) for x in os.environ["PREVIEW"].split(",")]:
+        fr=subprocess.run(["ffmpeg","-v","error","-ss",str(t),"-i",f"{B}/base.mkv","-frames:v","1","-f","rawvideo","-pix_fmt","rgba","-"],capture_output=True).stdout
+        cv=Image.frombytes("RGBA",(W,H),fr)
+        for e in els:
+            if getattr(e,"t0",0)<=t<getattr(e,"t1",T): e.draw(cv,t)
+        cv.convert("RGB").resize((360,640)).save(f"{O}/pv_{t}.png")
+    sys.exit()
+ov=f"{B}/overlay.mov" if MODE=="full" else f"{O}/overlay.mov"
 if not os.path.exists(ov): render_overlay(els,T,ov)
 # ---------- base: P&B na abertura, zoom de impacto, desfoque nas transições ----------
 GR="eq=contrast=1.08:saturation=0.92:gamma=0.98,colorbalance=rs=-0.03:bs=0.05:rh=0.05:gh=0.01:bh=-0.04"
@@ -272,7 +297,7 @@ if not os.path.exists(endbg):
 # transições: desfoque rápido nas entradas/saídas das cenas e nas viradas
 TR=sorted(set([1.78]+[a for a,b in SC]+[b for a,b in SC if b<END]+[57.4,63.85,68.6,73.2,82.75]))
 blur="".join(f",gblur=sigma=26:enable='between(t,{x-0.09:.2f},{x+0.09:.2f})'" for x in TR)
-mus=f"{B}/music.wav"
+mus=f"{O}/music.wav"
 subprocess.run(["python3","-I",f"{ENG}/../v6/music2.py",mus,f"{T/SPEED:.3f}",f"{1.78/SPEED:.3f}",f"{55.3/SPEED:.3f}",f"{82.8/SPEED:.3f}",f"{93.9/SPEED:.3f}",f"{108.2/SPEED:.3f}",f"{END/SPEED:.3f}"],check=True)
 VOICE2=("highpass=f=90,afftdn=nr=6:nf=-44:tn=1,atrim=start=0.025,asetpts=PTS-STARTPTS,apad=pad_dur=0.05,"
         "equalizer=f=300:t=q:w=1.0:g=-2,equalizer=f=2800:t=q:w=1.2:g=2.5,equalizer=f=5000:t=q:w=1.2:g=2.5,deesser=i=0.25,"
@@ -284,6 +309,6 @@ fg=[f"[0:v][0:a][1:v][1:a]concat=n=2:v=1:a=1[cv][ca]",f"[2:v]format=yuva420p[ov]
     "[mus][key]sidechaincompress=threshold=0.05:ratio=3:attack=30:release=450[md]",
     "[voz][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.89[ao]"]
 run(["-i",base,"-i",endbg,"-i",ov,"-i",mus,"-filter_complex",";".join(fg),"-map","[vo]","-map","[ao]",
-     "-c:v","libx264","-preset","medium","-crf","20","-maxrate","9M","-bufsize","18M","-c:a","aac","-b:a","192k","-movflags","+faststart",f"{B}/final.mp4"])
-light(f"{B}/final.mp4",f"{B}/final_leve.mp4")
+     "-c:v","libx264","-preset","medium","-crf","20","-maxrate","9M","-bufsize","18M","-c:a","aac","-b:a","192k","-movflags","+faststart",f"{O}/final.mp4"])
+light(f"{O}/final.mp4",f"{O}/final_leve.mp4")
 print("ok",round(T,2),round(T/SPEED,2),len(SC),"cenas")
