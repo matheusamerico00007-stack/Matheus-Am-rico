@@ -260,20 +260,15 @@ if not os.path.exists(base):
     run(["-i",V,"-filter_complex",fg,"-map","[v]","-c:v","libx264","-crf","15","-preset","fast",base])
 # ---------- voz (áudios em sequência) ----------
 voz=f"{B}/voz.wav"
-parts="";labs=""
-for k,(n,a,b,t0) in enumerate(TL["segs"]):
-    parts+=f"[{k}:a]atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.02,afade=t=out:st={b-a-0.03:.3f}:d=0.03,adelay={int(t0*1000)}|{int(t0*1000)},apad=whole_dur={T:.3f}[s{k}];"; labs+=f"[s{k}]"
-ins=[]
-for n,a,b,t0 in TL["segs"]: ins+=["-i",f"{D}/a{n}.wav"]
-run(ins+["-filter_complex",parts+labs+f"amix=inputs={len(TL['segs'])}:normalize=0:duration=longest,atrim=0:{T:.3f}[o]","-map","[o]","-ar","48000","-ac","1",voz])
+subprocess.run(["python3","-I",f"{ENG}/../cap/voz.py",D,f"{T:.3f}"],check=True)
 mus=f"{B}/music.wav"
 subprocess.run(["python3","-I",f"{ENG}/../v7/music3.py",mus,f"{T:.3f}","21.2","65.6",f"{END:.3f}"],check=True)
-VOICE2=("highpass=f=85,afftdn=nr=6:nf=-45:tn=1,equalizer=f=220:t=q:w=1.0:g=-2,equalizer=f=3000:t=q:w=1.2:g=2.5,equalizer=f=6000:t=q:w=1.2:g=1.5,deesser=i=0.2,"
+VOICE2=("highpass=f=75,agate=threshold=0.012:ratio=2:attack=5:release=200:range=0.25:knee=4,equalizer=f=220:t=q:w=1.0:g=-2,equalizer=f=3000:t=q:w=1.2:g=2.5,equalizer=f=6000:t=q:w=1.2:g=1.5,deesser=i=0.2,"
         "acompressor=threshold=-20dB:ratio=2.5:attack=10:release=200,loudnorm=I=-14:TP=-2:LRA=7,aresample=48000,aformat=channel_layouts=stereo")
 fgc=[f"[0:v]format=yuv420p[bv]",f"[1:v]format=yuva420p[ov]",
      f"[bv][ov]overlay=0:0:eof_action=pass,ass={assf}:fontsdir=/usr/share/fonts,format=yuv420p[vo]",
      f"[2:a]{VOICE2},asplit[vz][key]",f"[3:a]volume=0.20,aformat=channel_layouts=stereo[mu]",
-     "[mu][key]sidechaincompress=threshold=0.04:ratio=4:attack=25:release=400[md]",
+     "[mu][key]sidechaincompress=threshold=0.04:ratio=4:attack=30:release=650[md]",
      "[vz][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.89[ao]"]
 run(["-i",base,"-i",ov,"-i",voz,"-i",mus,"-filter_complex",";".join(fgc),"-map","[vo]","-map","[ao]","-t",f"{T:.3f}",
      "-c:v","libx264","-preset","medium","-crf","19","-maxrate","8M","-bufsize","16M","-c:a","aac","-b:a","192k","-movflags","+faststart",f"{B}/final.mp4"])
